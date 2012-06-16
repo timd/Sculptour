@@ -141,6 +141,7 @@
 		4C6AF264158CFD99005E76FB /* CMWorkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */; };
 		4C6AF2A4158D162E005E76FB /* CMWorkDetailViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */; };
 		4C6AF2A5158D162E005E76FB /* CMWorkDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */; };
+		4C6AF2BE158D1783005E76FB /* libGRMustache4-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6AF2BD158D1783005E76FB /* libGRMustache4-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -290,6 +291,17 @@
 		4C6AF2A1158D162D005E76FB /* CMWorkDetailViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkDetailViewController_iPhone.h; sourceTree = "<group>"; };
 		4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkDetailViewController_iPhone.m; sourceTree = "<group>"; };
 		4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMWorkDetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		4C6AF2B3158D1778005E76FB /* GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustache.h; path = GRMustache/include/GRMustache.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2B4158D1778005E76FB /* GRMustacheAvailabilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheAvailabilityMacros.h; path = GRMustache/include/GRMustacheAvailabilityMacros.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2B5158D1778005E76FB /* GRMustacheError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheError.h; path = GRMustache/include/GRMustacheError.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2B6158D1778005E76FB /* GRMustacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheHelper.h; path = GRMustache/include/GRMustacheHelper.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2B7158D1778005E76FB /* GRMustacheInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheInvocation.h; path = GRMustache/include/GRMustacheInvocation.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2B8158D1778005E76FB /* GRMustacheSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheSection.h; path = GRMustache/include/GRMustacheSection.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2B9158D1778005E76FB /* GRMustacheTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheTemplate.h; path = GRMustache/include/GRMustacheTemplate.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2BA158D1778005E76FB /* GRMustacheTemplateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheTemplateDelegate.h; path = GRMustache/include/GRMustacheTemplateDelegate.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2BB158D1778005E76FB /* GRMustacheTemplateRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheTemplateRepository.h; path = GRMustache/include/GRMustacheTemplateRepository.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2BC158D1778005E76FB /* GRMustacheVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheVersion.h; path = GRMustache/include/GRMustacheVersion.h; sourceTree = SOURCE_ROOT; };
+		4C6AF2BD158D1783005E76FB /* libGRMustache4-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGRMustache4-iOS.a"; path = "GRMustache/lib/libGRMustache4-iOS.a"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +317,7 @@
 				2297C6FC158CACCF0073492A /* Foundation.framework in Frameworks */,
 				2297C6FE158CACCF0073492A /* CoreGraphics.framework in Frameworks */,
 				2297C700158CACCF0073492A /* CoreData.framework in Frameworks */,
+				4C6AF2BE158D1783005E76FB /* libGRMustache4-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +768,17 @@
 		4C6AF2A6158D16A8005E76FB /* GRMustache */ = {
 			isa = PBXGroup;
 			children = (
+				4C6AF2BD158D1783005E76FB /* libGRMustache4-iOS.a */,
+				4C6AF2B3158D1778005E76FB /* GRMustache.h */,
+				4C6AF2B4158D1778005E76FB /* GRMustacheAvailabilityMacros.h */,
+				4C6AF2B5158D1778005E76FB /* GRMustacheError.h */,
+				4C6AF2B6158D1778005E76FB /* GRMustacheHelper.h */,
+				4C6AF2B7158D1778005E76FB /* GRMustacheInvocation.h */,
+				4C6AF2B8158D1778005E76FB /* GRMustacheSection.h */,
+				4C6AF2B9158D1778005E76FB /* GRMustacheTemplate.h */,
+				4C6AF2BA158D1778005E76FB /* GRMustacheTemplateDelegate.h */,
+				4C6AF2BB158D1778005E76FB /* GRMustacheTemplateRepository.h */,
+				4C6AF2BC158D1778005E76FB /* GRMustacheVersion.h */,
 			);
 			name = GRMustache;
 			sourceTree = "<group>";
@@ -1148,6 +1172,10 @@
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GRMustache/lib\"",
+				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1161,6 +1189,10 @@
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GRMustache/lib\"",
+				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
