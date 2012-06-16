@@ -27,16 +27,7 @@
 -(void)tearDown {
     
     [MagicalRecord cleanUp];
-}
-
--(void)testCoreData {
-    /*
-    Work *newWork = [Work createEntity];
-    GHAssertNotNil(newWork, @"is nil, shouldn't be");
     
-    Image *newImage = [Image createEntity];
-    GHAssertNotNil(newImage, @"is nil, shouldn't be");
-    */
 }
 
 -(void)testSeedData {
