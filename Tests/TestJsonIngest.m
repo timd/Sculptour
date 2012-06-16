@@ -11,6 +11,7 @@
 #import "Image.h"
 
 #import "CMDataCreater.h"
+#import "CMJsonIngest.h"
 
 @interface TestJsonIngest : GHTestCase { }
 
@@ -95,6 +96,15 @@
             newWork.longitude = [theDict objectForKey:@"longitude"];
         }
 
+        if (![[theDict objectForKey:@"image"] isEqual:[NSNull null]]) {
+            
+            Image *newImage = [Image MR_createEntity];
+            newImage.file = [NSString stringWithFormat:@"%d", [theDict objectForKey:@"image"]];
+            
+            [newWork addImagesObject:newImage];
+            
+        }
+        
         NSString *key;
         for (key in theDict) {
             NSLog(@"Key: %@, Value: %@", key, [theDict objectForKey:key]);
@@ -112,12 +122,80 @@
     // 
     Work *workOne = [Work MR_findFirstByAttribute:@"artist" withValue:@"Artist 1"];
     GHAssertNotNil(workOne, @"workOne was not found");
+
+    NSSet *images = workOne.images;
+    GHAssertNotNil(images, @"images should not be nil");
+    
+    NSArray *imagesArray = [images allObjects];
+    int count = [imagesArray count];
+    GHAssertEquals(count, 1, @"should be one image, is %d", count);
     
     // Test Lat/Long
     Work *workTwo = [Work MR_findFirstByAttribute:@"artist" withValue:@"Artist 2"];
     GHAssertNotNil(workTwo, @"workOne was not found");
     GHAssertEqualObjects(workTwo.latitude, NULL, @"latitude should be NULL, was %@", workTwo.latitude);
 
+}
+
+-(void)testJsonFromFile {
+
+    CMJsonIngest *ingester = [[CMJsonIngest alloc] init];
+    
+    [ingester ingestJsonWithFilename:@"TestJson"];
+    
+    // Test results in Core Data
+    
+    NSArray *worksArray = [Work MR_findAll];
+    
+    int worksCount = [worksArray count];
+    GHAssertEquals(worksCount, 3, @"Should be 3 works, got %d", worksCount);
+    
+    // 
+    Work *workOne = [Work MR_findFirstByAttribute:@"artist" withValue:@"Artist 1"];
+    GHAssertNotNil(workOne, @"workOne was not found");
+    
+    NSSet *images = workOne.images;
+    GHAssertNotNil(images, @"images should not be nil");
+    
+    NSArray *imagesArray = [images allObjects];
+    int count = [imagesArray count];
+    GHAssertEquals(count, 1, @"should be one image, is %d", count);
+    
+    // Test Lat/Long
+    Work *workTwo = [Work MR_findFirstByAttribute:@"artist" withValue:@"Artist 2"];
+    GHAssertNotNil(workTwo, @"workOne was not found");
+    GHAssertEqualObjects(workTwo.latitude, NULL, @"latitude should be NULL, was %@", workTwo.latitude);
+    
+}
+
+-(void)testPresenceOfImages {
+    
+    CMJsonIngest *ingester = [[CMJsonIngest alloc] init];
+    
+    [ingester ingestJsonWithFilename:@"TestJson"];
+    
+    Work *workOne = [Work MR_findFirstByAttribute:@"artist" withValue:@"Artist 1"];
+    GHAssertNotNil(workOne, @"workOne was not found");
+
+    NSSet *images = workOne.images;
+    NSArray *imagesArray = [images allObjects];
+    int count = [imagesArray count];
+    GHAssertEquals(count, 1, @"should be one image, is %d", count);
+    
+    Image *theImage = [imagesArray objectAtIndex:0];
+    GHAssertNotNil(theImage, @"theImage should not be nil");
+    
+    GHAssertEqualStrings(theImage.file, @"1", @"theImage.file should be '1'");
+
+    NSString *fileName = [NSString stringWithFormat:@"%@", theImage.file];
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"jpg"];
+    
+    GHAssertEqualStrings(fileName, @"1", @"should be 1, but is %@", fileName);
+    UIImage *image = [UIImage imageWithContentsOfFile:filePath];
+    
+    GHAssertNotNil(image, @"image should not be nil");
+    
 }
 
 @end

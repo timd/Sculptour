@@ -9,6 +9,7 @@
 #import "CMJsonIngest.h"
 
 #import "Work.h"
+#import "Image.h"
 
 @implementation CMJsonIngest
 
@@ -72,6 +73,15 @@
                 newWork.longitude = nil;
             } else {
                 newWork.longitude = [theDict objectForKey:@"longitude"];
+            }
+
+            if (![[theDict objectForKey:@"image"] isEqual:[NSNull null]]) {
+                
+                Image *newImage = [Image MR_createEntity];
+                newImage.file = [theDict objectForKey:@"image"];
+                
+                [newWork addImagesObject:newImage];
+                
             }
 
             

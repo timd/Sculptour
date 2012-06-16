@@ -8,7 +8,8 @@
   "material": "Material 1",
   "size": "Size 1",
   "latitude": 1.23456,
-  "longitude": 9.8765
+  "longitude": 9.8765,
+  "image":"1"
   },
   {
   "artist": "Artist 2",
@@ -19,7 +20,8 @@
   "material": "Material 2",
   "size": "Size 2",
   "latitude": null,
-  "longitude": null
+  "longitude": null,
+  "image":"2"
   },
   {
   "artist": "Artist 3",
@@ -30,6 +32,7 @@
   "material": "Material 3",
   "size": "Size 3",
   "latitude": null,
-  "longitude": null
+  "longitude": null,
+  "image": null
   }
   ]
