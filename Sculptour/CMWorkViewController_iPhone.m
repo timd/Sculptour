@@ -13,6 +13,13 @@
 
 #import "CMAppDelegate.h"
 
+#import "CMWorkDetailViewController_iPhone.h"
+
+#define kCMDetailsTabTag 0
+#define kCMPhotossTabTag 1
+#define kCMCollectionTabTag 2
+
+
 @interface CMWorkViewController_iPhone ()
 
 @end
@@ -22,6 +29,10 @@
 @synthesize work=_work;
 
 @synthesize tabBar=_tabBar;
+@synthesize currentTabView=_currentTabView;
+@synthesize detailViewController_iPhone=_detailViewController_iPhone;
+//@synthesize photosViewController_iPhone=_photosViewController_iPhone;
+//@synthesize collectionViewController_iPhone=_collectionViewController_iPhone;
 
 @synthesize questionMarkLabel=_questionMarkLabel;
 @synthesize distanceLabel=_distanceLabel;
@@ -42,6 +53,34 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 //
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    int item_tag = item.tag;
+    
+    switch (item_tag) 
+    {
+        case kCMDetailsTabTag:
+            
+            if (self.detailViewController_iPhone == nil)
+            {
+                self.detailViewController_iPhone = [[CMWorkDetailViewController_iPhone alloc] init];
+            }
+            self.detailViewController_iPhone.work = self.work;
+            
+            [[self.currentTabView view] removeFromSuperview];
+            self.currentTabView = self.detailViewController_iPhone;
+            [self.view addSubview: [self.currentTabView view]];
+            
+            break;
+            
+        default:
+            break;
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
 - (void)updateUI
 {
     if ([self.work.collected boolValue] == YES)
@@ -51,9 +90,17 @@
         self.distanceLabel.hidden = YES;
         self.streetNameLabel.hidden = YES;        
         self.collectButton.hidden = YES;
+        
+        // this doesn't seem to cause the delegate method to be called
+        [self.tabBar setSelectedItem: [[self.tabBar items] objectAtIndex: 0]];
+        [self tabBar: self.tabBar
+       didSelectItem: [[self.tabBar items] objectAtIndex: 0]];        
     }
     else 
     {
+        if (self.currentTabView)
+            [[self.currentTabView view] removeFromSuperview];
+        
         self.tabBar.hidden = YES;
         self.questionMarkLabel.hidden = NO;
         self.distanceLabel.hidden = NO;
@@ -80,6 +127,9 @@
         }
         
         self.streetNameLabel.text = self.work.place;
+        
+        
+        self.collectButton.hidden = NO;
     }
 }
 
@@ -89,6 +139,8 @@
 - (void)setWork:(Work *)work
 {
     _work = work;
+    
+    self.title = work.title;
     
     [self updateUI];
 }

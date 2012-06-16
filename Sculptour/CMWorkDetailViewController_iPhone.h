@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class Work;
+
 @interface CMWorkDetailViewController_iPhone : UIViewController <UIWebViewDelegate>
 
-@property (nonatomic, strong) UIWebView *webView;
+@property (nonatomic, strong) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) Work *work;
 
 @end

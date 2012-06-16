@@ -142,6 +142,7 @@
 		4C6AF2A4158D162E005E76FB /* CMWorkDetailViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */; };
 		4C6AF2A5158D162E005E76FB /* CMWorkDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */; };
 		4C6AF2BE158D1783005E76FB /* libGRMustache4-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6AF2BD158D1783005E76FB /* libGRMustache4-iOS.a */; };
+		4C6AF2C0158D17E5005E76FB /* Details.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 4C6AF2BF158D17E5005E76FB /* Details.mustache */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -302,6 +303,7 @@
 		4C6AF2BB158D1778005E76FB /* GRMustacheTemplateRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheTemplateRepository.h; path = GRMustache/include/GRMustacheTemplateRepository.h; sourceTree = SOURCE_ROOT; };
 		4C6AF2BC158D1778005E76FB /* GRMustacheVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRMustacheVersion.h; path = GRMustache/include/GRMustacheVersion.h; sourceTree = SOURCE_ROOT; };
 		4C6AF2BD158D1783005E76FB /* libGRMustache4-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGRMustache4-iOS.a"; path = "GRMustache/lib/libGRMustache4-iOS.a"; sourceTree = SOURCE_ROOT; };
+		4C6AF2BF158D17E5005E76FB /* Details.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Details.mustache; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -761,6 +763,7 @@
 				4C6AF2A1158D162D005E76FB /* CMWorkDetailViewController_iPhone.h */,
 				4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */,
 				4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */,
+				4C6AF2BF158D17E5005E76FB /* Details.mustache */,
 			);
 			name = "Detail view controller";
 			sourceTree = "<group>";
@@ -908,6 +911,7 @@
 				22A563B3158CFB4500A2AB3E /* main_menu.png in Resources */,
 				4C6AF264158CFD99005E76FB /* CMWorkViewController_iPhone.xib in Resources */,
 				4C6AF2A5158D162E005E76FB /* CMWorkDetailViewController_iPhone.xib in Resources */,
+				4C6AF2C0158D17E5005E76FB /* Details.mustache in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
