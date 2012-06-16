@@ -116,7 +116,7 @@
     // Test Lat/Long
     Work *workTwo = [Work MR_findFirstByAttribute:@"artist" withValue:@"Artist 2"];
     GHAssertNotNil(workTwo, @"workOne was not found");
-    GHAssertEquals(workTwo.latitude, nil, @"latitude should be nil, was %@", workTwo.latitude);
+    GHAssertEqualObjects(workTwo.latitude, NULL, @"latitude should be NULL, was %@", workTwo.latitude);
 
 }
 
