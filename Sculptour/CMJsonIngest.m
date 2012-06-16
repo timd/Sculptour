@@ -25,6 +25,10 @@
 
 -(void)ingestJsonWithFilename:(NSString *)filename {
     
+    // Drop all existing records
+    [Work MR_truncateAll];
+    [Image MR_truncateAll];
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:filename ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     
@@ -84,7 +88,6 @@
                 
             }
 
-            
             NSString *key;
             for (key in theDict) {
                 NSLog(@"Key: %@, Value: %@", key, [theDict objectForKey:key]);

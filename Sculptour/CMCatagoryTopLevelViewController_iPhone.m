@@ -34,7 +34,7 @@
 {
     [super viewDidLoad];
 
-    self.title = @"Catagories";
+    self.title = @"Categories";
     self.catagoryList = [NSArray arrayWithObjects: @"People", @"Animals", @"Small", @"Large", @"All", @"Uncollected", nil];
     
     [self.tableView reloadData];

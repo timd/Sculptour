@@ -24,7 +24,7 @@
 }
 
 -(void)createDummyData {
-
+    
     for (NSInteger count = 0; count < 10; count++) {
 
         // Create dummy Work data for test purposes

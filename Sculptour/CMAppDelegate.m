@@ -42,15 +42,13 @@ NSString * const CMLocationUpdateNotification = @"CMLocationUpdateNotification";
         self.menuController = [[CMRootMenuViewController alloc] initWithNibName:@"CMRootMenuViewController_iPad" bundle:nil];
     }
     
-    
     self.navController = [[UINavigationController alloc] initWithRootViewController: self.menuController];
-    
     
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"sculptour.sql"];
     
     // Create dummy seed data for testing purposes
-    CMDataCreater *dataCreater = [[CMDataCreater alloc] init];
-    [dataCreater createDummyData];
+    // CMDataCreater *dataCreater = [[CMDataCreater alloc] init];
+    // [dataCreater createDummyData];
     
     CMJsonIngest *jsonIngester = [[CMJsonIngest alloc] init];
     [jsonIngester ingestJsonWithFilename:@"harlow"];

@@ -60,8 +60,9 @@
     frame = self.scrollView.bounds;
     for (Image *workImage in imageList)
     {
-        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: workImage.url]]];
-                
+        //UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: workImage.url]]];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:workImage.file ofType:@"jpg"];
+        UIImage *image = [UIImage imageWithContentsOfFile:filePath];
         UIImageView *imageView = [[UIImageView alloc] initWithImage: image];
         [self.scrollView addSubview: imageView];
         frame.origin.x += frame.size.width;
