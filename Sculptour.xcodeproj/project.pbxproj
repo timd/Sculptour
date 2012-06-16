@@ -1108,6 +1108,7 @@
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1120,6 +1121,7 @@
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
