@@ -129,6 +129,7 @@
 		4C5F054A158CC91E009B77C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F0549158CC91E009B77C4 /* QuartzCore.framework */; };
 		4C5F054C158CC925009B77C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F054B158CC925009B77C4 /* MapKit.framework */; };
 		4C5F054E158CC92B009B77C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F054D158CC92B009B77C4 /* CoreLocation.framework */; };
+		4C5F0566158CE795009B77C4 /* CMWorkGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F0565158CE795009B77C4 /* CMWorkGridView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +265,8 @@
 		4C5F054B158CC925009B77C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4C5F054D158CC92B009B77C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AQGridView.xcodeproj; path = AQGridView/AQGridView.xcodeproj; sourceTree = SOURCE_ROOT; };
+		4C5F0564158CE795009B77C4 /* CMWorkGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkGridView.h; sourceTree = "<group>"; };
+		4C5F0565158CE795009B77C4 /* CMWorkGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkGridView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -675,6 +678,8 @@
 			children = (
 				4C5F0545158CC82A009B77C4 /* CMCollectionGridViewController.h */,
 				4C5F0546158CC82A009B77C4 /* CMCollectionGridViewController.m */,
+				4C5F0564158CE795009B77C4 /* CMWorkGridView.h */,
+				4C5F0565158CE795009B77C4 /* CMWorkGridView.m */,
 			);
 			name = Generic;
 			sourceTree = "<group>";
@@ -893,6 +898,7 @@
 				22A59A5E158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
 				4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */,
 				4C5F0547158CC82A009B77C4 /* CMCollectionGridViewController.m in Sources */,
+				4C5F0566158CE795009B77C4 /* CMWorkGridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

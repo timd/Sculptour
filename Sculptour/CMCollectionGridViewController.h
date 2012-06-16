@@ -12,5 +12,6 @@
 @interface CMCollectionGridViewController : UIViewController <AQGridViewDelegate, AQGridViewDataSource>
 
 @property (nonatomic, strong) AQGridView *gridView;
+@property (nonatomic, strong) NSArray *workList;
 
 @end

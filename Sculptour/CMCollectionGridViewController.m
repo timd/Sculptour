@@ -7,6 +7,7 @@
 //
 
 #import "CMCollectionGridViewController.h"
+#import "CMWorkGridView.h"
 
 @interface CMCollectionGridViewController ()
 
@@ -15,7 +16,7 @@
 @implementation CMCollectionGridViewController
 
 @synthesize gridView=_gridView;
-
+@synthesize workList=_workList;
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -72,8 +73,42 @@
 
 #pragma mark - AQGridView data source
 
+
 ///////////////////////////////////////////////////////////////////////////////
 //
+- (CGSize)portraitGridCellSizeForGridView:(AQGridView *)gridView
+{
+    return CGSizeMake(100, 100);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (NSUInteger) numberOfItemsInGridView: (AQGridView *) gridView
+{
+    return self.workList.count;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (AQGridViewCell *) gridView: (AQGridView *) gridView cellForItemAtIndex: (NSUInteger) index
+{
+    NSString *reuseIdentifier = NSStringFromClass([self class]);
+    
+    CMWorkGridView *cell = (CMWorkGridView*)[self.gridView dequeueReusableCellWithIdentifier: reuseIdentifier];
+    if (cell == nil)
+    {
+        cell = [[CMWorkGridView alloc] initWithFrame: CGRectMake(0.0, 0.0, 100.0, 10.0)
+                                     reuseIdentifier: reuseIdentifier];
+    }
+    
+    Work *work = [self.workList objectAtIndex: index];
+    cell.work = work;
+    
+    return cell;
+}
+
 
 #pragma mark - AQGridView delegate
 
