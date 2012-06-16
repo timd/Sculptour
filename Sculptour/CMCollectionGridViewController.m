@@ -45,9 +45,9 @@
         
     [self.view addSubview: self.gridView];
     
-    NSArray *allWorks = [Work MR_findAll];
-    NSLog(@"allWorks = %@", allWorks);
-    
+    self.workList = [Work MR_findAll];
+
+    [self.gridView reloadData];
 }
 
 
