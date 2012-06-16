@@ -124,6 +124,7 @@
 		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
 		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
 		4C5F04FC158CC1EE009B77C4 /* libAQGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F04F9158CC1C5009B77C4 /* libAQGridView.a */; };
+		4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F0500158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -244,6 +245,8 @@
 		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
 		4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPad.xib; sourceTree = "<group>"; };
 		4C5F04F1158CC1C5009B77C4 /* AQGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AQGridView.xcodeproj; path = AQGridView/AQGridView.xcodeproj; sourceTree = SOURCE_ROOT; };
+		4C5F04FF158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCatagoryTopLevelViewController_iPhone.h; sourceTree = "<group>"; };
+		4C5F0500158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCatagoryTopLevelViewController_iPhone.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -578,7 +581,7 @@
 			children = (
 				4C5F04EC158CBE45009B77C4 /* Root menu */,
 				4C5F04EE158CBE68009B77C4 /* Instructions view */,
-				4C5F04ED158CBE5E009B77C4 /* Collection view */,
+				4C5F04ED158CBE5E009B77C4 /* Collection views */,
 				4C5F04EF158CBE6F009B77C4 /* Map view */,
 			);
 			name = "View Controllers";
@@ -595,11 +598,13 @@
 			name = "Root menu";
 			sourceTree = "<group>";
 		};
-		4C5F04ED158CBE5E009B77C4 /* Collection view */ = {
+		4C5F04ED158CBE5E009B77C4 /* Collection views */ = {
 			isa = PBXGroup;
 			children = (
+				4C5F04FE158CC291009B77C4 /* iPad */,
+				4C5F04FD158CC286009B77C4 /* iPhone */,
 			);
-			name = "Collection view";
+			name = "Collection views";
 			sourceTree = "<group>";
 		};
 		4C5F04EE158CBE68009B77C4 /* Instructions view */ = {
@@ -630,6 +635,22 @@
 				4C5F04F9158CC1C5009B77C4 /* libAQGridView.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5F04FD158CC286009B77C4 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F04FF158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.h */,
+				4C5F0500158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		4C5F04FE158CC291009B77C4 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -817,6 +838,7 @@
 				2297C7B3158CBAAD0073492A /* MagicalRecord.m in Sources */,
 				22A59A5B158CD30A007D2FA1 /* CMAppDelegate.m in Sources */,
 				22A59A5E158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
+				4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
