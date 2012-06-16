@@ -6,8 +6,12 @@
 //  Copyright (c) 2012 Charismatic Megafauna Ltd. All rights reserved.
 //
 
+#import <CoreLocation/CoreLocation.h>
+
 #import "CMWorkViewController_iPhone.h"
 #import "Work.h"
+
+#import "CMAppDelegate.h"
 
 @interface CMWorkViewController_iPhone ()
 
@@ -30,10 +34,33 @@
     if ([self.work.collected boolValue] == YES)
     {
         self.tabBar.hidden = NO;
+        self.questionMarkLabel.hidden = YES;
+        self.distanceLabel.hidden = YES;
+        self.streetNameLabel.hidden = YES;
     }
     else 
     {
         self.tabBar.hidden = YES;
+        self.questionMarkLabel.hidden = NO;
+        self.distanceLabel.hidden = NO;
+        self.streetNameLabel.hidden = NO;
+        
+        CLLocation *here = SharedCurrentLocation;
+        
+        if (here != nil)
+        {
+            CLLocation *workLocation = [[CLLocation alloc] initWithLatitude: [self.work.latitude doubleValue]
+                                                                  longitude: [self.work.longitude doubleValue]];
+            float distance = [workLocation distanceFromLocation: SharedCurrentLocation];
+            
+            self.distanceLabel.text = [NSString stringWithFormat: @"%f km", distance / 1000.0];
+        }
+        else 
+        {
+            self.distanceLabel.text = @"Unknown distance";
+        }
+        
+        self.streetNameLabel.text = self.work.place;
     }
 }
 
