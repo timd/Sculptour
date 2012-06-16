@@ -11,7 +11,7 @@
 @class Work;
 
 @class CMWorkDetailViewController_iPhone;
-//@class CMWorkPhotosViewController_iPhone;
+@class CMWorkPhotosViewController_iPhone;
 //@class CMWorkCollectionViewController_iPhone;
 
 
@@ -22,7 +22,7 @@
 @property (nonatomic, strong) IBOutlet UITabBar *tabBar;
 @property (nonatomic, strong) id currentTabView;
 @property (nonatomic, strong) CMWorkDetailViewController_iPhone *detailViewController_iPhone;
-//@property (nonatomic, strong) CMWorkPhotosViewController_iPhone *photosViewController_iPhone;
+@property (nonatomic, strong) CMWorkPhotosViewController_iPhone *photosViewController_iPhone;
 //@property (nonatomic, strong) CMWorkCollectionViewController_iPhone *collectionViewController_iPhone;
 
 @property (nonatomic, strong) IBOutlet UILabel *questionMarkLabel;

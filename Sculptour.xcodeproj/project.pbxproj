@@ -126,6 +126,15 @@
 		22B2D76F158CC9FD004ADAEE /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
 		22B2D771158CCA67004ADAEE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
 		22B2D773158CCF25004ADAEE /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
+		4C448284158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */; };
+		4C448285158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */; };
+		4C44829D158D22AC007CC4EC /* NSArray-Set.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C44829C158D22AC007CC4EC /* NSArray-Set.m */; };
+		4C4482A0158D24CF007CC4EC /* 104-index-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C44829E158D24CE007CC4EC /* 104-index-cards.png */; };
+		4C4482A1158D24CF007CC4EC /* 104-index-cards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C44829F158D24CF007CC4EC /* 104-index-cards@2x.png */; };
+		4C4482A4158D24ED007CC4EC /* 43-film-roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482A2158D24EC007CC4EC /* 43-film-roll.png */; };
+		4C4482A5158D24ED007CC4EC /* 43-film-roll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */; };
+		4C4482A8158D250F007CC4EC /* 96-book.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482A6158D250E007CC4EC /* 96-book.png */; };
+		4C4482A9158D250F007CC4EC /* 96-book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482A7158D250F007CC4EC /* 96-book@2x.png */; };
 		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
 		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
 		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
@@ -271,6 +280,17 @@
 		22B2D6A8158CC3C9004ADAEE /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
 		22B2D6B4158CC543004ADAEE /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTest.m; sourceTree = "<group>"; };
+		4C448281158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkPhotosViewController_iPhone.h; sourceTree = "<group>"; };
+		4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkPhotosViewController_iPhone.m; sourceTree = "<group>"; };
+		4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMWorkPhotosViewController_iPhone.xib; sourceTree = "<group>"; };
+		4C44829B158D22AC007CC4EC /* NSArray-Set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-Set.h"; sourceTree = "<group>"; };
+		4C44829C158D22AC007CC4EC /* NSArray-Set.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray-Set.m"; sourceTree = "<group>"; };
+		4C44829E158D24CE007CC4EC /* 104-index-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "104-index-cards.png"; sourceTree = "<group>"; };
+		4C44829F158D24CF007CC4EC /* 104-index-cards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "104-index-cards@2x.png"; sourceTree = "<group>"; };
+		4C4482A2158D24EC007CC4EC /* 43-film-roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "43-film-roll.png"; sourceTree = "<group>"; };
+		4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "43-film-roll@2x.png"; sourceTree = "<group>"; };
+		4C4482A6158D250E007CC4EC /* 96-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book.png"; sourceTree = "<group>"; };
+		4C4482A7158D250F007CC4EC /* 96-book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book@2x.png"; sourceTree = "<group>"; };
 		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
 		4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRootMenuViewController.m; sourceTree = "<group>"; };
 		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -506,6 +526,8 @@
 		2297C742158CB9260073492A /* Third party */ = {
 			isa = PBXGroup;
 			children = (
+				4C44829B158D22AC007CC4EC /* NSArray-Set.h */,
+				4C44829C158D22AC007CC4EC /* NSArray-Set.m */,
 				4C6AF2A6158D16A8005E76FB /* GRMustache */,
 				4C5F0559158CE67F009B77C4 /* AQGridView */,
 				2297C745158CBAAC0073492A /* MagicalRecord */,
@@ -764,6 +786,15 @@
 				4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */,
 				4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */,
 				4C6AF2BF158D17E5005E76FB /* Details.mustache */,
+				4C448281158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.h */,
+				4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */,
+				4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */,
+				4C44829E158D24CE007CC4EC /* 104-index-cards.png */,
+				4C44829F158D24CF007CC4EC /* 104-index-cards@2x.png */,
+				4C4482A2158D24EC007CC4EC /* 43-film-roll.png */,
+				4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */,
+				4C4482A6158D250E007CC4EC /* 96-book.png */,
+				4C4482A7158D250F007CC4EC /* 96-book@2x.png */,
 			);
 			name = "Detail view controller";
 			sourceTree = "<group>";
@@ -912,6 +943,13 @@
 				4C6AF264158CFD99005E76FB /* CMWorkViewController_iPhone.xib in Resources */,
 				4C6AF2A5158D162E005E76FB /* CMWorkDetailViewController_iPhone.xib in Resources */,
 				4C6AF2C0158D17E5005E76FB /* Details.mustache in Resources */,
+				4C448285158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib in Resources */,
+				4C4482A0158D24CF007CC4EC /* 104-index-cards.png in Resources */,
+				4C4482A1158D24CF007CC4EC /* 104-index-cards@2x.png in Resources */,
+				4C4482A4158D24ED007CC4EC /* 43-film-roll.png in Resources */,
+				4C4482A5158D24ED007CC4EC /* 43-film-roll@2x.png in Resources */,
+				4C4482A8158D250F007CC4EC /* 96-book.png in Resources */,
+				4C4482A9158D250F007CC4EC /* 96-book@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -995,6 +1033,8 @@
 				22A59AA2158CEDA3007D2FA1 /* CMAppDelegate.m in Sources */,
 				4C6AF263158CFD99005E76FB /* CMWorkViewController_iPhone.m in Sources */,
 				4C6AF2A4158D162E005E76FB /* CMWorkDetailViewController_iPhone.m in Sources */,
+				4C448284158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m in Sources */,
+				4C44829D158D22AC007CC4EC /* NSArray-Set.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

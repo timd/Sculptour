@@ -14,9 +14,10 @@
 #import "CMAppDelegate.h"
 
 #import "CMWorkDetailViewController_iPhone.h"
+#import "CMWorkPhotosViewController_iPhone.h"
 
 #define kCMDetailsTabTag 0
-#define kCMPhotossTabTag 1
+#define kCMPhotosTabTag 1
 #define kCMCollectionTabTag 2
 
 
@@ -31,7 +32,7 @@
 @synthesize tabBar=_tabBar;
 @synthesize currentTabView=_currentTabView;
 @synthesize detailViewController_iPhone=_detailViewController_iPhone;
-//@synthesize photosViewController_iPhone=_photosViewController_iPhone;
+@synthesize photosViewController_iPhone=_photosViewController_iPhone;
 //@synthesize collectionViewController_iPhone=_collectionViewController_iPhone;
 
 @synthesize questionMarkLabel=_questionMarkLabel;
@@ -69,6 +70,20 @@
             
             [[self.currentTabView view] removeFromSuperview];
             self.currentTabView = self.detailViewController_iPhone;
+            [self.view addSubview: [self.currentTabView view]];
+            
+            break;
+            
+        case kCMPhotosTabTag:
+            
+            if (self.photosViewController_iPhone == nil)
+            {
+                self.photosViewController_iPhone = [[CMWorkPhotosViewController_iPhone alloc] init];
+            }
+            self.photosViewController_iPhone.work = self.work;
+            
+            [[self.currentTabView view] removeFromSuperview];
+            self.currentTabView = self.photosViewController_iPhone;
             [self.view addSubview: [self.currentTabView view]];
             
             break;
