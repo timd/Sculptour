@@ -9,7 +9,12 @@
   "size": "Size 1",
   "latitude": 1.23456,
   "longitude": 9.8765,
-  "image":"1"
+  "image":"1",
+  "tags": [
+           {
+           "tag": "foo"
+           }
+           ]
   },
   {
   "artist": "Artist 2",
@@ -21,7 +26,8 @@
   "size": "Size 2",
   "latitude": null,
   "longitude": null,
-  "image":"2"
+  "image":"2",
+  "tags": []
   },
   {
   "artist": "Artist 3",
@@ -33,6 +39,14 @@
   "size": "Size 3",
   "latitude": null,
   "longitude": null,
-  "image": null
+  "image": null,
+  "tags": [
+           {
+           "tag": "bar"
+           },
+           {
+           "tag": "foo"
+           }
+           ]
   }
   ]

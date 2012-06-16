@@ -10,6 +10,7 @@
 
 #import "Work.h"
 #import "Image.h"
+#import "Tag.h"
 
 @implementation CMJsonIngest
 
@@ -85,6 +86,30 @@
                 newImage.file = [theDict objectForKey:@"image"];
                 
                 [newWork addImagesObject:newImage];
+                
+            }
+            
+            // Handle tags
+            NSArray *tagsArray = [theDict objectForKey:@"tags"];
+            NSLog(@"tagsArray = %@", tagsArray);
+            
+            // Iterate across the tags array
+            for (NSDictionary *tagDict in tagsArray) {
+
+                NSLog(@"tagDict = %@", tagDict);
+                NSLog(@"value = %@", [tagDict valueForKey:@"tag"]);
+                
+                // See if there's already an existing tag with this name
+                NSArray *tags = [Tag MR_findByAttribute:@"name" withValue:[tagDict valueForKey:@"tag"]];
+                if ([tags count] == 0) {
+                    // No tag currently exists, create a new one
+                    Tag *newTag = [Tag MR_createEntity];
+                    [newTag setName:[tagDict objectForKey:@"tag"]];
+                    [newWork addTagsObject:newTag];
+                } else {
+                    Tag *theTag = [tags objectAtIndex:0];
+                    [newWork addTagsObject:theTag];
+                }
                 
             }
 

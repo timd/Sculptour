@@ -8,6 +8,7 @@
 
 #import "Work.h"
 #import "Image.h"
+#import "Tag.h"
 
 
 @implementation Work
@@ -25,5 +26,6 @@
 @dynamic title;
 @dynamic url;
 @dynamic images;
+@dynamic tags;
 
 @end
