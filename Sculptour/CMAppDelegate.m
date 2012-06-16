@@ -61,8 +61,7 @@ NSString * const CMLocationUpdateNotification = @"CMLocationUpdateNotification";
     
     if (![facebook isSessionValid]) {
         NSArray *permissions = [[NSArray alloc] initWithObjects:
-                                @"user_likes", 
-                                @"read_stream",
+                                @"publish_stream",
                                 nil];
         [facebook authorize:permissions];
     }

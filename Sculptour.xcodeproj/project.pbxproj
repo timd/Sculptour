@@ -124,6 +124,7 @@
 		22A56479158D4B9300A2AB3E /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5646F158D4B9300A2AB3E /* libfacebook_ios_sdk.a */; };
 		22A5647A158D4B9300A2AB3E /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5646F158D4B9300A2AB3E /* libfacebook_ios_sdk.a */; };
 		22A5647B158D4B9300A2AB3E /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5646F158D4B9300A2AB3E /* libfacebook_ios_sdk.a */; };
+		22A5647D158D530C00A2AB3E /* piglet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22A5647C158D530C00A2AB3E /* piglet.jpg */; };
 		22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
 		22A59A6B158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
 		22A59A6D158CE295007D2FA1 /* harlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A6C158CE295007D2FA1 /* harlow.json */; };
@@ -347,6 +348,7 @@
 		22A56473158D4B9300A2AB3E /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		22A56474158D4B9300A2AB3E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		22A56475158D4B9300A2AB3E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		22A5647C158D530C00A2AB3E /* piglet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piglet.jpg; sourceTree = "<group>"; };
 		22A59A68158CDD37007D2FA1 /* CMJsonIngest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMJsonIngest.h; sourceTree = "<group>"; };
 		22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMJsonIngest.m; sourceTree = "<group>"; };
 		22A59A6C158CE295007D2FA1 /* harlow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = harlow.json; sourceTree = "<group>"; };
@@ -600,6 +602,7 @@
 		2297C73B158CB89B0073492A /* App assets */ = {
 			isa = PBXGroup;
 			children = (
+				22A5647C158D530C00A2AB3E /* piglet.jpg */,
 				22A563B2158CFB4500A2AB3E /* main_menu.png */,
 			);
 			name = "App assets";
@@ -1118,6 +1121,7 @@
 				4C4482AE158D25F4007CC4EC /* CMWorkCollectionViewController_iPhone.xib in Resources */,
 				4C4482B3158D26B8007CC4EC /* CMMapViewController.xib in Resources */,
 				22A56476158D4B9300A2AB3E /* FBDialog.bundle in Resources */,
+				22A5647D158D530C00A2AB3E /* piglet.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
