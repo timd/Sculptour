@@ -7,6 +7,7 @@
 //
 
 #import "CMAppDelegate.h"
+#import "CMDataCreater.h"
 
 @implementation CMAppDelegate
 
@@ -17,11 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"sculptour.sql"];
+    
+    // Create dummy seed data for testing purposes
+    CMDataCreater *dataCreater = [[CMDataCreater alloc] init];
+    [dataCreater createDummyData];
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -50,6 +61,9 @@
 {
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+    
+    [MagicalRecord cleanUp];
+    
 }
 
 - (void)saveContext

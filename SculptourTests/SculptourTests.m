@@ -7,6 +7,9 @@
 //
 
 #import "SculptourTests.h"
+#import "Work.h"
+#import "Image.h"
+#import "CMDataCreater.h"
 
 @implementation SculptourTests
 
@@ -15,6 +18,9 @@
     [super setUp];
     
     // Set-up code here.
+   	[MagicalRecord setDefaultModelFromClass:[self class]];
+	[MagicalRecord setupCoreDataStackWithInMemoryStore];
+    
 }
 
 - (void)tearDown
@@ -22,11 +28,17 @@
     // Tear-down code here.
     
     [super tearDown];
+    [MagicalRecord cleanUp];
+    
 }
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in SculptourTests");
+
+    Work *testWork = [Work MR_createEntity];
+    testWork.artist = @"Foo";
+    STAssertNotNil(testWork, @"testWork is nil, shouldn't be");
+    
 }
 
 @end
