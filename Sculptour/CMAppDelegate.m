@@ -26,6 +26,7 @@ NSString * const CMLocationUpdateNotification = @"CMLocationUpdateNotification";
 @synthesize locationManager=_locationManager;
 @synthesize lastPoint=_lastPoint;
 
+@synthesize facebook;
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -45,13 +46,27 @@ NSString * const CMLocationUpdateNotification = @"CMLocationUpdateNotification";
     self.navController = [[UINavigationController alloc] initWithRootViewController: self.menuController];
     
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"sculptour.sql"];
-    
-    // Create dummy seed data for testing purposes
-    // CMDataCreater *dataCreater = [[CMDataCreater alloc] init];
-    // [dataCreater createDummyData];
-    
     CMJsonIngest *jsonIngester = [[CMJsonIngest alloc] init];
     [jsonIngester ingestJsonWithFilename:@"harlow"];
+
+    // Setup Facebook
+    facebook = [[Facebook alloc] initWithAppId:@"408333842536848" andDelegate:self];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"FBAccessTokenKey"] 
+        && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
+        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+    }
+    
+    if (![facebook isSessionValid]) {
+        NSArray *permissions = [[NSArray alloc] initWithObjects:
+                                @"user_likes", 
+                                @"read_stream",
+                                nil];
+        [facebook authorize:permissions];
+    }
+    
     
 	// setup globally accessible location manager
 	self.locationManager = [[CLLocationManager alloc] init];    
@@ -258,5 +273,39 @@ NSString * const CMLocationUpdateNotification = @"CMLocationUpdateNotification";
 	return NO;
 }
 
+#pragma mark -
+#pragma mark Facebook delegate methods
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [facebook handleOpenURL:url]; 
+}
+
+- (void)fbDidLogin {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
+    [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
+    
+}
+
+-(void)fbDidLogout {
+    // Remove saved authorization information if it exists
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"FBAccessTokenKey"]) {
+        [defaults removeObjectForKey:@"FBAccessTokenKey"];
+        [defaults removeObjectForKey:@"FBExpirationDateKey"];
+        [defaults synchronize];
+    }
+}
+ 
+-(void)fbDidNotLogin:(BOOL)cancelled {  
+}
+
+-(void)fbDidExtendToken:(NSString *)accessToken expiresAt:(NSDate *)expiresAt {
+}
+
+-(void)fbSessionInvalidated {
+}
 
 @end
