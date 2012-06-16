@@ -53,7 +53,7 @@
                                                                   longitude: [self.work.longitude doubleValue]];
             float distance = [workLocation distanceFromLocation: SharedCurrentLocation];
             
-            self.distanceLabel.text = [NSString stringWithFormat: @"%f km", distance / 1000.0];
+            self.distanceLabel.text = [NSString stringWithFormat: @"%.1f km", distance / 1000.0];
         }
         else 
         {
@@ -89,7 +89,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    if (self.work)
+        [self updateUI];
 }
 
 
