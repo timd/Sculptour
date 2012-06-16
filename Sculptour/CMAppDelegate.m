@@ -9,6 +9,7 @@
 #import "CMAppDelegate.h"
 #import "CMRootMenuViewController.h"
 #import "CMDataCreater.h"
+#import "CMJsonIngest.h"
 
 @implementation CMAppDelegate
 
@@ -47,6 +48,9 @@
     // Create dummy seed data for testing purposes
     CMDataCreater *dataCreater = [[CMDataCreater alloc] init];
     [dataCreater createDummyData];
+    
+    CMJsonIngest *jsonIngester = [[CMJsonIngest alloc] init];
+    [jsonIngester ingestJsonWithFilename:@"harlow"];
     
     
     self.window.backgroundColor = [UIColor whiteColor];

@@ -21,8 +21,6 @@
 		2297C725158CACCF0073492A /* SculptourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C724158CACCF0073492A /* SculptourTests.m */; };
 		2297C732158CB82F0073492A /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
 		2297C733158CB82F0073492A /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
-		2297C736158CB83E0073492A /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C735158CB83E0073492A /* Work.m */; };
-		2297C737158CB83E0073492A /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C735158CB83E0073492A /* Work.m */; };
 		2297C740158CB8D80073492A /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
 		2297C741158CB8D80073492A /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
 		2297C781158CBAAD0073492A /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C749158CBAAC0073492A /* MagicalImportFunctions.m */; };
@@ -77,10 +75,15 @@
 		2297C7B2158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77C158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m */; };
 		2297C7B3158CBAAD0073492A /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
 		2297C7B4158CBAAD0073492A /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
-		22A59A5B158CD30A007D2FA1 /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5A158CD30A007D2FA1 /* CMAppDelegate.m */; };
-		22A59A5E158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */; };
-		22A59A5F158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */; };
-		22A59A60158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */; };
+		22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
+		22A59A6B158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
+		22A59A6D158CE295007D2FA1 /* harlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A6C158CE295007D2FA1 /* harlow.json */; };
+		22A59A6E158CE295007D2FA1 /* harlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A6C158CE295007D2FA1 /* harlow.json */; };
+		22A59A71158CE69C007D2FA1 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A70158CE69C007D2FA1 /* Work.m */; };
+		22A59A72158CE69C007D2FA1 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A70158CE69C007D2FA1 /* Work.m */; };
+		22A59A73158CE69C007D2FA1 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A70158CE69C007D2FA1 /* Work.m */; };
+		22A59A80158CE7E9007D2FA1 /* TestJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */; };
+		22A59A82158CE8D9007D2FA1 /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A81158CE8D9007D2FA1 /* TestJson.json */; };
 		22B2D69B158CC3C9004ADAEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6F9158CACCF0073492A /* UIKit.framework */; };
 		22B2D69C158CC3C9004ADAEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FB158CACCF0073492A /* Foundation.framework */; };
 		22B2D69D158CC3C9004ADAEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FD158CACCF0073492A /* CoreGraphics.framework */; };
@@ -117,7 +120,6 @@
 		22B2D76D158CC9FD004ADAEE /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77A158CBAAD0073492A /* MagicalRecord+Setup.m */; };
 		22B2D76E158CC9FD004ADAEE /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77C158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m */; };
 		22B2D76F158CC9FD004ADAEE /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
-		22B2D770158CCA67004ADAEE /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C735158CB83E0073492A /* Work.m */; };
 		22B2D771158CCA67004ADAEE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
 		22B2D773158CCF25004ADAEE /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
 		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
@@ -181,8 +183,6 @@
 		2297C724158CACCF0073492A /* SculptourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SculptourTests.m; sourceTree = "<group>"; };
 		2297C730158CB82F0073492A /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		2297C731158CB82F0073492A /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
-		2297C734158CB83E0073492A /* Work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
-		2297C735158CB83E0073492A /* Work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
 		2297C73E158CB8D80073492A /* CMDataCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDataCreater.h; sourceTree = "<group>"; };
 		2297C73F158CB8D80073492A /* CMDataCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDataCreater.m; sourceTree = "<group>"; };
 		2297C748158CBAAC0073492A /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
@@ -239,9 +239,13 @@
 		2297C77E158CBAAD0073492A /* MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecord.m; sourceTree = "<group>"; };
 		2297C77F158CBAAD0073492A /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		2297C780158CBAAD0073492A /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
-		22A59A59158CD30A007D2FA1 /* CMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
-		22A59A5A158CD30A007D2FA1 /* CMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
-		22A59A5D158CD354007D2FA1 /* Sculptour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sculptour.xcdatamodel; sourceTree = "<group>"; };
+		22A59A68158CDD37007D2FA1 /* CMJsonIngest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMJsonIngest.h; sourceTree = "<group>"; };
+		22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMJsonIngest.m; sourceTree = "<group>"; };
+		22A59A6C158CE295007D2FA1 /* harlow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = harlow.json; sourceTree = "<group>"; };
+		22A59A6F158CE69C007D2FA1 /* Work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
+		22A59A70158CE69C007D2FA1 /* Work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
+		22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJsonIngest.m; sourceTree = "<group>"; };
+		22A59A81158CE8D9007D2FA1 /* TestJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
 		22B2D699158CC3C9004ADAEE /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B2D6A0158CC3C9004ADAEE /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		22B2D6A2158CC3C9004ADAEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -394,7 +398,7 @@
 		2297C72E158CB5AA0073492A /* Backend */ = {
 			isa = PBXGroup;
 			children = (
-				22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */,
+				22A59A66158CDD27007D2FA1 /* JSON */,
 				2297C72F158CB8190073492A /* Models */,
 				2297C73D158CB8B10073492A /* Fixtures */,
 			);
@@ -404,10 +408,10 @@
 		2297C72F158CB8190073492A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2297C734158CB83E0073492A /* Work.h */,
-				2297C735158CB83E0073492A /* Work.m */,
 				2297C730158CB82F0073492A /* Image.h */,
 				2297C731158CB82F0073492A /* Image.m */,
+				22A59A6F158CE69C007D2FA1 /* Work.h */,
+				22A59A70158CE69C007D2FA1 /* Work.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -432,6 +436,8 @@
 		2297C73A158CB88A0073492A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				22A59A6C158CE295007D2FA1 /* harlow.json */,
+				22A59A81158CE8D9007D2FA1 /* TestJson.json */,
 				2297C73C158CB8A00073492A /* Work assets */,
 				2297C73B158CB89B0073492A /* App assets */,
 			);
@@ -571,7 +577,16 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		22B2D69E158CC3C9004ADAEE /* GHUnit Tests */ = {
+		22A59A66158CDD27007D2FA1 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				22A59A68158CDD37007D2FA1 /* CMJsonIngest.h */,
+				22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		22B2D69E158CC3C9004ADAEE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				22B2D6B2158CC531004ADAEE /* Tests */,
@@ -599,6 +614,7 @@
 			children = (
 				22B2D6B4158CC543004ADAEE /* MyTest.m */,
 				22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */,
+				22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -821,6 +837,7 @@
 				2297C706158CACCF0073492A /* InfoPlist.strings in Resources */,
 				4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */,
 				4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */,
+				22A59A6D158CE295007D2FA1 /* harlow.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,6 +854,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B2D6A3158CC3C9004ADAEE /* InfoPlist.strings in Resources */,
+				22A59A6E158CE295007D2FA1 /* harlow.json in Resources */,
+				22A59A82158CE8D9007D2FA1 /* TestJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,7 +885,6 @@
 				2297C708158CACCF0073492A /* main.m in Sources */,
 				4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */,
 				2297C732158CB82F0073492A /* Image.m in Sources */,
-				2297C736158CB83E0073492A /* Work.m in Sources */,
 				2297C740158CB8D80073492A /* CMDataCreater.m in Sources */,
 				2297C781158CBAAD0073492A /* MagicalImportFunctions.m in Sources */,
 				2297C783158CBAAD0073492A /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -899,6 +917,8 @@
 				4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */,
 				4C5F0547158CC82A009B77C4 /* CMCollectionGridViewController.m in Sources */,
 				4C5F0566158CE795009B77C4 /* CMWorkGridView.m in Sources */,
+				22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */,
+				22A59A71158CE69C007D2FA1 /* Work.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,7 +928,6 @@
 			files = (
 				2297C725158CACCF0073492A /* SculptourTests.m in Sources */,
 				2297C733158CB82F0073492A /* Image.m in Sources */,
-				2297C737158CB83E0073492A /* Work.m in Sources */,
 				2297C741158CB8D80073492A /* CMDataCreater.m in Sources */,
 				2297C782158CBAAD0073492A /* MagicalImportFunctions.m in Sources */,
 				2297C784158CBAAD0073492A /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -936,7 +955,7 @@
 				2297C7B0158CBAAD0073492A /* MagicalRecord+Setup.m in Sources */,
 				2297C7B2158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m in Sources */,
 				2297C7B4158CBAAD0073492A /* MagicalRecord.m in Sources */,
-				22A59A5F158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
+				22A59A72158CE69C007D2FA1 /* Work.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,11 +992,12 @@
 				22B2D76E158CC9FD004ADAEE /* MagicalRecord+ShorthandSupport.m in Sources */,
 				22B2D76F158CC9FD004ADAEE /* MagicalRecord.m in Sources */,
 				22B2D6B5158CC543004ADAEE /* MyTest.m in Sources */,
-				22B2D770158CCA67004ADAEE /* Work.m in Sources */,
 				22B2D771158CCA67004ADAEE /* Image.m in Sources */,
 				22B2D6B8158CC5E5004ADAEE /* CoreDataTest.m in Sources */,
 				22B2D773158CCF25004ADAEE /* CMDataCreater.m in Sources */,
-				22A59A60158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
+				22A59A6B158CDD37007D2FA1 /* CMJsonIngest.m in Sources */,
+				22A59A73158CE69C007D2FA1 /* Work.m in Sources */,
+				22A59A80158CE7E9007D2FA1 /* TestJsonIngest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
