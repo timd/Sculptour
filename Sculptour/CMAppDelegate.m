@@ -11,6 +11,8 @@
 #import "CMDataCreater.h"
 #import "CMJsonIngest.h"
 
+NSString * const CMLocationUpdateNotification = @"CMLocationUpdateNotification";
+
 @implementation CMAppDelegate
 
 @synthesize window = _window;
@@ -21,6 +23,12 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
+@synthesize locationManager=_locationManager;
+@synthesize lastPoint=_lastPoint;
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
@@ -46,6 +54,13 @@
     
     CMJsonIngest *jsonIngester = [[CMJsonIngest alloc] init];
     [jsonIngester ingestJsonWithFilename:@"harlow"];
+    
+	// setup globally accessible location manager
+	self.locationManager = [[CLLocationManager alloc] init];    
+	self.locationManager.delegate = self;
+	self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+	[self.locationManager startUpdatingLocation];
+    
     
     self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
@@ -178,5 +193,72 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+
+#pragma mark -
+#pragma mark Location methods
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)locationManager: (CLLocationManager *)manager
+	didUpdateToLocation: (CLLocation *)newLocation 
+		   fromLocation: (CLLocation *)oldLocation
+{	
+    CLLocationCoordinate2D coordinate = newLocation.coordinate; 
+    
+    if ((coordinate.latitude == 0.0) && (coordinate.longitude == 0.0))
+        return;
+    
+	// check that an update is really necessary here
+	if (self.lastPoint != nil)
+	{       
+        
+		if ((self.lastPoint.coordinate.latitude == coordinate.latitude) &&
+			(self.lastPoint.coordinate.longitude == coordinate.longitude))
+		{
+			return;
+		}
+	}
+	
+	self.lastPoint = newLocation;
+	
+	// if anyone has asked to be updated after this, tell them about it
+	[[NSNotificationCenter defaultCenter] postNotificationName: (NSString*)CMLocationUpdateNotification
+														object: self];									
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)locationManager:(CLLocationManager *)manager 
+	   didFailWithError:(NSError *)error 
+{
+	if (error.code == kCLErrorDenied)
+	{
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Couldn't get location"
+														message: @"We couldn't get your location! To use Sculptour you should head over to your phone's settings and enable it under the location preferences."
+													   delegate:nil
+											  cancelButtonTitle:@"Okay" 
+											  otherButtonTitles:nil]; 
+		[alert show]; 
+	}
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)locationManager: (CLLocationManager *)manager 
+	   didUpdateHeading: (CLHeading *)newHeading
+{
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager
+{
+	return NO;
+}
+
 
 @end

@@ -35,7 +35,7 @@
     if (self) 
     {
         title = [[UILabel alloc] initWithFrame: CGRectMake(0.0, 0.0, self.bounds.size.width, 25.0)];
-        
+        [self.contentView addSubview: title];        
     }
     return self;
 }

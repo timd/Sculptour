@@ -42,12 +42,9 @@
     self.gridView.dataSource = self;
     self.gridView.delegate = self;
     self.gridView.backgroundColor = [UIColor whiteColor];
+    self.gridView.layoutDirection = AQGridViewLayoutDirectionVertical;
         
     [self.view addSubview: self.gridView];
-    
-    self.workList = [Work MR_findAll];
-
-    [self.gridView reloadData];
 }
 
 
@@ -56,7 +53,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    self.title = @"Insert tag here";
+    
+    self.workList = [Work MR_findAll];
+    
+    [self.gridView reloadData];
 }
 
 

@@ -137,6 +137,8 @@
 		4C5F054E158CC92B009B77C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F054D158CC92B009B77C4 /* CoreLocation.framework */; };
 		4C5F0566158CE795009B77C4 /* CMWorkGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F0565158CE795009B77C4 /* CMWorkGridView.m */; };
 		4C6AF25E158CF913005E76FB /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59AA7158CF7E0007D2FA1 /* Sculptour.xcdatamodeld */; };
+		4C6AF263158CFD99005E76FB /* CMWorkViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */; };
+		4C6AF264158CFD99005E76FB /* CMWorkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -280,6 +282,9 @@
 		4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AQGridView.xcodeproj; path = AQGridView/AQGridView.xcodeproj; sourceTree = SOURCE_ROOT; };
 		4C5F0564158CE795009B77C4 /* CMWorkGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkGridView.h; sourceTree = "<group>"; };
 		4C5F0565158CE795009B77C4 /* CMWorkGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkGridView.m; sourceTree = "<group>"; };
+		4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkViewController_iPhone.h; sourceTree = "<group>"; };
+		4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkViewController_iPhone.m; sourceTree = "<group>"; };
+		4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMWorkViewController_iPhone.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -633,6 +638,7 @@
 		4C5F04E3158CBBA4009B77C4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4C6AF25F158CFD4A005E76FB /* Detail view controller */,
 				4C5F04EC158CBE45009B77C4 /* Root menu */,
 				4C5F04EE158CBE68009B77C4 /* Instructions view */,
 				4C5F04ED158CBE5E009B77C4 /* Collection views */,
@@ -725,6 +731,16 @@
 				4C5F055F158CE68F009B77C4 /* libAQGridView.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4C6AF25F158CFD4A005E76FB /* Detail view controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */,
+				4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */,
+				4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */,
+			);
+			name = "Detail view controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -850,6 +866,7 @@
 				4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */,
 				22A59A6D158CE295007D2FA1 /* harlow.json in Resources */,
 				22A563B3158CFB4500A2AB3E /* main_menu.png in Resources */,
+				4C6AF264158CFD99005E76FB /* CMWorkViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,6 +948,7 @@
 				22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */,
 				22A59A71158CE69C007D2FA1 /* Work.m in Sources */,
 				22A59AA2158CEDA3007D2FA1 /* CMAppDelegate.m in Sources */,
+				4C6AF263158CFD99005E76FB /* CMWorkViewController_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,6 +1130,7 @@
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1124,6 +1143,7 @@
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

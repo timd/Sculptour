@@ -75,12 +75,7 @@
 		2297C7B2158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77C158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m */; };
 		2297C7B3158CBAAD0073492A /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
 		2297C7B4158CBAAD0073492A /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
-<<<<<<< HEAD
-		22A59A5B158CD30A007D2FA1 /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5A158CD30A007D2FA1 /* CMAppDelegate.m */; };
-		22A59A5E158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */; };
-		22A59A5F158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */; };
-		22A59A60158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */; };
-=======
+		22A563B3158CFB4500A2AB3E /* main_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A563B2158CFB4500A2AB3E /* main_menu.png */; };
 		22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
 		22A59A6B158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
 		22A59A6D158CE295007D2FA1 /* harlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A6C158CE295007D2FA1 /* harlow.json */; };
@@ -90,14 +85,16 @@
 		22A59A73158CE69C007D2FA1 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A70158CE69C007D2FA1 /* Work.m */; };
 		22A59A80158CE7E9007D2FA1 /* TestJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */; };
 		22A59A82158CE8D9007D2FA1 /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A81158CE8D9007D2FA1 /* TestJson.json */; };
->>>>>>> refs/heads/TD/CoreData
+		22A59AA2158CEDA3007D2FA1 /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59AA1158CEDA3007D2FA1 /* CMAppDelegate.m */; };
+		22A59AA6158CF02D007D2FA1 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A59AA5158CF02D007D2FA1 /* GHUnitIOS.framework */; };
+		22A59AAA158CF7E0007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59AA7158CF7E0007D2FA1 /* Sculptour.xcdatamodeld */; };
+		22A59AAB158CF7E0007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59AA7158CF7E0007D2FA1 /* Sculptour.xcdatamodeld */; };
 		22B2D69B158CC3C9004ADAEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6F9158CACCF0073492A /* UIKit.framework */; };
 		22B2D69C158CC3C9004ADAEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FB158CACCF0073492A /* Foundation.framework */; };
 		22B2D69D158CC3C9004ADAEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FD158CACCF0073492A /* CoreGraphics.framework */; };
 		22B2D6A3158CC3C9004ADAEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22B2D6A1158CC3C9004ADAEE /* InfoPlist.strings */; };
 		22B2D6A5158CC3C9004ADAEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D6A4158CC3C9004ADAEE /* main.m */; };
 		22B2D6A9158CC3C9004ADAEE /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D6A8158CC3C9004ADAEE /* CMAppDelegate.m */; };
-		22B2D6B1158CC428004ADAEE /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B2D6B0158CC428004ADAEE /* GHUnitIOS.framework */; };
 		22B2D6B5158CC543004ADAEE /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D6B4158CC543004ADAEE /* MyTest.m */; };
 		22B2D6B8158CC5E5004ADAEE /* CoreDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */; };
 		22B2D6B9158CC633004ADAEE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FF158CACCF0073492A /* CoreData.framework */; };
@@ -139,6 +136,9 @@
 		4C5F054C158CC925009B77C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F054B158CC925009B77C4 /* MapKit.framework */; };
 		4C5F054E158CC92B009B77C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F054D158CC92B009B77C4 /* CoreLocation.framework */; };
 		4C5F0566158CE795009B77C4 /* CMWorkGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F0565158CE795009B77C4 /* CMWorkGridView.m */; };
+		4C6AF25E158CF913005E76FB /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59AA7158CF7E0007D2FA1 /* Sculptour.xcdatamodeld */; };
+		4C6AF263158CFD99005E76FB /* CMWorkViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */; };
+		4C6AF264158CFD99005E76FB /* CMWorkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,11 +246,7 @@
 		2297C77E158CBAAD0073492A /* MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecord.m; sourceTree = "<group>"; };
 		2297C77F158CBAAD0073492A /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		2297C780158CBAAD0073492A /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		22A59A59158CD30A007D2FA1 /* CMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
-		22A59A5A158CD30A007D2FA1 /* CMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
-		22A59A5D158CD354007D2FA1 /* Sculptour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sculptour.xcdatamodel; sourceTree = "<group>"; };
-=======
+		22A563B2158CFB4500A2AB3E /* main_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu.png; sourceTree = "<group>"; };
 		22A59A68158CDD37007D2FA1 /* CMJsonIngest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMJsonIngest.h; sourceTree = "<group>"; };
 		22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMJsonIngest.m; sourceTree = "<group>"; };
 		22A59A6C158CE295007D2FA1 /* harlow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = harlow.json; sourceTree = "<group>"; };
@@ -258,7 +254,10 @@
 		22A59A70158CE69C007D2FA1 /* Work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
 		22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJsonIngest.m; sourceTree = "<group>"; };
 		22A59A81158CE8D9007D2FA1 /* TestJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
->>>>>>> refs/heads/TD/CoreData
+		22A59AA0158CEDA3007D2FA1 /* CMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
+		22A59AA1158CEDA3007D2FA1 /* CMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
+		22A59AA5158CF02D007D2FA1 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		22A59AA8158CF7E0007D2FA1 /* Sculptour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sculptour.xcdatamodel; sourceTree = "<group>"; };
 		22B2D699158CC3C9004ADAEE /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B2D6A0158CC3C9004ADAEE /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		22B2D6A2158CC3C9004ADAEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -266,7 +265,6 @@
 		22B2D6A6158CC3C9004ADAEE /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		22B2D6A7158CC3C9004ADAEE /* CMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
 		22B2D6A8158CC3C9004ADAEE /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
-		22B2D6B0158CC428004ADAEE /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 		22B2D6B4158CC543004ADAEE /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTest.m; sourceTree = "<group>"; };
 		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
@@ -284,6 +282,9 @@
 		4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AQGridView.xcodeproj; path = AQGridView/AQGridView.xcodeproj; sourceTree = SOURCE_ROOT; };
 		4C5F0564158CE795009B77C4 /* CMWorkGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkGridView.h; sourceTree = "<group>"; };
 		4C5F0565158CE795009B77C4 /* CMWorkGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkGridView.m; sourceTree = "<group>"; };
+		4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkViewController_iPhone.h; sourceTree = "<group>"; };
+		4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkViewController_iPhone.m; sourceTree = "<group>"; };
+		4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMWorkViewController_iPhone.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,7 +322,7 @@
 				22B2D69B158CC3C9004ADAEE /* UIKit.framework in Frameworks */,
 				22B2D69C158CC3C9004ADAEE /* Foundation.framework in Frameworks */,
 				22B2D69D158CC3C9004ADAEE /* CoreGraphics.framework in Frameworks */,
-				22B2D6B1158CC428004ADAEE /* GHUnitIOS.framework in Frameworks */,
+				22A59AA6158CF02D007D2FA1 /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,10 +353,10 @@
 		2297C6F8158CACCF0073492A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22A59AA5158CF02D007D2FA1 /* GHUnitIOS.framework */,
 				4C5F054D158CC92B009B77C4 /* CoreLocation.framework */,
 				4C5F054B158CC925009B77C4 /* MapKit.framework */,
 				4C5F0549158CC91E009B77C4 /* QuartzCore.framework */,
-				22B2D6B0158CC428004ADAEE /* GHUnitIOS.framework */,
 				2297C6F9158CACCF0073492A /* UIKit.framework */,
 				2297C6FB158CACCF0073492A /* Foundation.framework */,
 				2297C6FD158CACCF0073492A /* CoreGraphics.framework */,
@@ -411,11 +412,7 @@
 		2297C72E158CB5AA0073492A /* Backend */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */,
-=======
 				22A59A66158CDD27007D2FA1 /* JSON */,
->>>>>>> refs/heads/TD/CoreData
 				2297C72F158CB8190073492A /* Models */,
 				2297C73D158CB8B10073492A /* Fixtures */,
 			);
@@ -425,6 +422,7 @@
 		2297C72F158CB8190073492A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				22A59AA7158CF7E0007D2FA1 /* Sculptour.xcdatamodeld */,
 				2297C730158CB82F0073492A /* Image.h */,
 				2297C731158CB82F0073492A /* Image.m */,
 				22A59A6F158CE69C007D2FA1 /* Work.h */,
@@ -436,8 +434,8 @@
 		2297C738158CB8770073492A /* App delegate */ = {
 			isa = PBXGroup;
 			children = (
-				22A59A59158CD30A007D2FA1 /* CMAppDelegate.h */,
-				22A59A5A158CD30A007D2FA1 /* CMAppDelegate.m */,
+				22A59AA0158CEDA3007D2FA1 /* CMAppDelegate.h */,
+				22A59AA1158CEDA3007D2FA1 /* CMAppDelegate.m */,
 			);
 			name = "App delegate";
 			sourceTree = "<group>";
@@ -464,6 +462,7 @@
 		2297C73B158CB89B0073492A /* App assets */ = {
 			isa = PBXGroup;
 			children = (
+				22A563B2158CFB4500A2AB3E /* main_menu.png */,
 			);
 			name = "App assets";
 			sourceTree = "<group>";
@@ -594,9 +593,6 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		22B2D69E158CC3C9004ADAEE /* GHUnit Tests */ = {
-=======
 		22A59A66158CDD27007D2FA1 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,8 +602,7 @@
 			name = JSON;
 			sourceTree = "<group>";
 		};
-		22B2D69E158CC3C9004ADAEE /* Tests */ = {
->>>>>>> refs/heads/TD/CoreData
+		22B2D69E158CC3C9004ADAEE /* GHUnit Tests */ = {
 			isa = PBXGroup;
 			children = (
 				22B2D6B2158CC531004ADAEE /* Tests */,
@@ -643,6 +638,7 @@
 		4C5F04E3158CBBA4009B77C4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4C6AF25F158CFD4A005E76FB /* Detail view controller */,
 				4C5F04EC158CBE45009B77C4 /* Root menu */,
 				4C5F04EE158CBE68009B77C4 /* Instructions view */,
 				4C5F04ED158CBE5E009B77C4 /* Collection views */,
@@ -735,6 +731,16 @@
 				4C5F055F158CE68F009B77C4 /* libAQGridView.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4C6AF25F158CFD4A005E76FB /* Detail view controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */,
+				4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */,
+				4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */,
+			);
+			name = "Detail view controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -856,12 +862,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2297C706158CACCF0073492A /* InfoPlist.strings in Resources */,
-<<<<<<< HEAD
 				4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */,
 				4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */,
-=======
 				22A59A6D158CE295007D2FA1 /* harlow.json in Resources */,
->>>>>>> refs/heads/TD/CoreData
+				22A563B3158CFB4500A2AB3E /* main_menu.png in Resources */,
+				4C6AF264158CFD99005E76FB /* CMWorkViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,6 +911,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6AF25E158CF913005E76FB /* Sculptour.xcdatamodeld in Sources */,
 				2297C708158CACCF0073492A /* main.m in Sources */,
 				4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */,
 				2297C732158CB82F0073492A /* Image.m in Sources */,
@@ -936,16 +942,13 @@
 				2297C7AF158CBAAD0073492A /* MagicalRecord+Setup.m in Sources */,
 				2297C7B1158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m in Sources */,
 				2297C7B3158CBAAD0073492A /* MagicalRecord.m in Sources */,
-<<<<<<< HEAD
-				22A59A5B158CD30A007D2FA1 /* CMAppDelegate.m in Sources */,
-				22A59A5E158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
 				4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */,
 				4C5F0547158CC82A009B77C4 /* CMCollectionGridViewController.m in Sources */,
 				4C5F0566158CE795009B77C4 /* CMWorkGridView.m in Sources */,
-=======
 				22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */,
 				22A59A71158CE69C007D2FA1 /* Work.m in Sources */,
->>>>>>> refs/heads/TD/CoreData
+				22A59AA2158CEDA3007D2FA1 /* CMAppDelegate.m in Sources */,
+				4C6AF263158CFD99005E76FB /* CMWorkViewController_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,11 +985,8 @@
 				2297C7B0158CBAAD0073492A /* MagicalRecord+Setup.m in Sources */,
 				2297C7B2158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m in Sources */,
 				2297C7B4158CBAAD0073492A /* MagicalRecord.m in Sources */,
-<<<<<<< HEAD
-				22A59A5F158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
-=======
 				22A59A72158CE69C007D2FA1 /* Work.m in Sources */,
->>>>>>> refs/heads/TD/CoreData
+				22A59AAA158CF7E0007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,13 +1026,10 @@
 				22B2D771158CCA67004ADAEE /* Image.m in Sources */,
 				22B2D6B8158CC5E5004ADAEE /* CoreDataTest.m in Sources */,
 				22B2D773158CCF25004ADAEE /* CMDataCreater.m in Sources */,
-<<<<<<< HEAD
-				22A59A60158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
-=======
 				22A59A6B158CDD37007D2FA1 /* CMJsonIngest.m in Sources */,
 				22A59A73158CE69C007D2FA1 /* Work.m in Sources */,
 				22A59A80158CE7E9007D2FA1 /* TestJsonIngest.m in Sources */,
->>>>>>> refs/heads/TD/CoreData
+				22A59AAB158CF7E0007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1133,6 +1130,7 @@
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1145,6 +1143,7 @@
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1266,12 +1265,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */ = {
+		22A59AA7158CF7E0007D2FA1 /* Sculptour.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				22A59A5D158CD354007D2FA1 /* Sculptour.xcdatamodel */,
+				22A59AA8158CF7E0007D2FA1 /* Sculptour.xcdatamodel */,
 			);
-			currentVersion = 22A59A5D158CD354007D2FA1 /* Sculptour.xcdatamodel */;
+			currentVersion = 22A59AA8158CF7E0007D2FA1 /* Sculptour.xcdatamodel */;
 			path = Sculptour.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
