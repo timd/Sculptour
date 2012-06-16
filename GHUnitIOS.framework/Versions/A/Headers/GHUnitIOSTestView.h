@@ -28,31 +28,31 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YKUIImageViewControl.h"
+#import "GHUIImageViewControl.h"
 
 @class GHUnitIOSTestView;
 
 @protocol GHUnitIOSTestViewDelegate <NSObject>
-- (void)testViewDidSelectOriginalImage:(GHUnitIOSTestView *)testView;
-- (void)testViewDidSelectNewImage:(GHUnitIOSTestView *)testView;
+- (void)testViewDidSelectSavedImage:(GHUnitIOSTestView *)testView;
+- (void)testViewDidSelectRenderedImage:(GHUnitIOSTestView *)testView;
 - (void)testViewDidApproveChange:(GHUnitIOSTestView *)testView;
 @end
 
 @interface GHUnitIOSTestView : UIScrollView {
-  id<GHUnitIOSTestViewDelegate> controlDelegate_;
+  id<GHUnitIOSTestViewDelegate> __unsafe_unretained controlDelegate_;
 
   // TODO(johnb): Perhaps hold a scrollview here as subclassing UIViews can be weird.
 
-  YKUIImageViewControl *originalImageView_;
-  YKUIImageViewControl *newImageView_;
+  GHUIImageViewControl *savedImageView_;
+  GHUIImageViewControl *renderedImageView_;
 
   UIButton *approveButton_;
 
   UILabel *textLabel_;
 }
-@property(assign, nonatomic) id<GHUnitIOSTestViewDelegate> controlDelegate;
+@property(unsafe_unretained, nonatomic) id<GHUnitIOSTestViewDelegate> controlDelegate;
 
-- (void)setOriginalImage:(UIImage *)originalImage newImage:(UIImage *)newImage text:(NSString *)text;
+- (void)setSavedImage:(UIImage *)savedImage renderedImage:(UIImage *)renderedImage text:(NSString *)text;
 
 - (void)setText:(NSString *)text;
 

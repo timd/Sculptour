@@ -84,13 +84,14 @@
 		22A59A73158CE69C007D2FA1 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A70158CE69C007D2FA1 /* Work.m */; };
 		22A59A80158CE7E9007D2FA1 /* TestJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */; };
 		22A59A82158CE8D9007D2FA1 /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A81158CE8D9007D2FA1 /* TestJson.json */; };
+		22A59AA2158CEDA3007D2FA1 /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59AA1158CEDA3007D2FA1 /* CMAppDelegate.m */; };
+		22A59AA6158CF02D007D2FA1 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A59AA5158CF02D007D2FA1 /* GHUnitIOS.framework */; };
 		22B2D69B158CC3C9004ADAEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6F9158CACCF0073492A /* UIKit.framework */; };
 		22B2D69C158CC3C9004ADAEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FB158CACCF0073492A /* Foundation.framework */; };
 		22B2D69D158CC3C9004ADAEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FD158CACCF0073492A /* CoreGraphics.framework */; };
 		22B2D6A3158CC3C9004ADAEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22B2D6A1158CC3C9004ADAEE /* InfoPlist.strings */; };
 		22B2D6A5158CC3C9004ADAEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D6A4158CC3C9004ADAEE /* main.m */; };
 		22B2D6A9158CC3C9004ADAEE /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D6A8158CC3C9004ADAEE /* CMAppDelegate.m */; };
-		22B2D6B1158CC428004ADAEE /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B2D6B0158CC428004ADAEE /* GHUnitIOS.framework */; };
 		22B2D6B5158CC543004ADAEE /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D6B4158CC543004ADAEE /* MyTest.m */; };
 		22B2D6B8158CC5E5004ADAEE /* CoreDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */; };
 		22B2D6B9158CC633004ADAEE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FF158CACCF0073492A /* CoreData.framework */; };
@@ -246,6 +247,9 @@
 		22A59A70158CE69C007D2FA1 /* Work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
 		22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJsonIngest.m; sourceTree = "<group>"; };
 		22A59A81158CE8D9007D2FA1 /* TestJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
+		22A59AA0158CEDA3007D2FA1 /* CMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
+		22A59AA1158CEDA3007D2FA1 /* CMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
+		22A59AA5158CF02D007D2FA1 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 		22B2D699158CC3C9004ADAEE /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B2D6A0158CC3C9004ADAEE /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		22B2D6A2158CC3C9004ADAEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -253,7 +257,6 @@
 		22B2D6A6158CC3C9004ADAEE /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		22B2D6A7158CC3C9004ADAEE /* CMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
 		22B2D6A8158CC3C9004ADAEE /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
-		22B2D6B0158CC428004ADAEE /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 		22B2D6B4158CC543004ADAEE /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTest.m; sourceTree = "<group>"; };
 		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
@@ -308,7 +311,7 @@
 				22B2D69B158CC3C9004ADAEE /* UIKit.framework in Frameworks */,
 				22B2D69C158CC3C9004ADAEE /* Foundation.framework in Frameworks */,
 				22B2D69D158CC3C9004ADAEE /* CoreGraphics.framework in Frameworks */,
-				22B2D6B1158CC428004ADAEE /* GHUnitIOS.framework in Frameworks */,
+				22A59AA6158CF02D007D2FA1 /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,10 +342,10 @@
 		2297C6F8158CACCF0073492A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22A59AA5158CF02D007D2FA1 /* GHUnitIOS.framework */,
 				4C5F054D158CC92B009B77C4 /* CoreLocation.framework */,
 				4C5F054B158CC925009B77C4 /* MapKit.framework */,
 				4C5F0549158CC91E009B77C4 /* QuartzCore.framework */,
-				22B2D6B0158CC428004ADAEE /* GHUnitIOS.framework */,
 				2297C6F9158CACCF0073492A /* UIKit.framework */,
 				2297C6FB158CACCF0073492A /* Foundation.framework */,
 				2297C6FD158CACCF0073492A /* CoreGraphics.framework */,
@@ -419,8 +422,8 @@
 		2297C738158CB8770073492A /* App delegate */ = {
 			isa = PBXGroup;
 			children = (
-				22A59A59158CD30A007D2FA1 /* CMAppDelegate.h */,
-				22A59A5A158CD30A007D2FA1 /* CMAppDelegate.m */,
+				22A59AA0158CEDA3007D2FA1 /* CMAppDelegate.h */,
+				22A59AA1158CEDA3007D2FA1 /* CMAppDelegate.m */,
 			);
 			name = "App delegate";
 			sourceTree = "<group>";
@@ -586,7 +589,7 @@
 			name = JSON;
 			sourceTree = "<group>";
 		};
-		22B2D69E158CC3C9004ADAEE /* Tests */ = {
+		22B2D69E158CC3C9004ADAEE /* GHUnit Tests */ = {
 			isa = PBXGroup;
 			children = (
 				22B2D6B2158CC531004ADAEE /* Tests */,
@@ -912,13 +915,12 @@
 				2297C7AF158CBAAD0073492A /* MagicalRecord+Setup.m in Sources */,
 				2297C7B1158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m in Sources */,
 				2297C7B3158CBAAD0073492A /* MagicalRecord.m in Sources */,
-				22A59A5B158CD30A007D2FA1 /* CMAppDelegate.m in Sources */,
-				22A59A5E158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
 				4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */,
 				4C5F0547158CC82A009B77C4 /* CMCollectionGridViewController.m in Sources */,
 				4C5F0566158CE795009B77C4 /* CMWorkGridView.m in Sources */,
 				22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */,
 				22A59A71158CE69C007D2FA1 /* Work.m in Sources */,
+				22A59AA2158CEDA3007D2FA1 /* CMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1229,19 +1231,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				22A59A5D158CD354007D2FA1 /* Sculptour.xcdatamodel */,
-			);
-			currentVersion = 22A59A5D158CD354007D2FA1 /* Sculptour.xcdatamodel */;
-			path = Sculptour.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2297C6EC158CACCF0073492A /* Project object */;
 }

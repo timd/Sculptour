@@ -1,8 +1,8 @@
 //
-//  GHUnitIOSViewController.h
-//  GHUnitIOS
+//  GHMockNSHTTPURLResponse.h
+//  GHUnit
 //
-//  Created by Gabriel Handford on 1/25/09.
+//  Created by Gabriel Handford on 4/9/09.
 //  Copyright 2009. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person
@@ -27,47 +27,20 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "GHUnitIOSView.h"
-
-#import "GHUnitIOSTableViewDataSource.h"
-#import "GHUnitIOSTestViewController.h"
+#import <Foundation/Foundation.h>
 
 /*
- Main view controller for the iOS test application.
+ NSHTTPURLResponse subclass for use with mocking.
+ Allows us to manually set the status code and headers in the response.
  */
-@interface GHUnitIOSViewController : UIViewController <UITableViewDelegate, GHTestRunnerDelegate, UISearchBarDelegate> {
-    
-  GHUnitIOSView *view_;
-
-  GHUnitIOSTableViewDataSource *dataSource_;
-  GHTestSuite *suite_;
-  
-  UIBarButtonItem *runButton_;
-  
-  // If set then we will no longer auto scroll as tests are run
-  BOOL userDidDrag_;
-  
+@interface GHMockNSHTTPURLResponse : NSHTTPURLResponse {
+	NSInteger statusCode_;
+	NSDictionary *headers_;
 }
 
-@property (strong, nonatomic) GHTestSuite *suite;
+- (id)initWithStatusCode:(NSInteger)statusCode headers:(NSDictionary *)headers;
 
-- (void)reloadTest:(id<GHTest>)test;
-
-- (void)scrollToTest:(id<GHTest>)test;
-- (void)scrollToBottom;
-
-- (void)setStatusText:(NSString *)message;
-
-- (void)runTests;
-
-- (void)cancel;
-
-- (void)reload;
-
-- (void)loadDefaults;
-- (void)saveDefaults;
-
-- (GHUnitIOSTableViewDataSource *)dataSource;
+- (void)setStatusCode:(NSInteger)code;
+- (void)setHeaders:(NSDictionary *)headers;
 
 @end
-
