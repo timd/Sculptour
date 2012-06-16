@@ -8,6 +8,7 @@
 
 #import "CMCollectionGridViewController.h"
 #import "CMWorkGridView.h"
+#import "Work.h"
 
 @interface CMCollectionGridViewController ()
 
@@ -43,6 +44,10 @@
     self.gridView.backgroundColor = [UIColor whiteColor];
         
     [self.view addSubview: self.gridView];
+    
+    NSArray *allWorks = [Work MR_findAll];
+    NSLog(@"allWorks = %@", allWorks);
+    
 }
 
 

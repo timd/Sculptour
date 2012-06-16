@@ -38,11 +38,6 @@
     self.navController = [[UINavigationController alloc] initWithRootViewController: self.menuController];
     
     
-    self.window.rootViewController = self.navController;
-    [self.window makeKeyAndVisible];
-    return YES;
-    
-    
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"sculptour.sql"];
     
     // Create dummy seed data for testing purposes
@@ -52,8 +47,7 @@
     CMJsonIngest *jsonIngester = [[CMJsonIngest alloc] init];
     [jsonIngester ingestJsonWithFilename:@"harlow"];
     
-    
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
     return YES;
     
