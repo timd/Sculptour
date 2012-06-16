@@ -7,6 +7,7 @@
 //
 
 #import "CMCatagoryTopLevelViewController_iPhone.h"
+#import "CMCollectionGridViewController.h"
 
 @interface CMCatagoryTopLevelViewController_iPhone ()
 
@@ -15,6 +16,7 @@
 @implementation CMCatagoryTopLevelViewController_iPhone
 
 @synthesize catagoryList=_catagoryList;
+@synthesize collectionView=_collectionView;
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -33,7 +35,7 @@
     [super viewDidLoad];
 
     self.title = @"Catagories";
-    self.catagoryList = [NSArray arrayWithObjects: @"By Artist", @"By Animal", @"All", @"Uncollected", nil];
+    self.catagoryList = [NSArray arrayWithObjects: @"People", @"Animals", @"Small", @"Large", @"All", @"Uncollected", nil];
     
     [self.tableView reloadData];
 }
@@ -140,6 +142,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (self.collectionView == nil)
+    {
+        self.collectionView = [[CMCollectionGridViewController alloc] init];
+    }
+    
+    // TODO: get set of work
+    
+    [self.navigationController pushViewController: self.collectionView
+                                         animated: YES];
+    
+    
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];

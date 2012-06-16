@@ -40,6 +40,7 @@
     self.gridView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     self.gridView.dataSource = self;
     self.gridView.delegate = self;
+    self.gridView.backgroundColor = [UIColor whiteColor];
         
     [self.view addSubview: self.gridView];
 }

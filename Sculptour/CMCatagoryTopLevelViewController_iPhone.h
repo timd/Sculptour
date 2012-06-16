@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class CMCollectionGridViewController;
+
 @interface CMCatagoryTopLevelViewController_iPhone : UITableViewController
 
 @property (nonatomic, strong) NSArray *catagoryList;
+@property (nonatomic, strong) CMCollectionGridViewController *collectionView;
 
 @end
