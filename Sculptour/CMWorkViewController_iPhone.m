@@ -6,8 +6,12 @@
 //  Copyright (c) 2012 Charismatic Megafauna Ltd. All rights reserved.
 //
 
+#import <CoreLocation/CoreLocation.h>
+
 #import "CMWorkViewController_iPhone.h"
 #import "Work.h"
+
+#import "CMAppDelegate.h"
 
 @interface CMWorkViewController_iPhone ()
 
@@ -22,6 +26,19 @@
 @synthesize questionMarkLabel=_questionMarkLabel;
 @synthesize distanceLabel=_distanceLabel;
 @synthesize streetNameLabel=_streetNameLabel;
+@synthesize collectButton=_collectButton;
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (IBAction)collectWork:(id)sender
+{
+    self.work.collected = [NSNumber numberWithBool: YES];
+    [[NSManagedObjectContext defaultContext] MR_save];
+    
+    [self updateUI];
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -30,10 +47,39 @@
     if ([self.work.collected boolValue] == YES)
     {
         self.tabBar.hidden = NO;
+        self.questionMarkLabel.hidden = YES;
+        self.distanceLabel.hidden = YES;
+        self.streetNameLabel.hidden = YES;        
+        self.collectButton.hidden = YES;
     }
     else 
     {
         self.tabBar.hidden = YES;
+        self.questionMarkLabel.hidden = NO;
+        self.distanceLabel.hidden = NO;
+        self.streetNameLabel.hidden = NO;
+        
+        CLLocation *here = SharedCurrentLocation;
+        
+        if (here != nil)
+        {
+            CLLocation *workLocation = [[CLLocation alloc] initWithLatitude: [self.work.latitude doubleValue]
+                                                                  longitude: [self.work.longitude doubleValue]];
+            float distance = [workLocation distanceFromLocation: SharedCurrentLocation];
+            
+            self.distanceLabel.text = [NSString stringWithFormat: @"%.1f km", distance / 1000.0];
+            
+            
+            self.collectButton.hidden = distance > 10.0;
+            
+        }
+        else 
+        {
+            self.distanceLabel.text = @"Unknown distance";
+            self.collectButton.hidden = YES;
+        }
+        
+        self.streetNameLabel.text = self.work.place;
     }
 }
 
@@ -62,7 +108,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    if (self.work)
+        [self updateUI];
 }
 
 

@@ -9,6 +9,7 @@
 #import "CMCollectionGridViewController.h"
 #import "CMWorkGridView.h"
 #import "Work.h"
+#import "CMWorkViewController_iPhone.h"
 
 @interface CMCollectionGridViewController ()
 
@@ -18,6 +19,7 @@
 
 @synthesize gridView=_gridView;
 @synthesize workList=_workList;
+@synthesize workViewController_iPhone=_workViewController_iPhone;
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -119,5 +121,24 @@
 
 
 #pragma mark - AQGridView delegate
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)gridView:(AQGridView *)gridView didSelectItemAtIndex:(NSUInteger)index
+{
+    if (self.workViewController_iPhone == nil)
+    {
+        self.workViewController_iPhone = [[CMWorkViewController_iPhone alloc] init];
+    }
+    
+    Work *work = [self.workList objectAtIndex: index];
+    self.workViewController_iPhone.work = work;
+    
+    [self.navigationController pushViewController: self.workViewController_iPhone
+                                         animated: YES];
+    
+}
+
 
 @end

@@ -139,6 +139,8 @@
 		4C6AF25E158CF913005E76FB /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59AA7158CF7E0007D2FA1 /* Sculptour.xcdatamodeld */; };
 		4C6AF263158CFD99005E76FB /* CMWorkViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */; };
 		4C6AF264158CFD99005E76FB /* CMWorkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */; };
+		4C6AF2A4158D162E005E76FB /* CMWorkDetailViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */; };
+		4C6AF2A5158D162E005E76FB /* CMWorkDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -285,6 +287,9 @@
 		4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkViewController_iPhone.h; sourceTree = "<group>"; };
 		4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkViewController_iPhone.m; sourceTree = "<group>"; };
 		4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMWorkViewController_iPhone.xib; sourceTree = "<group>"; };
+		4C6AF2A1158D162D005E76FB /* CMWorkDetailViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkDetailViewController_iPhone.h; sourceTree = "<group>"; };
+		4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkDetailViewController_iPhone.m; sourceTree = "<group>"; };
+		4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMWorkDetailViewController_iPhone.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -486,6 +491,7 @@
 		2297C742158CB9260073492A /* Third party */ = {
 			isa = PBXGroup;
 			children = (
+				4C6AF2A6158D16A8005E76FB /* GRMustache */,
 				4C5F0559158CE67F009B77C4 /* AQGridView */,
 				2297C745158CBAAC0073492A /* MagicalRecord */,
 			);
@@ -739,8 +745,18 @@
 				4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */,
 				4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */,
 				4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */,
+				4C6AF2A1158D162D005E76FB /* CMWorkDetailViewController_iPhone.h */,
+				4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */,
+				4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */,
 			);
 			name = "Detail view controller";
+			sourceTree = "<group>";
+		};
+		4C6AF2A6158D16A8005E76FB /* GRMustache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GRMustache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -867,6 +883,7 @@
 				22A59A6D158CE295007D2FA1 /* harlow.json in Resources */,
 				22A563B3158CFB4500A2AB3E /* main_menu.png in Resources */,
 				4C6AF264158CFD99005E76FB /* CMWorkViewController_iPhone.xib in Resources */,
+				4C6AF2A5158D162E005E76FB /* CMWorkDetailViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -949,6 +966,7 @@
 				22A59A71158CE69C007D2FA1 /* Work.m in Sources */,
 				22A59AA2158CEDA3007D2FA1 /* CMAppDelegate.m in Sources */,
 				4C6AF263158CFD99005E76FB /* CMWorkViewController_iPhone.m in Sources */,
+				4C6AF2A4158D162E005E76FB /* CMWorkDetailViewController_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

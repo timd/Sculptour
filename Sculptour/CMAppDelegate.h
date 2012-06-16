@@ -11,8 +11,8 @@
 
 extern NSString * const CMLocationUpdateNotification;
 
-#define SharedCurrentLocation ((PlaceWhisper3AppDelegate *)[[UIApplication sharedApplication] delegate]).lastPoint
-#define SharedLocationManager ((PlaceWhisper3AppDelegate *)[[UIApplication sharedApplication] delegate]).locationManager
+#define SharedCurrentLocation ((CMAppDelegate *)[[UIApplication sharedApplication] delegate]).lastPoint
+#define SharedLocationManager ((CMAppDelegate *)[[UIApplication sharedApplication] delegate]).locationManager
 
 @class CMRootMenuViewController;
 
