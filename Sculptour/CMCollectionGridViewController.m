@@ -20,6 +20,7 @@
 @synthesize gridView=_gridView;
 @synthesize workList=_workList;
 @synthesize workViewController_iPhone=_workViewController_iPhone;
+@synthesize selectedTag = _selectedTag;
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -56,9 +57,21 @@
 {
     [super viewDidLoad];
     
-    self.title = @"Insert tag here";
+    if (self.selectedTag != nil) {
+
+        self.title = self.selectedTag;
+        self.workList = [Work MR_findByAttribute:@"tag" withValue:self.selectedTag];
+        
+    } else {
+        
+        self.title = @"All works";
+        self.workList = [Work MR_findAll];
+        
+    }
     
-    self.workList = [Work MR_findAll];
+    
+    
+    
     
     [self.gridView reloadData];
 }

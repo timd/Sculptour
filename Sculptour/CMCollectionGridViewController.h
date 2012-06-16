@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) AQGridView *gridView;
 @property (nonatomic, strong) NSArray *workList;
+@property (nonatomic, strong) NSString *selectedTag;
 
 @property (nonatomic, strong) CMWorkViewController_iPhone *workViewController_iPhone;
 
