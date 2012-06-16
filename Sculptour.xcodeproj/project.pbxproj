@@ -153,6 +153,13 @@
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = AQGridView;
 		};
+		4C5F055E158CE68F009B77C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AQGridView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -256,6 +263,7 @@
 		4C5F0549158CC91E009B77C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4C5F054B158CC925009B77C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4C5F054D158CC92B009B77C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AQGridView.xcodeproj; path = AQGridView/AQGridView.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,9 +311,6 @@
 		2297C6EA158CACCE0073492A = {
 			isa = PBXGroup;
 			children = (
-				4C5F054D158CC92B009B77C4 /* CoreLocation.framework */,
-				4C5F054B158CC925009B77C4 /* MapKit.framework */,
-				4C5F0549158CC91E009B77C4 /* QuartzCore.framework */,
 				2297C701158CACCF0073492A /* Sculptour */,
 				2297C71D158CACCF0073492A /* SculptourTests */,
 				22B2D69E158CC3C9004ADAEE /* GHUnit Tests */,
@@ -327,6 +332,9 @@
 		2297C6F8158CACCF0073492A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C5F054D158CC92B009B77C4 /* CoreLocation.framework */,
+				4C5F054B158CC925009B77C4 /* MapKit.framework */,
+				4C5F0549158CC91E009B77C4 /* QuartzCore.framework */,
 				22B2D6B0158CC428004ADAEE /* GHUnitIOS.framework */,
 				2297C6F9158CACCF0073492A /* UIKit.framework */,
 				2297C6FB158CACCF0073492A /* Foundation.framework */,
@@ -453,6 +461,7 @@
 		2297C742158CB9260073492A /* Third party */ = {
 			isa = PBXGroup;
 			children = (
+				4C5F0559158CE67F009B77C4 /* AQGridView */,
 				2297C745158CBAAC0073492A /* MagicalRecord */,
 			);
 			name = "Third party";
@@ -637,14 +646,6 @@
 			name = "Map view";
 			sourceTree = "<group>";
 		};
-		4C5F04F0158CBEDF009B77C4 /* External */ = {
-			isa = PBXGroup;
-			children = (
-				4C5F04F1158CC1C5009B77C4 /* AQGridView.xcodeproj */,
-			);
-			name = External;
-			sourceTree = "<group>";
-		};
 		4C5F04F2158CC1C5009B77C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -676,6 +677,22 @@
 				4C5F0546158CC82A009B77C4 /* CMCollectionGridViewController.m */,
 			);
 			name = Generic;
+			sourceTree = "<group>";
+		};
+		4C5F0559158CE67F009B77C4 /* AQGridView */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */,
+			);
+			name = AQGridView;
+			sourceTree = "<group>";
+		};
+		4C5F055B158CE68E009B77C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F055F158CE68F009B77C4 /* libAQGridView.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -760,6 +777,10 @@
 					ProductGroup = 4C5F04F2158CC1C5009B77C4 /* Products */;
 					ProjectRef = 4C5F04F1158CC1C5009B77C4 /* AQGridView.xcodeproj */;
 				},
+				{
+					ProductGroup = 4C5F055B158CE68E009B77C4 /* Products */;
+					ProjectRef = 4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -776,6 +797,13 @@
 			fileType = archive.ar;
 			path = libAQGridView.a;
 			remoteRef = 4C5F04F8158CC1C5009B77C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C5F055F158CE68F009B77C4 /* libAQGridView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAQGridView.a;
+			remoteRef = 4C5F055E158CE68F009B77C4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
