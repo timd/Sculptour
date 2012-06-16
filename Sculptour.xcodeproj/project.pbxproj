@@ -21,6 +21,9 @@
 		2297C71A158CACCF0073492A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FF158CACCF0073492A /* CoreData.framework */; };
 		2297C722158CACCF0073492A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2297C720158CACCF0073492A /* InfoPlist.strings */; };
 		2297C725158CACCF0073492A /* SculptourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C724158CACCF0073492A /* SculptourTests.m */; };
+		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
+		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
+		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,10 @@
 		2297C721158CACCF0073492A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2297C723158CACCF0073492A /* SculptourTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SculptourTests.h; sourceTree = "<group>"; };
 		2297C724158CACCF0073492A /* SculptourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SculptourTests.m; sourceTree = "<group>"; };
+		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
+		4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRootMenuViewController.m; sourceTree = "<group>"; };
+		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
+		4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,8 @@
 		2297C701158CACCF0073492A /* Sculptour */ = {
 			isa = PBXGroup;
 			children = (
+				4C5F04F0158CBEDF009B77C4 /* External */,
+				4C5F04E3158CBBA4009B77C4 /* View Controllers */,
 				2297C70A158CACCF0073492A /* CMAppDelegate.h */,
 				2297C70B158CACCF0073492A /* CMAppDelegate.m */,
 				2297C70D158CACCF0073492A /* Sculptour.xcdatamodeld */,
@@ -150,6 +159,56 @@
 				2297C720158CACCF0073492A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C5F04E3158CBBA4009B77C4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F04EC158CBE45009B77C4 /* Root menu */,
+				4C5F04EE158CBE68009B77C4 /* Instructions view */,
+				4C5F04ED158CBE5E009B77C4 /* Collection view */,
+				4C5F04EF158CBE6F009B77C4 /* Map view */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4C5F04EC158CBE45009B77C4 /* Root menu */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */,
+				4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */,
+				4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */,
+				4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */,
+			);
+			name = "Root menu";
+			sourceTree = "<group>";
+		};
+		4C5F04ED158CBE5E009B77C4 /* Collection view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Collection view";
+			sourceTree = "<group>";
+		};
+		4C5F04EE158CBE68009B77C4 /* Instructions view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Instructions view";
+			sourceTree = "<group>";
+		};
+		4C5F04EF158CBE6F009B77C4 /* Map view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Map view";
+			sourceTree = "<group>";
+		};
+		4C5F04F0158CBEDF009B77C4 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2297C706158CACCF0073492A /* InfoPlist.strings in Resources */,
+				4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */,
+				4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +323,7 @@
 				2297C708158CACCF0073492A /* main.m in Sources */,
 				2297C70C158CACCF0073492A /* CMAppDelegate.m in Sources */,
 				2297C70F158CACCF0073492A /* Sculptour.xcdatamodeld in Sources */,
+				4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +487,7 @@
 				2297C72A158CACCF0073492A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2297C72B158CACCF0073492A /* Build configuration list for PBXNativeTarget "SculptourTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +496,7 @@
 				2297C72D158CACCF0073492A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

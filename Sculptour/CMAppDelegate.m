@@ -7,10 +7,14 @@
 //
 
 #import "CMAppDelegate.h"
+#import "CMRootMenuViewController.h"
 
 @implementation CMAppDelegate
 
 @synthesize window = _window;
+@synthesize navController=_navController;
+@synthesize menuController=_menuController;
+
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
@@ -18,7 +22,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    
     // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        self.menuController = [[CMRootMenuViewController alloc] initWithNibName:@"CMRootMenuViewController_iPhone" bundle:nil];
+    } else {
+        self.menuController = [[CMRootMenuViewController alloc] initWithNibName:@"CMRootMenuViewController_iPad" bundle:nil];
+    }
+    
+    
+    self.navController = [[UINavigationController alloc] initWithRootViewController: self.menuController];
+    
+    
+    self.window.rootViewController = self.navController;
+    [self.window makeKeyAndVisible];
+    return YES;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
