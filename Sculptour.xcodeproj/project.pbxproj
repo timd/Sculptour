@@ -125,6 +125,10 @@
 		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
 		4C5F04FC158CC1EE009B77C4 /* libAQGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F04F9158CC1C5009B77C4 /* libAQGridView.a */; };
 		4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F0500158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m */; };
+		4C5F0547158CC82A009B77C4 /* CMCollectionGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F0546158CC82A009B77C4 /* CMCollectionGridViewController.m */; };
+		4C5F054A158CC91E009B77C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F0549158CC91E009B77C4 /* QuartzCore.framework */; };
+		4C5F054C158CC925009B77C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F054B158CC925009B77C4 /* MapKit.framework */; };
+		4C5F054E158CC92B009B77C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F054D158CC92B009B77C4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +251,11 @@
 		4C5F04F1158CC1C5009B77C4 /* AQGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AQGridView.xcodeproj; path = AQGridView/AQGridView.xcodeproj; sourceTree = SOURCE_ROOT; };
 		4C5F04FF158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCatagoryTopLevelViewController_iPhone.h; sourceTree = "<group>"; };
 		4C5F0500158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCatagoryTopLevelViewController_iPhone.m; sourceTree = "<group>"; };
+		4C5F0545158CC82A009B77C4 /* CMCollectionGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCollectionGridViewController.h; sourceTree = "<group>"; };
+		4C5F0546158CC82A009B77C4 /* CMCollectionGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCollectionGridViewController.m; sourceTree = "<group>"; };
+		4C5F0549158CC91E009B77C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4C5F054B158CC925009B77C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4C5F054D158CC92B009B77C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +263,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5F054E158CC92B009B77C4 /* CoreLocation.framework in Frameworks */,
+				4C5F054C158CC925009B77C4 /* MapKit.framework in Frameworks */,
+				4C5F054A158CC91E009B77C4 /* QuartzCore.framework in Frameworks */,
 				4C5F04FC158CC1EE009B77C4 /* libAQGridView.a in Frameworks */,
 				2297C6FA158CACCF0073492A /* UIKit.framework in Frameworks */,
 				2297C6FC158CACCF0073492A /* Foundation.framework in Frameworks */,
@@ -291,6 +303,9 @@
 		2297C6EA158CACCE0073492A = {
 			isa = PBXGroup;
 			children = (
+				4C5F054D158CC92B009B77C4 /* CoreLocation.framework */,
+				4C5F054B158CC925009B77C4 /* MapKit.framework */,
+				4C5F0549158CC91E009B77C4 /* QuartzCore.framework */,
 				2297C701158CACCF0073492A /* Sculptour */,
 				2297C71D158CACCF0073492A /* SculptourTests */,
 				22B2D69E158CC3C9004ADAEE /* GHUnit Tests */,
@@ -601,6 +616,7 @@
 		4C5F04ED158CBE5E009B77C4 /* Collection views */ = {
 			isa = PBXGroup;
 			children = (
+				4C5F0548158CC831009B77C4 /* Generic */,
 				4C5F04FE158CC291009B77C4 /* iPad */,
 				4C5F04FD158CC286009B77C4 /* iPhone */,
 			);
@@ -651,6 +667,15 @@
 			children = (
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		4C5F0548158CC831009B77C4 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F0545158CC82A009B77C4 /* CMCollectionGridViewController.h */,
+				4C5F0546158CC82A009B77C4 /* CMCollectionGridViewController.m */,
+			);
+			name = Generic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -839,6 +864,7 @@
 				22A59A5B158CD30A007D2FA1 /* CMAppDelegate.m in Sources */,
 				22A59A5E158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
 				4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */,
+				4C5F0547158CC82A009B77C4 /* CMCollectionGridViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1016,6 +1042,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
+				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1027,6 +1054,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
+				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
