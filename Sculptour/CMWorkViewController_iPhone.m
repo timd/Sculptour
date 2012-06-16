@@ -15,6 +15,7 @@
 
 #import "CMWorkDetailViewController_iPhone.h"
 #import "CMWorkPhotosViewController_iPhone.h"
+#import "CMWorkCollectionViewController_iPhone.h"
 
 #define kCMDetailsTabTag 0
 #define kCMPhotosTabTag 1
@@ -33,7 +34,7 @@
 @synthesize currentTabView=_currentTabView;
 @synthesize detailViewController_iPhone=_detailViewController_iPhone;
 @synthesize photosViewController_iPhone=_photosViewController_iPhone;
-//@synthesize collectionViewController_iPhone=_collectionViewController_iPhone;
+@synthesize collectionViewController_iPhone=_collectionViewController_iPhone;
 
 @synthesize questionMarkLabel=_questionMarkLabel;
 @synthesize distanceLabel=_distanceLabel;
@@ -84,6 +85,20 @@
             
             [[self.currentTabView view] removeFromSuperview];
             self.currentTabView = self.photosViewController_iPhone;
+            [self.view addSubview: [self.currentTabView view]];
+            
+            break;
+            
+        case kCMCollectionTabTag:
+            
+            if (self.collectionViewController_iPhone == nil)
+            {
+                self.collectionViewController_iPhone = [[CMWorkCollectionViewController_iPhone alloc] init];
+            }
+            self.collectionViewController_iPhone.work = self.work;
+            
+            [[self.currentTabView view] removeFromSuperview];
+            self.currentTabView = self.collectionViewController_iPhone;
             [self.view addSubview: [self.currentTabView view]];
             
             break;

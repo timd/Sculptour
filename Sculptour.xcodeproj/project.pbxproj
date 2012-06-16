@@ -135,6 +135,8 @@
 		4C4482A5158D24ED007CC4EC /* 43-film-roll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */; };
 		4C4482A8158D250F007CC4EC /* 96-book.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482A6158D250E007CC4EC /* 96-book.png */; };
 		4C4482A9158D250F007CC4EC /* 96-book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482A7158D250F007CC4EC /* 96-book@2x.png */; };
+		4C4482AD158D25F4007CC4EC /* CMWorkCollectionViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4482AB158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.m */; };
+		4C4482AE158D25F4007CC4EC /* CMWorkCollectionViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482AC158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.xib */; };
 		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
 		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
 		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
@@ -291,6 +293,9 @@
 		4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "43-film-roll@2x.png"; sourceTree = "<group>"; };
 		4C4482A6158D250E007CC4EC /* 96-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book.png"; sourceTree = "<group>"; };
 		4C4482A7158D250F007CC4EC /* 96-book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book@2x.png"; sourceTree = "<group>"; };
+		4C4482AA158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkCollectionViewController_iPhone.h; sourceTree = "<group>"; };
+		4C4482AB158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkCollectionViewController_iPhone.m; sourceTree = "<group>"; };
+		4C4482AC158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMWorkCollectionViewController_iPhone.xib; sourceTree = "<group>"; };
 		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
 		4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRootMenuViewController.m; sourceTree = "<group>"; };
 		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -795,6 +800,9 @@
 				4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */,
 				4C4482A6158D250E007CC4EC /* 96-book.png */,
 				4C4482A7158D250F007CC4EC /* 96-book@2x.png */,
+				4C4482AA158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.h */,
+				4C4482AB158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.m */,
+				4C4482AC158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.xib */,
 			);
 			name = "Detail view controller";
 			sourceTree = "<group>";
@@ -950,6 +958,7 @@
 				4C4482A5158D24ED007CC4EC /* 43-film-roll@2x.png in Resources */,
 				4C4482A8158D250F007CC4EC /* 96-book.png in Resources */,
 				4C4482A9158D250F007CC4EC /* 96-book@2x.png in Resources */,
+				4C4482AE158D25F4007CC4EC /* CMWorkCollectionViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,6 +1044,7 @@
 				4C6AF2A4158D162E005E76FB /* CMWorkDetailViewController_iPhone.m in Sources */,
 				4C448284158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m in Sources */,
 				4C44829D158D22AC007CC4EC /* NSArray-Set.m in Sources */,
+				4C4482AD158D25F4007CC4EC /* CMWorkCollectionViewController_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
