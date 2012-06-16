@@ -13,23 +13,14 @@
 		2297C700158CACCF0073492A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FF158CACCF0073492A /* CoreData.framework */; };
 		2297C706158CACCF0073492A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2297C704158CACCF0073492A /* InfoPlist.strings */; };
 		2297C708158CACCF0073492A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C707158CACCF0073492A /* main.m */; };
-		2297C70C158CACCF0073492A /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C70B158CACCF0073492A /* CMAppDelegate.m */; };
-		2297C70F158CACCF0073492A /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2297C70D158CACCF0073492A /* Sculptour.xcdatamodeld */; };
 		2297C717158CACCF0073492A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C716158CACCF0073492A /* SenTestingKit.framework */; };
 		2297C718158CACCF0073492A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6F9158CACCF0073492A /* UIKit.framework */; };
 		2297C719158CACCF0073492A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FB158CACCF0073492A /* Foundation.framework */; };
 		2297C71A158CACCF0073492A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FF158CACCF0073492A /* CoreData.framework */; };
 		2297C722158CACCF0073492A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2297C720158CACCF0073492A /* InfoPlist.strings */; };
 		2297C725158CACCF0073492A /* SculptourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C724158CACCF0073492A /* SculptourTests.m */; };
-<<<<<<< HEAD
-		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
-		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
-		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
-=======
 		2297C732158CB82F0073492A /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
 		2297C733158CB82F0073492A /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
-		2297C736158CB83E0073492A /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C735158CB83E0073492A /* Work.m */; };
-		2297C737158CB83E0073492A /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C735158CB83E0073492A /* Work.m */; };
 		2297C740158CB8D80073492A /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
 		2297C741158CB8D80073492A /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
 		2297C781158CBAAD0073492A /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C749158CBAAC0073492A /* MagicalImportFunctions.m */; };
@@ -84,6 +75,22 @@
 		2297C7B2158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77C158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m */; };
 		2297C7B3158CBAAD0073492A /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
 		2297C7B4158CBAAD0073492A /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
+<<<<<<< HEAD
+		22A59A5B158CD30A007D2FA1 /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5A158CD30A007D2FA1 /* CMAppDelegate.m */; };
+		22A59A5E158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */; };
+		22A59A5F158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */; };
+		22A59A60158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */; };
+=======
+		22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
+		22A59A6B158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
+		22A59A6D158CE295007D2FA1 /* harlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A6C158CE295007D2FA1 /* harlow.json */; };
+		22A59A6E158CE295007D2FA1 /* harlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A6C158CE295007D2FA1 /* harlow.json */; };
+		22A59A71158CE69C007D2FA1 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A70158CE69C007D2FA1 /* Work.m */; };
+		22A59A72158CE69C007D2FA1 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A70158CE69C007D2FA1 /* Work.m */; };
+		22A59A73158CE69C007D2FA1 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A70158CE69C007D2FA1 /* Work.m */; };
+		22A59A80158CE7E9007D2FA1 /* TestJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */; };
+		22A59A82158CE8D9007D2FA1 /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A81158CE8D9007D2FA1 /* TestJson.json */; };
+>>>>>>> refs/heads/TD/CoreData
 		22B2D69B158CC3C9004ADAEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6F9158CACCF0073492A /* UIKit.framework */; };
 		22B2D69C158CC3C9004ADAEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FB158CACCF0073492A /* Foundation.framework */; };
 		22B2D69D158CC3C9004ADAEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FD158CACCF0073492A /* CoreGraphics.framework */; };
@@ -120,11 +127,18 @@
 		22B2D76D158CC9FD004ADAEE /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77A158CBAAD0073492A /* MagicalRecord+Setup.m */; };
 		22B2D76E158CC9FD004ADAEE /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77C158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m */; };
 		22B2D76F158CC9FD004ADAEE /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
-		22B2D770158CCA67004ADAEE /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C735158CB83E0073492A /* Work.m */; };
 		22B2D771158CCA67004ADAEE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
-		22B2D772158CCC8E004ADAEE /* Sculptour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2297C70D158CACCF0073492A /* Sculptour.xcdatamodeld */; };
 		22B2D773158CCF25004ADAEE /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
->>>>>>> refs/heads/TD/CoreData
+		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
+		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
+		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
+		4C5F04FC158CC1EE009B77C4 /* libAQGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F04F9158CC1C5009B77C4 /* libAQGridView.a */; };
+		4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F0500158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m */; };
+		4C5F0547158CC82A009B77C4 /* CMCollectionGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F0546158CC82A009B77C4 /* CMCollectionGridViewController.m */; };
+		4C5F054A158CC91E009B77C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F0549158CC91E009B77C4 /* QuartzCore.framework */; };
+		4C5F054C158CC925009B77C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F054B158CC925009B77C4 /* MapKit.framework */; };
+		4C5F054E158CC92B009B77C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F054D158CC92B009B77C4 /* CoreLocation.framework */; };
+		4C5F0566158CE795009B77C4 /* CMWorkGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F0565158CE795009B77C4 /* CMWorkGridView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +148,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2297C6F4158CACCF0073492A;
 			remoteInfo = Sculptour;
+		};
+		4C5F04F8158CC1C5009B77C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C5F04F1158CC1C5009B77C4 /* AQGridView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AQGridView;
+		};
+		4C5F04FA158CC1D2009B77C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C5F04F1158CC1C5009B77C4 /* AQGridView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = AQGridView;
+		};
+		4C5F055E158CE68F009B77C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AQGridView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -147,25 +182,14 @@
 		2297C705158CACCF0073492A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2297C707158CACCF0073492A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2297C709158CACCF0073492A /* Sculptour-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sculptour-Prefix.pch"; sourceTree = "<group>"; };
-		2297C70A158CACCF0073492A /* CMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
-		2297C70B158CACCF0073492A /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
-		2297C70E158CACCF0073492A /* Sculptour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sculptour.xcdatamodel; sourceTree = "<group>"; };
 		2297C715158CACCF0073492A /* SculptourTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SculptourTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2297C716158CACCF0073492A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2297C71F158CACCF0073492A /* SculptourTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SculptourTests-Info.plist"; sourceTree = "<group>"; };
 		2297C721158CACCF0073492A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2297C723158CACCF0073492A /* SculptourTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SculptourTests.h; sourceTree = "<group>"; };
 		2297C724158CACCF0073492A /* SculptourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SculptourTests.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
-		4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRootMenuViewController.m; sourceTree = "<group>"; };
-		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
-		4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPad.xib; sourceTree = "<group>"; };
-=======
 		2297C730158CB82F0073492A /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		2297C731158CB82F0073492A /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
-		2297C734158CB83E0073492A /* Work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
-		2297C735158CB83E0073492A /* Work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
 		2297C73E158CB8D80073492A /* CMDataCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDataCreater.h; sourceTree = "<group>"; };
 		2297C73F158CB8D80073492A /* CMDataCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDataCreater.m; sourceTree = "<group>"; };
 		2297C748158CBAAC0073492A /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
@@ -222,6 +246,19 @@
 		2297C77E158CBAAD0073492A /* MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecord.m; sourceTree = "<group>"; };
 		2297C77F158CBAAD0073492A /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		2297C780158CBAAD0073492A /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		22A59A59158CD30A007D2FA1 /* CMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
+		22A59A5A158CD30A007D2FA1 /* CMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
+		22A59A5D158CD354007D2FA1 /* Sculptour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sculptour.xcdatamodel; sourceTree = "<group>"; };
+=======
+		22A59A68158CDD37007D2FA1 /* CMJsonIngest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMJsonIngest.h; sourceTree = "<group>"; };
+		22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMJsonIngest.m; sourceTree = "<group>"; };
+		22A59A6C158CE295007D2FA1 /* harlow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = harlow.json; sourceTree = "<group>"; };
+		22A59A6F158CE69C007D2FA1 /* Work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
+		22A59A70158CE69C007D2FA1 /* Work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
+		22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJsonIngest.m; sourceTree = "<group>"; };
+		22A59A81158CE8D9007D2FA1 /* TestJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
+>>>>>>> refs/heads/TD/CoreData
 		22B2D699158CC3C9004ADAEE /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B2D6A0158CC3C9004ADAEE /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		22B2D6A2158CC3C9004ADAEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -232,7 +269,21 @@
 		22B2D6B0158CC428004ADAEE /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 		22B2D6B4158CC543004ADAEE /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTest.m; sourceTree = "<group>"; };
->>>>>>> refs/heads/TD/CoreData
+		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
+		4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRootMenuViewController.m; sourceTree = "<group>"; };
+		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
+		4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPad.xib; sourceTree = "<group>"; };
+		4C5F04F1158CC1C5009B77C4 /* AQGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AQGridView.xcodeproj; path = AQGridView/AQGridView.xcodeproj; sourceTree = SOURCE_ROOT; };
+		4C5F04FF158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCatagoryTopLevelViewController_iPhone.h; sourceTree = "<group>"; };
+		4C5F0500158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCatagoryTopLevelViewController_iPhone.m; sourceTree = "<group>"; };
+		4C5F0545158CC82A009B77C4 /* CMCollectionGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCollectionGridViewController.h; sourceTree = "<group>"; };
+		4C5F0546158CC82A009B77C4 /* CMCollectionGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCollectionGridViewController.m; sourceTree = "<group>"; };
+		4C5F0549158CC91E009B77C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4C5F054B158CC925009B77C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4C5F054D158CC92B009B77C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AQGridView.xcodeproj; path = AQGridView/AQGridView.xcodeproj; sourceTree = SOURCE_ROOT; };
+		4C5F0564158CE795009B77C4 /* CMWorkGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkGridView.h; sourceTree = "<group>"; };
+		4C5F0565158CE795009B77C4 /* CMWorkGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkGridView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +291,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5F054E158CC92B009B77C4 /* CoreLocation.framework in Frameworks */,
+				4C5F054C158CC925009B77C4 /* MapKit.framework in Frameworks */,
+				4C5F054A158CC91E009B77C4 /* QuartzCore.framework in Frameworks */,
+				4C5F04FC158CC1EE009B77C4 /* libAQGridView.a in Frameworks */,
 				2297C6FA158CACCF0073492A /* UIKit.framework in Frameworks */,
 				2297C6FC158CACCF0073492A /* Foundation.framework in Frameworks */,
 				2297C6FE158CACCF0073492A /* CoreGraphics.framework in Frameworks */,
@@ -278,7 +333,7 @@
 			children = (
 				2297C701158CACCF0073492A /* Sculptour */,
 				2297C71D158CACCF0073492A /* SculptourTests */,
-				22B2D69E158CC3C9004ADAEE /* Tests */,
+				22B2D69E158CC3C9004ADAEE /* GHUnit Tests */,
 				2297C6F8158CACCF0073492A /* Frameworks */,
 				2297C6F6158CACCF0073492A /* Products */,
 			);
@@ -297,6 +352,9 @@
 		2297C6F8158CACCF0073492A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C5F054D158CC92B009B77C4 /* CoreLocation.framework */,
+				4C5F054B158CC925009B77C4 /* MapKit.framework */,
+				4C5F0549158CC91E009B77C4 /* QuartzCore.framework */,
 				22B2D6B0158CC428004ADAEE /* GHUnitIOS.framework */,
 				2297C6F9158CACCF0073492A /* UIKit.framework */,
 				2297C6FB158CACCF0073492A /* Foundation.framework */,
@@ -310,18 +368,10 @@
 		2297C701158CACCF0073492A /* Sculptour */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				4C5F04F0158CBEDF009B77C4 /* External */,
-				4C5F04E3158CBBA4009B77C4 /* View Controllers */,
-				2297C70A158CACCF0073492A /* CMAppDelegate.h */,
-				2297C70B158CACCF0073492A /* CMAppDelegate.m */,
-				2297C70D158CACCF0073492A /* Sculptour.xcdatamodeld */,
-=======
 				2297C738158CB8770073492A /* App delegate */,
 				2297C739158CB8800073492A /* Front end */,
 				2297C72E158CB5AA0073492A /* Backend */,
 				2297C73A158CB88A0073492A /* Assets */,
->>>>>>> refs/heads/TD/CoreData
 				2297C702158CACCF0073492A /* Supporting Files */,
 				2297C742158CB9260073492A /* Third party */,
 			);
@@ -358,62 +408,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		4C5F04E3158CBBA4009B77C4 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				4C5F04EC158CBE45009B77C4 /* Root menu */,
-				4C5F04EE158CBE68009B77C4 /* Instructions view */,
-				4C5F04ED158CBE5E009B77C4 /* Collection view */,
-				4C5F04EF158CBE6F009B77C4 /* Map view */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		4C5F04EC158CBE45009B77C4 /* Root menu */ = {
-			isa = PBXGroup;
-			children = (
-				4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */,
-				4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */,
-				4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */,
-				4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */,
-			);
-			name = "Root menu";
-			sourceTree = "<group>";
-		};
-		4C5F04ED158CBE5E009B77C4 /* Collection view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Collection view";
-			sourceTree = "<group>";
-		};
-		4C5F04EE158CBE68009B77C4 /* Instructions view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Instructions view";
-			sourceTree = "<group>";
-		};
-		4C5F04EF158CBE6F009B77C4 /* Map view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Map view";
-			sourceTree = "<group>";
-		};
-		4C5F04F0158CBEDF009B77C4 /* External */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = External;
-=======
 		2297C72E158CB5AA0073492A /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */,
+=======
+				22A59A66158CDD27007D2FA1 /* JSON */,
+>>>>>>> refs/heads/TD/CoreData
 				2297C72F158CB8190073492A /* Models */,
 				2297C73D158CB8B10073492A /* Fixtures */,
-				2297C70D158CACCF0073492A /* Sculptour.xcdatamodeld */,
 			);
 			name = Backend;
 			sourceTree = "<group>";
@@ -421,10 +425,10 @@
 		2297C72F158CB8190073492A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2297C734158CB83E0073492A /* Work.h */,
-				2297C735158CB83E0073492A /* Work.m */,
 				2297C730158CB82F0073492A /* Image.h */,
 				2297C731158CB82F0073492A /* Image.m */,
+				22A59A6F158CE69C007D2FA1 /* Work.h */,
+				22A59A70158CE69C007D2FA1 /* Work.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -432,8 +436,8 @@
 		2297C738158CB8770073492A /* App delegate */ = {
 			isa = PBXGroup;
 			children = (
-				2297C70A158CACCF0073492A /* CMAppDelegate.h */,
-				2297C70B158CACCF0073492A /* CMAppDelegate.m */,
+				22A59A59158CD30A007D2FA1 /* CMAppDelegate.h */,
+				22A59A5A158CD30A007D2FA1 /* CMAppDelegate.m */,
 			);
 			name = "App delegate";
 			sourceTree = "<group>";
@@ -441,6 +445,7 @@
 		2297C739158CB8800073492A /* Front end */ = {
 			isa = PBXGroup;
 			children = (
+				4C5F04E3158CBBA4009B77C4 /* View Controllers */,
 			);
 			name = "Front end";
 			sourceTree = "<group>";
@@ -448,6 +453,8 @@
 		2297C73A158CB88A0073492A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				22A59A6C158CE295007D2FA1 /* harlow.json */,
+				22A59A81158CE8D9007D2FA1 /* TestJson.json */,
 				2297C73C158CB8A00073492A /* Work assets */,
 				2297C73B158CB89B0073492A /* App assets */,
 			);
@@ -480,6 +487,7 @@
 		2297C742158CB9260073492A /* Third party */ = {
 			isa = PBXGroup;
 			children = (
+				4C5F0559158CE67F009B77C4 /* AQGridView */,
 				2297C745158CBAAC0073492A /* MagicalRecord */,
 			);
 			name = "Third party";
@@ -586,7 +594,20 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+		22B2D69E158CC3C9004ADAEE /* GHUnit Tests */ = {
+=======
+		22A59A66158CDD27007D2FA1 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				22A59A68158CDD37007D2FA1 /* CMJsonIngest.h */,
+				22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
 		22B2D69E158CC3C9004ADAEE /* Tests */ = {
+>>>>>>> refs/heads/TD/CoreData
 			isa = PBXGroup;
 			children = (
 				22B2D6B2158CC531004ADAEE /* Tests */,
@@ -594,6 +615,7 @@
 				22B2D6A8158CC3C9004ADAEE /* CMAppDelegate.m */,
 				22B2D69F158CC3C9004ADAEE /* Supporting Files */,
 			);
+			name = "GHUnit Tests";
 			path = Tests;
 			sourceTree = "<group>";
 		};
@@ -613,9 +635,106 @@
 			children = (
 				22B2D6B4158CC543004ADAEE /* MyTest.m */,
 				22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */,
+				22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */,
 			);
 			name = Tests;
->>>>>>> refs/heads/TD/CoreData
+			sourceTree = "<group>";
+		};
+		4C5F04E3158CBBA4009B77C4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F04EC158CBE45009B77C4 /* Root menu */,
+				4C5F04EE158CBE68009B77C4 /* Instructions view */,
+				4C5F04ED158CBE5E009B77C4 /* Collection views */,
+				4C5F04EF158CBE6F009B77C4 /* Map view */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4C5F04EC158CBE45009B77C4 /* Root menu */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */,
+				4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */,
+				4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */,
+				4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */,
+			);
+			name = "Root menu";
+			sourceTree = "<group>";
+		};
+		4C5F04ED158CBE5E009B77C4 /* Collection views */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F0548158CC831009B77C4 /* Generic */,
+				4C5F04FE158CC291009B77C4 /* iPad */,
+				4C5F04FD158CC286009B77C4 /* iPhone */,
+			);
+			name = "Collection views";
+			sourceTree = "<group>";
+		};
+		4C5F04EE158CBE68009B77C4 /* Instructions view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Instructions view";
+			sourceTree = "<group>";
+		};
+		4C5F04EF158CBE6F009B77C4 /* Map view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Map view";
+			sourceTree = "<group>";
+		};
+		4C5F04F2158CC1C5009B77C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F04F9158CC1C5009B77C4 /* libAQGridView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5F04FD158CC286009B77C4 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F04FF158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.h */,
+				4C5F0500158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		4C5F04FE158CC291009B77C4 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		4C5F0548158CC831009B77C4 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F0545158CC82A009B77C4 /* CMCollectionGridViewController.h */,
+				4C5F0546158CC82A009B77C4 /* CMCollectionGridViewController.m */,
+				4C5F0564158CE795009B77C4 /* CMWorkGridView.h */,
+				4C5F0565158CE795009B77C4 /* CMWorkGridView.m */,
+			);
+			name = Generic;
+			sourceTree = "<group>";
+		};
+		4C5F0559158CE67F009B77C4 /* AQGridView */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */,
+			);
+			name = AQGridView;
+			sourceTree = "<group>";
+		};
+		4C5F055B158CE68E009B77C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F055F158CE68F009B77C4 /* libAQGridView.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,6 +751,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4C5F04FB158CC1D2009B77C4 /* PBXTargetDependency */,
 			);
 			name = Sculptour;
 			productName = Sculptour;
@@ -694,6 +814,16 @@
 			mainGroup = 2297C6EA158CACCE0073492A;
 			productRefGroup = 2297C6F6158CACCF0073492A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4C5F04F2158CC1C5009B77C4 /* Products */;
+					ProjectRef = 4C5F04F1158CC1C5009B77C4 /* AQGridView.xcodeproj */;
+				},
+				{
+					ProductGroup = 4C5F055B158CE68E009B77C4 /* Products */;
+					ProjectRef = 4C5F055A158CE68E009B77C4 /* AQGridView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2297C6F4158CACCF0073492A /* Sculptour */,
@@ -703,14 +833,35 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4C5F04F9158CC1C5009B77C4 /* libAQGridView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAQGridView.a;
+			remoteRef = 4C5F04F8158CC1C5009B77C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C5F055F158CE68F009B77C4 /* libAQGridView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAQGridView.a;
+			remoteRef = 4C5F055E158CE68F009B77C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		2297C6F3158CACCF0073492A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2297C706158CACCF0073492A /* InfoPlist.strings in Resources */,
+<<<<<<< HEAD
 				4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */,
 				4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */,
+=======
+				22A59A6D158CE295007D2FA1 /* harlow.json in Resources */,
+>>>>>>> refs/heads/TD/CoreData
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +878,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B2D6A3158CC3C9004ADAEE /* InfoPlist.strings in Resources */,
+				22A59A6E158CE295007D2FA1 /* harlow.json in Resources */,
+				22A59A82158CE8D9007D2FA1 /* TestJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,13 +907,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2297C708158CACCF0073492A /* main.m in Sources */,
-				2297C70C158CACCF0073492A /* CMAppDelegate.m in Sources */,
-				2297C70F158CACCF0073492A /* Sculptour.xcdatamodeld in Sources */,
-<<<<<<< HEAD
 				4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */,
-=======
 				2297C732158CB82F0073492A /* Image.m in Sources */,
-				2297C736158CB83E0073492A /* Work.m in Sources */,
 				2297C740158CB8D80073492A /* CMDataCreater.m in Sources */,
 				2297C781158CBAAD0073492A /* MagicalImportFunctions.m in Sources */,
 				2297C783158CBAAD0073492A /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -788,6 +936,15 @@
 				2297C7AF158CBAAD0073492A /* MagicalRecord+Setup.m in Sources */,
 				2297C7B1158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m in Sources */,
 				2297C7B3158CBAAD0073492A /* MagicalRecord.m in Sources */,
+<<<<<<< HEAD
+				22A59A5B158CD30A007D2FA1 /* CMAppDelegate.m in Sources */,
+				22A59A5E158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
+				4C5F0501158CC2D1009B77C4 /* CMCatagoryTopLevelViewController_iPhone.m in Sources */,
+				4C5F0547158CC82A009B77C4 /* CMCollectionGridViewController.m in Sources */,
+				4C5F0566158CE795009B77C4 /* CMWorkGridView.m in Sources */,
+=======
+				22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */,
+				22A59A71158CE69C007D2FA1 /* Work.m in Sources */,
 >>>>>>> refs/heads/TD/CoreData
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,7 +955,6 @@
 			files = (
 				2297C725158CACCF0073492A /* SculptourTests.m in Sources */,
 				2297C733158CB82F0073492A /* Image.m in Sources */,
-				2297C737158CB83E0073492A /* Work.m in Sources */,
 				2297C741158CB8D80073492A /* CMDataCreater.m in Sources */,
 				2297C782158CBAAD0073492A /* MagicalImportFunctions.m in Sources */,
 				2297C784158CBAAD0073492A /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -826,6 +982,11 @@
 				2297C7B0158CBAAD0073492A /* MagicalRecord+Setup.m in Sources */,
 				2297C7B2158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m in Sources */,
 				2297C7B4158CBAAD0073492A /* MagicalRecord.m in Sources */,
+<<<<<<< HEAD
+				22A59A5F158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
+=======
+				22A59A72158CE69C007D2FA1 /* Work.m in Sources */,
+>>>>>>> refs/heads/TD/CoreData
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,7 +994,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B2D772158CCC8E004ADAEE /* Sculptour.xcdatamodeld in Sources */,
 				22B2D6A5158CC3C9004ADAEE /* main.m in Sources */,
 				22B2D6A9158CC3C9004ADAEE /* CMAppDelegate.m in Sources */,
 				22B2D756158CC9FD004ADAEE /* MagicalImportFunctions.m in Sources */,
@@ -863,10 +1023,16 @@
 				22B2D76E158CC9FD004ADAEE /* MagicalRecord+ShorthandSupport.m in Sources */,
 				22B2D76F158CC9FD004ADAEE /* MagicalRecord.m in Sources */,
 				22B2D6B5158CC543004ADAEE /* MyTest.m in Sources */,
-				22B2D770158CCA67004ADAEE /* Work.m in Sources */,
 				22B2D771158CCA67004ADAEE /* Image.m in Sources */,
 				22B2D6B8158CC5E5004ADAEE /* CoreDataTest.m in Sources */,
 				22B2D773158CCF25004ADAEE /* CMDataCreater.m in Sources */,
+<<<<<<< HEAD
+				22A59A60158CD354007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
+=======
+				22A59A6B158CDD37007D2FA1 /* CMJsonIngest.m in Sources */,
+				22A59A73158CE69C007D2FA1 /* Work.m in Sources */,
+				22A59A80158CE7E9007D2FA1 /* TestJsonIngest.m in Sources */,
+>>>>>>> refs/heads/TD/CoreData
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,6 +1043,11 @@
 			isa = PBXTargetDependency;
 			target = 2297C6F4158CACCF0073492A /* Sculptour */;
 			targetProxy = 2297C71B158CACCF0073492A /* PBXContainerItemProxy */;
+		};
+		4C5F04FB158CC1D2009B77C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AQGridView;
+			targetProxy = 4C5F04FA158CC1D2009B77C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -960,6 +1131,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
+				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -971,6 +1143,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
+				HEADER_SEARCH_PATHS = AQGridView/Classes;
 				INFOPLIST_FILE = "Sculptour/Sculptour-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1080,8 +1253,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-<<<<<<< HEAD
-=======
 		};
 		22B2D6AC158CC3C9004ADAEE /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
@@ -1090,17 +1261,17 @@
 				22B2D6AB158CC3C9004ADAEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
->>>>>>> refs/heads/TD/CoreData
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2297C70D158CACCF0073492A /* Sculptour.xcdatamodeld */ = {
+		22A59A5C158CD354007D2FA1 /* Sculptour.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				2297C70E158CACCF0073492A /* Sculptour.xcdatamodel */,
+				22A59A5D158CD354007D2FA1 /* Sculptour.xcdatamodel */,
 			);
-			currentVersion = 2297C70E158CACCF0073492A /* Sculptour.xcdatamodel */;
+			currentVersion = 22A59A5D158CD354007D2FA1 /* Sculptour.xcdatamodel */;
 			path = Sculptour.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
