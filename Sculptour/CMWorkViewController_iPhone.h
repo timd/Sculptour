@@ -18,5 +18,8 @@
 @property (nonatomic, strong) IBOutlet UILabel *questionMarkLabel;
 @property (nonatomic, strong) IBOutlet UILabel *streetNameLabel;
 @property (nonatomic, strong) IBOutlet UILabel *distanceLabel;
+@property (nonatomic, strong) IBOutlet UIButton *collectButton;
+
+- (IBAction)collectWork:(id)sender;
 
 @end

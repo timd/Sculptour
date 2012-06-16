@@ -26,6 +26,19 @@
 @synthesize questionMarkLabel=_questionMarkLabel;
 @synthesize distanceLabel=_distanceLabel;
 @synthesize streetNameLabel=_streetNameLabel;
+@synthesize collectButton=_collectButton;
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (IBAction)collectWork:(id)sender
+{
+    self.work.collected = [NSNumber numberWithBool: YES];
+    [[NSManagedObjectContext defaultContext] MR_save];
+    
+    [self updateUI];
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -36,7 +49,8 @@
         self.tabBar.hidden = NO;
         self.questionMarkLabel.hidden = YES;
         self.distanceLabel.hidden = YES;
-        self.streetNameLabel.hidden = YES;
+        self.streetNameLabel.hidden = YES;        
+        self.collectButton.hidden = YES;
     }
     else 
     {
@@ -54,10 +68,15 @@
             float distance = [workLocation distanceFromLocation: SharedCurrentLocation];
             
             self.distanceLabel.text = [NSString stringWithFormat: @"%.1f km", distance / 1000.0];
+            
+            
+            self.collectButton.hidden = distance > 10.0;
+            
         }
         else 
         {
             self.distanceLabel.text = @"Unknown distance";
+            self.collectButton.hidden = YES;
         }
         
         self.streetNameLabel.text = self.work.place;
