@@ -9,7 +9,7 @@
         <attribute name="artist" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="collected" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="internal" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="internal" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="material" optional="YES" attributeType="String" syncable="YES"/>
@@ -21,7 +21,7 @@
         <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="work" inverseEntity="Image" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Work" positionX="-63" positionY="-18" width="128" height="240"/>
         <element name="Image" positionX="187" positionY="90" width="128" height="90"/>
+        <element name="Work" positionX="-63" positionY="-18" width="128" height="240"/>
     </elements>
 </model>

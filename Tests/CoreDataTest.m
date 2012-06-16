@@ -26,6 +26,7 @@
 
 -(void)tearDown {
     
+    [Work MR_truncateAll];
     [MagicalRecord cleanUp];
 }
 

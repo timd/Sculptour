@@ -13,18 +13,18 @@
 
 @interface Work : NSManagedObject
 
-@property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * artist;
-@property (nonatomic, retain) NSString * material;
+@property (nonatomic, retain) NSNumber * collected;
 @property (nonatomic, retain) NSString * date;
-@property (nonatomic, retain) NSString * size;
-@property (nonatomic, retain) NSString * place;
+@property (nonatomic, retain) NSString * internal;
 @property (nonatomic, retain) NSNumber * latitude;
 @property (nonatomic, retain) NSNumber * longitude;
-@property (nonatomic, retain) NSString * url;
+@property (nonatomic, retain) NSString * material;
+@property (nonatomic, retain) NSString * place;
+@property (nonatomic, retain) NSString * size;
 @property (nonatomic, retain) NSString * text;
-@property (nonatomic, retain) NSNumber * collected;
-@property (nonatomic, retain) NSNumber * internal;
+@property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) NSString * url;
 @property (nonatomic, retain) NSSet *images;
 @end
 

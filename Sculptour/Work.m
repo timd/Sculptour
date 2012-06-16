@@ -12,18 +12,18 @@
 
 @implementation Work
 
-@dynamic title;
 @dynamic artist;
-@dynamic material;
+@dynamic collected;
 @dynamic date;
-@dynamic size;
-@dynamic place;
+@dynamic internal;
 @dynamic latitude;
 @dynamic longitude;
-@dynamic url;
+@dynamic material;
+@dynamic place;
+@dynamic size;
 @dynamic text;
-@dynamic collected;
-@dynamic internal;
+@dynamic title;
+@dynamic url;
 @dynamic images;
 
 @end
