@@ -62,6 +62,9 @@
             newWork.title = [theDict objectForKey:@"work"];
             newWork.material = [theDict objectForKey:@"material"];
             
+            newWork.latitude = [theDict objectForKey:@"latitude"];
+            newWork.longitude = [theDict objectForKey:@"longitude"];
+            
             NSString *key;
             for (key in theDict) {
                 NSLog(@"Key: %@, Value: %@", key, [theDict objectForKey:key]);

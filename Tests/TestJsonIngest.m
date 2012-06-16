@@ -75,6 +75,7 @@
         } else {
             newWork.text = [theDict objectForKey:@"text"];
         }
+        
         newWork.size = [theDict objectForKey:@"size"];
         newWork.artist = [theDict objectForKey:@"artist"];
         newWork.place = [theDict objectForKey:@"location"];
@@ -82,6 +83,18 @@
         newWork.title = [theDict objectForKey:@"work"];
         newWork.material = [theDict objectForKey:@"material"];
         
+        if ([[theDict objectForKey:@"latitude"] isEqual:[NSNull null]]) {
+            newWork.latitude = nil;
+        } else {
+            newWork.latitude = [theDict objectForKey:@"latitude"];
+        }
+
+        if ([[theDict objectForKey:@"longitude"] isEqual:[NSNull null]]) {
+            newWork.longitude = nil;
+        } else {
+            newWork.longitude = [theDict objectForKey:@"longitude"];
+        }
+
         NSString *key;
         for (key in theDict) {
             NSLog(@"Key: %@, Value: %@", key, [theDict objectForKey:key]);
@@ -100,6 +113,10 @@
     Work *workOne = [Work MR_findFirstByAttribute:@"artist" withValue:@"Artist 1"];
     GHAssertNotNil(workOne, @"workOne was not found");
     
+    // Test Lat/Long
+    Work *workTwo = [Work MR_findFirstByAttribute:@"artist" withValue:@"Artist 2"];
+    GHAssertNotNil(workTwo, @"workOne was not found");
+    GHAssertEquals(workTwo.latitude, nil, @"latitude should be nil, was %@", workTwo.latitude);
 
 }
 

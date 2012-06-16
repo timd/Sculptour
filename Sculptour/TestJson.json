@@ -1,29 +1,35 @@
-[
+ [
   {
-      "artist": "Artist 1",
-      "work": "Work 1",
-      "location": "Location 1",
-      "internal": "Internal 1",
-      "text": "Text 1",
-      "material": "Material 1",
-      "size": "Size 1"
+  "artist": "Artist 1",
+  "work": "Work 1",
+  "location": "Location 1",
+  "internal": "Internal 1",
+  "text": "Text 1",
+  "material": "Material 1",
+  "size": "Size 1",
+  "latitude": 1.23456,
+  "longitude": 9.8765
   },
   {
-     "artist": "Artist 2",
-     "work": "Work 2",
-     "location": "Location 2",
-     "internal": "Internal 2",
-     "text": "Text 2",
-     "material": "Material 2",
-     "size": "Size 2"
+  "artist": "Artist 2",
+  "work": "Work 2",
+  "location": "Location 2",
+  "internal": "Internal 2",
+  "text": "Text 2",
+  "material": "Material 2",
+  "size": "Size 2",
+  "latitude": null,
+  "longitude": null
   },
   {
-     "artist": "Artist 3",
-     "work": "Work 3",
-     "location": "Location 3",
-     "internal": "Internal 3",
-     "text": "Text 3",
-     "material": "Material 3",
-     "size": "Size 3"
+  "artist": "Artist 3",
+  "work": "Work 3",
+  "location": "Location 3",
+  "internal": "Internal 3",
+  "text": "Text 3",
+  "material": "Material 3",
+  "size": "Size 3",
+  "latitude": 0,
+  "longitude": 0
   }
-]
+  ]
