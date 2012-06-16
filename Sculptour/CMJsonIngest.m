@@ -62,8 +62,18 @@
             newWork.title = [theDict objectForKey:@"work"];
             newWork.material = [theDict objectForKey:@"material"];
             
-            newWork.latitude = [theDict objectForKey:@"latitude"];
-            newWork.longitude = [theDict objectForKey:@"longitude"];
+            if ([[theDict objectForKey:@"latitude"] isEqual:[NSNull null]]) {
+                newWork.latitude = nil;
+            } else {
+                newWork.latitude = [theDict objectForKey:@"latitude"];
+            }
+
+            if ([[theDict objectForKey:@"longitude"] isEqual:[NSNull null]]) {
+                newWork.longitude = nil;
+            } else {
+                newWork.longitude = [theDict objectForKey:@"longitude"];
+            }
+
             
             NSString *key;
             for (key in theDict) {
