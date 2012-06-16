@@ -8,11 +8,12 @@
 
 #import "CMRootMenuViewController.h"
 #import "CMCatagoryTopLevelViewController_iPhone.h"
+#import "CMMapViewController.h"
 
 @implementation CMRootMenuViewController
 
 @synthesize catagoryView_iPhone=_catagoryView_iPhone;
-
+@synthesize mapViewController=_mapViewController;
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -42,6 +43,12 @@
 //
 - (IBAction)showMap:(id)sender
 {
+    if (self.mapViewController == nil)
+    {
+        self.mapViewController = [[CMMapViewController alloc] init];
+    }
+    [self.navigationController pushViewController: self.mapViewController
+                                         animated: YES];
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  CMWorkDetailViewController_iPhone.h
+//  CMWorkCollectionViewController_iPhone.h
 //  Sculptour
 //
 //  Created by Michael Dales on 16/06/2012.
@@ -10,9 +10,8 @@
 
 @class Work;
 
-@interface CMWorkDetailViewController_iPhone : UIViewController <UIWebViewDelegate>
+@interface CMWorkCollectionViewController_iPhone : UIViewController
 
-@property (nonatomic, strong) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) Work *work;
 
 @end

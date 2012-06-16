@@ -10,11 +10,21 @@
 
 @class Work;
 
-@interface CMWorkViewController_iPhone : UIViewController
+@class CMWorkDetailViewController_iPhone;
+@class CMWorkPhotosViewController_iPhone;
+@class CMWorkCollectionViewController_iPhone;
+
+
+@interface CMWorkViewController_iPhone : UIViewController <UITabBarDelegate>
 
 @property (nonatomic, strong) Work *work;
 
 @property (nonatomic, strong) IBOutlet UITabBar *tabBar;
+@property (nonatomic, strong) id currentTabView;
+@property (nonatomic, strong) CMWorkDetailViewController_iPhone *detailViewController_iPhone;
+@property (nonatomic, strong) CMWorkPhotosViewController_iPhone *photosViewController_iPhone;
+@property (nonatomic, strong) CMWorkCollectionViewController_iPhone *collectionViewController_iPhone;
+
 @property (nonatomic, strong) IBOutlet UILabel *questionMarkLabel;
 @property (nonatomic, strong) IBOutlet UILabel *streetNameLabel;
 @property (nonatomic, strong) IBOutlet UILabel *distanceLabel;
