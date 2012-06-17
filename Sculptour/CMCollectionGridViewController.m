@@ -94,7 +94,7 @@
 - (void)viewDidUnload
 {
     [[NSNotificationCenter defaultCenter] removeObserver: self];
-    
+    self.gridView = nil;    
     [super viewDidUnload];
 }
 

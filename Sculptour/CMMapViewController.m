@@ -10,6 +10,7 @@
 #import "Work.h"
 #import "CMPlacemark.h"
 #import "CMWorkViewController_iPhone.h"
+#import "CMAppDelegate.h"
 
 @interface CMMapViewController ()
 
@@ -24,8 +25,11 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
 - (MKAnnotationView *)mapView: (MKMapView *)mapView 
-            viewForAnnotation: (id <MKAnnotation>)annotation{
-
+            viewForAnnotation: (id <MKAnnotation>)annotation
+{
+    if ([annotation isKindOfClass: [MKUserLocation class]])
+        return nil;    
+    
 	MKPinAnnotationView *annotationView =[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"parkingloc"];
 
     [annotationView setCanShowCallout: YES];
@@ -37,11 +41,11 @@
     
 	if (work.collected)
 	{
-		[annotationView setPinColor: MKPinAnnotationColorPurple];
+		[annotationView setPinColor: MKPinAnnotationColorGreen];
 	}
 	else
 	{
-		[annotationView setPinColor: MKPinAnnotationColorGreen];
+		[annotationView setPinColor: MKPinAnnotationColorRed];
 	}
     
 	return annotationView;
@@ -79,17 +83,48 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 //
-- (void)viewDidLoad
+- (void)workCollectedNotification: (NSNotification*)notification
 {
-    [super viewDidLoad];
-    
+    NSArray *annotations = [self.mapView annotations];    
+    [self.mapView removeAnnotations: annotations];
     
     NSArray *workList = [Work MR_findAll];
     for (Work *work in workList)
     {
         CMPlacemark *placeMark = [[CMPlacemark alloc] initWithWork: work];
-        [self.mapView addAnnotation: placeMark];
+        [self.mapView addAnnotation: placeMark];                
+    }   
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.title = @"Harlow";
+    
+    [self.mapView setShowsUserLocation: YES];
+    CLLocationCoordinate2D coord;
+    coord.latitude = 51.765608948854236; 
+    coord.longitude = 0.10488510131835938;
+    
+    MKCoordinateSpan span = {.latitudeDelta = 0.05, .longitudeDelta = 0.05};
+    MKCoordinateRegion region = {coord, span};
+    [self.mapView setRegion:region];
+    
+    NSArray *workList = [Work MR_findAll];
+    for (Work *work in workList)
+    {
+        CMPlacemark *placeMark = [[CMPlacemark alloc] initWithWork: work];
+        [self.mapView addAnnotation: placeMark];                
     }
+    
+    [[NSNotificationCenter defaultCenter] addObserver: self
+                                             selector: @selector(workCollectedNotification:) 
+                                                 name: CMWorkCollectedNotification
+                                               object: nil];
         
 }
 
@@ -98,9 +133,10 @@
 //
 - (void)viewDidUnload
 {
+    [[NSNotificationCenter defaultCenter] removeObserver: self];
+    
+    self.mapView = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 
