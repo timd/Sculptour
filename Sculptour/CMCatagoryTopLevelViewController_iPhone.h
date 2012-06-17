@@ -15,4 +15,5 @@
 @property (nonatomic, strong) NSArray *catagoryList;
 @property (nonatomic, strong) CMCollectionGridViewController *collectionView;
 
+
 @end

@@ -27,7 +27,7 @@
     
     title.text = work.title;
     
-    if (work.collected)
+    if ([work.collected isEqualToNumber: [NSNumber numberWithBool: YES]])
     {
         Image *workImage = [work.images anyObject];
         NSString *filePath = [[NSBundle mainBundle] pathForResource:workImage.file ofType:@"jpg"];

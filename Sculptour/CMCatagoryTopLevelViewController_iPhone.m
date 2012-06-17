@@ -9,6 +9,9 @@
 #import "CMCatagoryTopLevelViewController_iPhone.h"
 #import "CMCollectionGridViewController.h"
 
+#import "Tag.h"
+#import "Work.h"
+
 @interface CMCatagoryTopLevelViewController_iPhone ()
 
 @end
@@ -17,6 +20,32 @@
 
 @synthesize catagoryList=_catagoryList;
 @synthesize collectionView=_collectionView;
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)buildMenu
+{
+    NSMutableArray *collections = [NSMutableArray array];
+    
+    // first add in all the tags
+    NSArray *tagList = [Tag MR_findAll];
+    NSLog(@"tags (%d)", tagList.count);
+    
+    for (Tag *tag in tagList)
+    {
+        NSPredicate *predicate = [NSPredicate predicateWithFormat: @"ANY tags.name CONTAINS %@", tag.name];
+        NSDictionary *info = [NSDictionary dictionaryWithObjectsAndKeys: predicate, @"predicate", [tag.name capitalizedString], @"title", nil];        
+        [collections addObject: info];
+    }
+    
+    // now add the special cases
+    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"collected == NO"];//, [NSNumber numberWithBool: NO]];
+    NSDictionary *info = [NSDictionary dictionaryWithObjectsAndKeys: predicate, @"predicate", @"Uncollected", @"title", nil];        
+    [collections addObject: info];
+    
+    self.catagoryList = collections;
+}
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -35,7 +64,7 @@
     [super viewDidLoad];
 
     self.title = @"Categories";
-    self.catagoryList = [NSArray arrayWithObjects: @"People", @"Animals", @"Small", @"Large", @"All", @"Uncollected", nil];
+    [self buildMenu];
     
     [self.tableView reloadData];
 }
@@ -92,8 +121,9 @@
                                           reuseIdentifier: CellIdentifier];
     }
     
-    
-    cell.textLabel.text = [self.catagoryList objectAtIndex: indexPath.row];
+    NSDictionary *info = [self.catagoryList objectAtIndex: indexPath.row];
+        
+    cell.textLabel.text = [info objectForKey: @"title"];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
@@ -140,26 +170,26 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView 
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.collectionView == nil)
     {
         self.collectionView = [[CMCollectionGridViewController alloc] init];
     }
     
-    // TODO: get set of work
+    NSDictionary *info = [self.catagoryList objectAtIndex: indexPath.row];
+    NSPredicate *predicate = [info objectForKey: @"predicate"];
+    
+    NSArray *workSubSet = [Work MR_findAllWithPredicate: predicate];
+    NSLog(@"items: %d", workSubSet.count);
+    
+    self.collectionView.workList = workSubSet;    
+    self.collectionView.title = [info objectForKey: @"title"];
     
     [self.navigationController pushViewController: self.collectionView
                                          animated: YES];
     
-    
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
 }
 
 @end
