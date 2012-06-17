@@ -118,6 +118,13 @@
 		22A5642B158D40A800A2AB3E /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5642A158D40A800A2AB3E /* Work.m */; };
 		22A5642C158D40A800A2AB3E /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5642A158D40A800A2AB3E /* Work.m */; };
 		22A5642D158D40A800A2AB3E /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5642A158D40A800A2AB3E /* Work.m */; };
+		22A56476158D4B9300A2AB3E /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22A56469158D4B9300A2AB3E /* FBDialog.bundle */; };
+		22A56477158D4B9300A2AB3E /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22A56469158D4B9300A2AB3E /* FBDialog.bundle */; };
+		22A56478158D4B9300A2AB3E /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22A56469158D4B9300A2AB3E /* FBDialog.bundle */; };
+		22A56479158D4B9300A2AB3E /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5646F158D4B9300A2AB3E /* libfacebook_ios_sdk.a */; };
+		22A5647A158D4B9300A2AB3E /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5646F158D4B9300A2AB3E /* libfacebook_ios_sdk.a */; };
+		22A5647B158D4B9300A2AB3E /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A5646F158D4B9300A2AB3E /* libfacebook_ios_sdk.a */; };
+		22A5647D158D530C00A2AB3E /* piglet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22A5647C158D530C00A2AB3E /* piglet.jpg */; };
 		22A59A6A158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
 		22A59A6B158CDD37007D2FA1 /* CMJsonIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */; };
 		22A59A6D158CE295007D2FA1 /* harlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 22A59A6C158CE295007D2FA1 /* harlow.json */; };
@@ -328,6 +335,22 @@
 		22A56425158D40A700A2AB3E /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		22A56429158D40A700A2AB3E /* Work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
 		22A5642A158D40A800A2AB3E /* Work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
+		22A56467158D4B9300A2AB3E /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		22A56468158D4B9300A2AB3E /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		22A56469158D4B9300A2AB3E /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		22A5646A158D4B9300A2AB3E /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		22A5646B158D4B9300A2AB3E /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		22A5646C158D4B9300A2AB3E /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		22A5646D158D4B9300A2AB3E /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		22A5646E158D4B9300A2AB3E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		22A5646F158D4B9300A2AB3E /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		22A56470158D4B9300A2AB3E /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		22A56471158D4B9300A2AB3E /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		22A56472158D4B9300A2AB3E /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		22A56473158D4B9300A2AB3E /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		22A56474158D4B9300A2AB3E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		22A56475158D4B9300A2AB3E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		22A5647C158D530C00A2AB3E /* piglet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piglet.jpg; sourceTree = "<group>"; };
 		22A59A68158CDD37007D2FA1 /* CMJsonIngest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMJsonIngest.h; sourceTree = "<group>"; };
 		22A59A69158CDD37007D2FA1 /* CMJsonIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMJsonIngest.m; sourceTree = "<group>"; };
 		22A59A6C158CE295007D2FA1 /* harlow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = harlow.json; sourceTree = "<group>"; };
@@ -416,6 +439,7 @@
 				2297C6FE158CACCF0073492A /* CoreGraphics.framework in Frameworks */,
 				2297C700158CACCF0073492A /* CoreData.framework in Frameworks */,
 				4C6AF2BE158D1783005E76FB /* libGRMustache4-iOS.a in Frameworks */,
+				22A56479158D4B9300A2AB3E /* libfacebook_ios_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +451,7 @@
 				2297C718158CACCF0073492A /* UIKit.framework in Frameworks */,
 				2297C719158CACCF0073492A /* Foundation.framework in Frameworks */,
 				2297C71A158CACCF0073492A /* CoreData.framework in Frameworks */,
+				22A5647A158D4B9300A2AB3E /* libfacebook_ios_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,12 +464,67 @@
 				22B2D69C158CC3C9004ADAEE /* Foundation.framework in Frameworks */,
 				22B2D69D158CC3C9004ADAEE /* CoreGraphics.framework in Frameworks */,
 				22A59AA6158CF02D007D2FA1 /* GHUnitIOS.framework in Frameworks */,
+				22A5647B158D4B9300A2AB3E /* libfacebook_ios_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		227ABEBF158DCDDD00DA6DDB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4C44829E158D24CE007CC4EC /* 104-index-cards.png */,
+				4C44829F158D24CF007CC4EC /* 104-index-cards@2x.png */,
+				4C4482A2158D24EC007CC4EC /* 43-film-roll.png */,
+				4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */,
+				4C4482A6158D250E007CC4EC /* 96-book.png */,
+				4C4482A7158D250F007CC4EC /* 96-book@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		227ABEC0158DCDEB00DA6DDB /* Work view */ = {
+			isa = PBXGroup;
+			children = (
+				4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */,
+				4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */,
+				4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */,
+			);
+			name = "Work view";
+			sourceTree = "<group>";
+		};
+		227ABEC1158DCDF400DA6DDB /* Photos view */ = {
+			isa = PBXGroup;
+			children = (
+				4C448281158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.h */,
+				4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */,
+				4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */,
+			);
+			name = "Photos view";
+			sourceTree = "<group>";
+		};
+		227ABEC2158DCDFD00DA6DDB /* Collection view */ = {
+			isa = PBXGroup;
+			children = (
+				4C4482AA158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.h */,
+				4C4482AB158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.m */,
+				4C4482AC158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.xib */,
+			);
+			name = "Collection view";
+			sourceTree = "<group>";
+		};
+		227ABEC3158DCE0700DA6DDB /* Detail view */ = {
+			isa = PBXGroup;
+			children = (
+				4C6AF2A1158D162D005E76FB /* CMWorkDetailViewController_iPhone.h */,
+				4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */,
+				4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */,
+				4C6AF2BF158D17E5005E76FB /* Details.mustache */,
+			);
+			name = "Detail view";
+			sourceTree = "<group>";
+		};
 		2297C6EA158CACCE0073492A = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +660,7 @@
 		2297C73B158CB89B0073492A /* App assets */ = {
 			isa = PBXGroup;
 			children = (
+				22A5647C158D530C00A2AB3E /* piglet.jpg */,
 				22A563B2158CFB4500A2AB3E /* main_menu.png */,
 			);
 			name = "App assets";
@@ -622,6 +703,7 @@
 		2297C742158CB9260073492A /* Third party */ = {
 			isa = PBXGroup;
 			children = (
+				22A56466158D4B9300A2AB3E /* facebook-ios-sdk */,
 				4C44829B158D22AC007CC4EC /* NSArray-Set.h */,
 				4C44829C158D22AC007CC4EC /* NSArray-Set.m */,
 				4C6AF2A6158D16A8005E76FB /* GRMustache */,
@@ -730,6 +812,28 @@
 				2297C77F158CBAAD0073492A /* MagicalRecordShorthand.h */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		22A56466158D4B9300A2AB3E /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				22A56467158D4B9300A2AB3E /* Facebook.h */,
+				22A56468158D4B9300A2AB3E /* FBConnect.h */,
+				22A56469158D4B9300A2AB3E /* FBDialog.bundle */,
+				22A5646A158D4B9300A2AB3E /* FBDialog.h */,
+				22A5646B158D4B9300A2AB3E /* FBFrictionlessRequestSettings.h */,
+				22A5646C158D4B9300A2AB3E /* FBLoginDialog.h */,
+				22A5646D158D4B9300A2AB3E /* FBRequest.h */,
+				22A5646E158D4B9300A2AB3E /* JSON.h */,
+				22A5646F158D4B9300A2AB3E /* libfacebook_ios_sdk.a */,
+				22A56470158D4B9300A2AB3E /* NSObject+SBJSON.h */,
+				22A56471158D4B9300A2AB3E /* NSString+SBJSON.h */,
+				22A56472158D4B9300A2AB3E /* SBJSON.h */,
+				22A56473158D4B9300A2AB3E /* SBJsonBase.h */,
+				22A56474158D4B9300A2AB3E /* SBJsonParser.h */,
+				22A56475158D4B9300A2AB3E /* SBJsonWriter.h */,
+			);
+			path = "facebook-ios-sdk";
 			sourceTree = "<group>";
 		};
 		22A59A66158CDD27007D2FA1 /* JSON */ = {
@@ -882,25 +986,11 @@
 		4C6AF25F158CFD4A005E76FB /* Detail view controller */ = {
 			isa = PBXGroup;
 			children = (
-				4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */,
-				4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */,
-				4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */,
-				4C6AF2A1158D162D005E76FB /* CMWorkDetailViewController_iPhone.h */,
-				4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */,
-				4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */,
-				4C6AF2BF158D17E5005E76FB /* Details.mustache */,
-				4C448281158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.h */,
-				4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */,
-				4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */,
-				4C44829E158D24CE007CC4EC /* 104-index-cards.png */,
-				4C44829F158D24CF007CC4EC /* 104-index-cards@2x.png */,
-				4C4482A2158D24EC007CC4EC /* 43-film-roll.png */,
-				4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */,
-				4C4482A6158D250E007CC4EC /* 96-book.png */,
-				4C4482A7158D250F007CC4EC /* 96-book@2x.png */,
-				4C4482AA158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.h */,
-				4C4482AB158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.m */,
-				4C4482AC158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.xib */,
+				227ABEC3158DCE0700DA6DDB /* Detail view */,
+				227ABEC2158DCDFD00DA6DDB /* Collection view */,
+				227ABEC1158DCDF400DA6DDB /* Photos view */,
+				227ABEC0158DCDEB00DA6DDB /* Work view */,
+				227ABEBF158DCDDD00DA6DDB /* Assets */,
 			);
 			name = "Detail view controller";
 			sourceTree = "<group>";
@@ -1076,6 +1166,8 @@
 				4C4482A9158D250F007CC4EC /* 96-book@2x.png in Resources */,
 				4C4482AE158D25F4007CC4EC /* CMWorkCollectionViewController_iPhone.xib in Resources */,
 				4C4482B3158D26B8007CC4EC /* CMMapViewController.xib in Resources */,
+				22A56476158D4B9300A2AB3E /* FBDialog.bundle in Resources */,
+				22A5647D158D530C00A2AB3E /* piglet.jpg in Resources */,
 				4C4482C5158DBF5E007CC4EC /* qmark.png in Resources */,
 				4C4482C6158DBF5E007CC4EC /* qmark@2x.png in Resources */,
 			);
@@ -1086,6 +1178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2297C722158CACCF0073492A /* InfoPlist.strings in Resources */,
+				22A56477158D4B9300A2AB3E /* FBDialog.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1114,6 +1207,7 @@
 				22B2D6A3158CC3C9004ADAEE /* InfoPlist.strings in Resources */,
 				22A59A6E158CE295007D2FA1 /* harlow.json in Resources */,
 				22A59A82158CE8D9007D2FA1 /* TestJson.json in Resources */,
+				22A56478158D4B9300A2AB3E /* FBDialog.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1371,6 +1465,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/GRMustache/lib\"",
+					"\"$(SRCROOT)/Sculptour/facebook-ios-sdk\"",
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1388,6 +1483,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/GRMustache/lib\"",
+					"\"$(SRCROOT)/Sculptour/facebook-ios-sdk\"",
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1406,6 +1502,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				INFOPLIST_FILE = "SculptourTests/SculptourTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Sculptour/facebook-ios-sdk\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -1423,6 +1523,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sculptour/Sculptour-Prefix.pch";
 				INFOPLIST_FILE = "SculptourTests/SculptourTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Sculptour/facebook-ios-sdk\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -1440,6 +1544,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Sculptour/facebook-ios-sdk\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1460,6 +1568,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Sculptour/facebook-ios-sdk\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

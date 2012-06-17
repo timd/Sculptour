@@ -8,6 +8,7 @@
 
 #import "CMWorkDetailViewController_iPhone.h"
 #import "Work.h"
+#import "CMAppDelegate.h"
 
 #import "GRMustache.h"
 
@@ -85,6 +86,46 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)didTapFacebookButton:(id)sender {
+    
+    UIImage *image = [UIImage imageNamed:@"piglet.jpg"];
+    NSData* imageData = UIImageJPEGRepresentation(image, 90);
+    
+    CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
+    Facebook *facebook = appDelegate.facebook;
+    
+    NSMutableDictionary * params = [NSMutableDictionary dictionaryWithObjectsAndKeys:[facebook accessToken], 
+                                    @"access_token",
+                                    @"This is a photo of Piglet", 
+                                    @"message",
+                                    imageData, 
+                                    @"source",
+                                    nil];
+    
+    [facebook requestWithGraphPath:@"me/photos" 
+                         andParams:params
+                     andHttpMethod:@"POST" 
+                       andDelegate:self];
+}
+
+-(void)requestLoading:(FBRequest *)request {
+    
+}
+
+-(void)request:(FBRequest *)request didReceiveResponse:(NSURLResponse *)response {
+    
+}
+
+-(void)request:(FBRequest *)request didFailWithError:(NSError *)error {
+    
+    NSLog(@"Error from Facebook request: %@", [error localizedDescription]);
+    
+}
+
+-(void)request:(FBRequest *)request didLoad:(id)result {
+    
 }
 
 @end

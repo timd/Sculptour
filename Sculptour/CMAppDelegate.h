@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "FBConnect.h"
+
 
 extern NSString * const CMLocationUpdateNotification;
 extern NSString * const CMWorkCollectedNotification;
@@ -17,7 +19,11 @@ extern NSString * const CMWorkCollectedNotification;
 
 @class CMRootMenuViewController;
 
-@interface CMAppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>
+@interface CMAppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate, FBSessionDelegate> {
+    
+    Facebook *facebook;
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *navController;
@@ -29,6 +35,8 @@ extern NSString * const CMWorkCollectedNotification;
 
 @property (nonatomic, strong) CLLocationManager	*locationManager;
 @property (nonatomic, strong) CLLocation *lastPoint;
+
+@property (nonatomic, strong) Facebook *facebook;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
