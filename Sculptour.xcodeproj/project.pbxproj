@@ -195,6 +195,7 @@
 		4C4482C5158DBF5E007CC4EC /* qmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482C3158DBF5D007CC4EC /* qmark.png */; };
 		4C4482C6158DBF5E007CC4EC /* qmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482C4158DBF5E007CC4EC /* qmark@2x.png */; };
 		4C4482D9158DD6F5007CC4EC /* CLLocation+CLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4482D8158DD6F5007CC4EC /* CLLocation+CLExtensions.m */; };
+		4C448307158DE2AC007CC4EC /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C448306158DE2AC007CC4EC /* Twitter.framework */; };
 		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
 		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
 		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
@@ -410,6 +411,7 @@
 		4C4482C4158DBF5E007CC4EC /* qmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qmark@2x.png"; sourceTree = "<group>"; };
 		4C4482D7158DD6F5007CC4EC /* CLLocation+CLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+CLExtensions.h"; sourceTree = "<group>"; };
 		4C4482D8158DD6F5007CC4EC /* CLLocation+CLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+CLExtensions.m"; sourceTree = "<group>"; };
+		4C448306158DE2AC007CC4EC /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
 		4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRootMenuViewController.m; sourceTree = "<group>"; };
 		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C448307158DE2AC007CC4EC /* Twitter.framework in Frameworks */,
 				4C5F054E158CC92B009B77C4 /* CoreLocation.framework in Frameworks */,
 				4C5F054C158CC925009B77C4 /* MapKit.framework in Frameworks */,
 				4C5F054A158CC91E009B77C4 /* QuartzCore.framework in Frameworks */,
@@ -548,6 +551,7 @@
 		2297C6EA158CACCE0073492A = {
 			isa = PBXGroup;
 			children = (
+				4C448306158DE2AC007CC4EC /* Twitter.framework */,
 				2297C701158CACCF0073492A /* Sculptour */,
 				2297C71D158CACCF0073492A /* SculptourTests */,
 				22B2D69E158CC3C9004ADAEE /* GHUnit Tests */,

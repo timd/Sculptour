@@ -73,11 +73,14 @@
             if (self.detailViewController_iPhone == nil)
             {
                 self.detailViewController_iPhone = [[CMWorkDetailViewController_iPhone alloc] init];
+                self.detailViewController_iPhone.parentController = self;
+
             }
             self.detailViewController_iPhone.work = self.work;
             
             if (self.navigationItem.rightBarButtonItem) {
-                self.navigationItem.rightBarButtonItem = nil;
+                // TODO: Be consistent...
+//                self.navigationItem.rightBarButtonItem = nil;
             }
             
             [[self.currentTabView view] removeFromSuperview];
@@ -113,6 +116,7 @@
             if (self.collectionViewController_iPhone == nil)
             {
                 self.collectionViewController_iPhone = [[CMWorkCollectionViewController_iPhone alloc] init];
+                self.collectionViewController_iPhone.parentController = self;
             }
             self.collectionViewController_iPhone.work = self.work;
             

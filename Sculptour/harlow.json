@@ -536,7 +536,12 @@
   "size": "240cm",
   "latitude": 51.779106,
   "longitude": 0.112548,
-  "image": "42"
+  "image": "42",
+  "tags": [
+           {
+           "tag": "abstract"
+           }
+           ]
   },
   {
   "artist": "Shelley Fausett  ",
@@ -597,7 +602,12 @@
   "size": "Diameter: 37cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "people"
+           }
+           ]
   },
   {
   "artist": "Gerda Rubinstein ",
@@ -681,7 +691,12 @@
   "size": "Height: 85cm",
   "latitude": 51.773617,
   "longitude": 0.108436,
-  "image": "53"
+  "image": "53",
+  "tags": [
+           {
+           "tag": "people"
+           }
+           ]
   },
   {
   "artist": "Mary Spencer Watson ",
@@ -705,7 +720,12 @@
   "size": "90cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "animals"
+           }
+           ]
   },
   {
   "artist": "P Puget after Jacques Bousseau   ",
@@ -717,7 +737,12 @@
   "size": "Height: 66cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "people"
+           }
+           ]
   },
   {
   "artist": "Anthony Hawken  ",
@@ -813,7 +838,12 @@
   "size": "Height: 250cm; Width: 70cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "religious"
+           }
+           ]
   },
   {
   "artist": "Zdzislaw Ruszkowski",
@@ -825,7 +855,16 @@
   "size": "150cm x 120cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "people",
+           },
+           {
+           "tag": "religious",
+           }
+           ]
+
   },
   {
   "artist": "Sally Doig",
@@ -837,7 +876,12 @@
   "size": "Height: 130cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "people"
+           }
+           ]
   },
   {
   "artist": "Jane Ackroyd",
@@ -849,7 +893,13 @@
   "size": "Height: 40cm; Length: 64cm",
   "latitude": 51.767513,
   "longitude": 0.093985,
-  "image": "67"
+  "image": "67",
+  "tags": [
+           {
+           "tag": "animals"
+           }
+           ]
+
   },
   {
   "artist": "Lesley South",
@@ -873,7 +923,13 @@
   "size": "Height 152cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "people"
+           }
+           ]
+
   },
   {
   "artist": "Betty Rea",
@@ -897,7 +953,13 @@
   "size": "Height: 60cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "people"
+           }
+           ]
+
   },
   {
   "artist": "Clare Guest",
@@ -909,7 +971,12 @@
   "size": "Height: 105cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "animals"
+           }
+           ]
   },
   {
   "artist": "John Mills  ",

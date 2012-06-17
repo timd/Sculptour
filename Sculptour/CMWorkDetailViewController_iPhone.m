@@ -6,9 +6,13 @@
 //  Copyright (c) 2012 Charismatic Megafauna Ltd. All rights reserved.
 //
 
+#import <Twitter/TWTweetComposeViewController.h>
+
 #import "CMWorkDetailViewController_iPhone.h"
 #import "Work.h"
 #import "CMAppDelegate.h"
+#import "CMWorkViewController_iPhone.h"
+
 
 #import "GRMustache.h"
 
@@ -20,6 +24,7 @@
 
 @synthesize webView=_webView;
 @synthesize work=_work;
+@synthesize parentController = _parentController;
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -62,12 +67,67 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 //
+- (void)share: (id)sender
+{
+    UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle: @"Title" 
+                                                            delegate: self 
+                                                   cancelButtonTitle: @"Cancel" 
+                                              destructiveButtonTitle: nil
+                                                   otherButtonTitles: @"Share on Facebook", @"Share on Twitter", nil];
+    [popupQuery showInView:self.view];
+
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)postToTwitter
+{
+    TWTweetComposeViewController *twitter = [[TWTweetComposeViewController alloc] init];
+    [twitter setInitialText: [NSString stringWithFormat: @"I found the %@ scuplture in Harlow!", self.work.title]];
+    
+    [self presentModalViewController:twitter animated:YES];
+    
+    twitter.completionHandler = ^(TWTweetComposeViewControllerResult result) 
+    {            
+        // Dismiss the controller
+        [self dismissModalViewControllerAnimated:YES];
+    };
+
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex)
+    {
+        case 0:
+            [self didTapFacebookButton: nil];
+            break;
+            
+        case 1:
+            [self postToTwitter];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     if (self.work != nil)
         [self updateUI];
+    
+    UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share:)];
+    self.parentController.navigationItem.rightBarButtonItem = share;
 }
 
 

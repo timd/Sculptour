@@ -10,11 +10,13 @@
 #import "FBConnect.h"
 
 @class Work;
+@class CMWorkViewController_iPhone;
 
-@interface CMWorkDetailViewController_iPhone : UIViewController <UIWebViewDelegate, FBRequestDelegate>
+@interface CMWorkDetailViewController_iPhone : UIViewController <UIWebViewDelegate, FBRequestDelegate, UIActionSheetDelegate>
 
 @property (nonatomic, strong) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) Work *work;
+@property (nonatomic, strong) CMWorkViewController_iPhone *parentController;
 
 - (IBAction)didTapFacebookButton:(id)sender;
 
