@@ -7,18 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CMWorkViewController_iPhone.h"
 
 @class Work;
 
-@interface CMWorkPhotosViewController_iPhone : UIViewController<UIScrollViewDelegate>
+@interface CMWorkPhotosViewController_iPhone : UIViewController<UIScrollViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (nonatomic, strong) Work *work;
 
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, strong) CMWorkViewController_iPhone *parentController;
 
 @property (nonatomic, strong) NSArray *imageViewList;
 
 - (IBAction)pageChange;
+- (void)takePhoto;
 
 @end

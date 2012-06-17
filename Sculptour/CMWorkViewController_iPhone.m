@@ -72,6 +72,10 @@
             }
             self.detailViewController_iPhone.work = self.work;
             
+            if (self.navigationItem.rightBarButtonItem) {
+                self.navigationItem.rightBarButtonItem = nil;
+            }
+            
             [[self.currentTabView view] removeFromSuperview];
             self.currentTabView = self.detailViewController_iPhone;
             [self.view addSubview: [self.currentTabView view]];
@@ -80,17 +84,25 @@
             
         case kCMPhotosTabTag:
             
+        {
+            
             if (self.photosViewController_iPhone == nil)
             {
                 self.photosViewController_iPhone = [[CMWorkPhotosViewController_iPhone alloc] init];
+                self.photosViewController_iPhone.parentController = self;
             }
             self.photosViewController_iPhone.work = self.work;
+            
+            // Add "take photo" button to navbar
+            UIBarButtonItem *photoButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"camera"] style:UIBarButtonItemStylePlain target:self.photosViewController_iPhone action:@selector(takePhoto)];
+            self.navigationItem.rightBarButtonItem = photoButton;
             
             [[self.currentTabView view] removeFromSuperview];
             self.currentTabView = self.photosViewController_iPhone;
             [self.view addSubview: [self.currentTabView view]];
             
             break;
+        }
             
         case kCMCollectionTabTag:
             
@@ -99,6 +111,10 @@
                 self.collectionViewController_iPhone = [[CMWorkCollectionViewController_iPhone alloc] init];
             }
             self.collectionViewController_iPhone.work = self.work;
+            
+            if (self.navigationItem.rightBarButtonItem) {
+                self.navigationItem.rightBarButtonItem = nil;
+            }
             
             [[self.currentTabView view] removeFromSuperview];
             self.currentTabView = self.collectionViewController_iPhone;

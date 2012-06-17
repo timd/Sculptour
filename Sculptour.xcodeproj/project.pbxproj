@@ -172,6 +172,8 @@
 		22B2D76F158CC9FD004ADAEE /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
 		22B2D771158CCA67004ADAEE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
 		22B2D773158CCF25004ADAEE /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
+		22DEA222158DD593001D58C6 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 22DEA220158DD593001D58C6 /* camera.png */; };
+		22DEA223158DD593001D58C6 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22DEA221158DD593001D58C6 /* camera@2x.png */; };
 		4C448284158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */; };
 		4C448285158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */; };
 		4C44829D158D22AC007CC4EC /* NSArray-Set.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C44829C158D22AC007CC4EC /* NSArray-Set.m */; };
@@ -369,6 +371,8 @@
 		22B2D6A8158CC3C9004ADAEE /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
 		22B2D6B4158CC543004ADAEE /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTest.m; sourceTree = "<group>"; };
+		22DEA220158DD593001D58C6 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		22DEA221158DD593001D58C6 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
 		4C448281158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkPhotosViewController_iPhone.h; sourceTree = "<group>"; };
 		4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkPhotosViewController_iPhone.m; sourceTree = "<group>"; };
 		4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMWorkPhotosViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -660,6 +664,8 @@
 		2297C73B158CB89B0073492A /* App assets */ = {
 			isa = PBXGroup;
 			children = (
+				22DEA220158DD593001D58C6 /* camera.png */,
+				22DEA221158DD593001D58C6 /* camera@2x.png */,
 				22A5647C158D530C00A2AB3E /* piglet.jpg */,
 				22A563B2158CFB4500A2AB3E /* main_menu.png */,
 			);
@@ -1170,6 +1176,8 @@
 				22A5647D158D530C00A2AB3E /* piglet.jpg in Resources */,
 				4C4482C5158DBF5E007CC4EC /* qmark.png in Resources */,
 				4C4482C6158DBF5E007CC4EC /* qmark@2x.png in Resources */,
+				22DEA222158DD593001D58C6 /* camera.png in Resources */,
+				22DEA223158DD593001D58C6 /* camera@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

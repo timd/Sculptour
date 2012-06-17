@@ -22,6 +22,7 @@
 @synthesize scrollView;
 @synthesize pageControl;
 @synthesize imageViewList=_imageViewList;
+@synthesize parentController = _parentController;
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -83,6 +84,21 @@
         [self updateUI];
 }
 
+-(void)takePhoto {
+    
+    NSLog(@"takePhoto");
+    
+#if TARGET_IPHONE_SIMULATOR
+    [self showActionSheet];
+#else
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [self showActionSheet];
+    } else {
+        [self takeSimulatorSafePhotoWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    }
+#endif
+    
+}
 
 #pragma mark - general UIViewController stuff
 
@@ -105,7 +121,11 @@
     
     if (self.work != nil)
         [self updateUI];
+
 }
+
+
+
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -117,6 +137,7 @@
     
     [super viewDidUnload];
 }
+
 
 #pragma mark - UIScrollView delegate methods
 
@@ -135,6 +156,80 @@
 //
 - (IBAction)pageChange
 {
+}
+
+#pragma mark -
+#pragma mark Photo methods
+
+#pragma mark -
+#pragma mark Photo methods
+
+-(void)showActionSheet {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Choose source of photo" message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Take photo", @"Choose from library", nil];
+    [alert show];
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSLog(@"button = %d", buttonIndex);
+    switch (buttonIndex) {
+        case 0:
+            // dismiss, no action
+            break;
+            
+        case 1:
+            // Use camera
+            [self takeSimulatorSafePhotoWithSourceType:UIImagePickerControllerSourceTypeCamera];
+            break;
+            
+        case 2:
+            // Use library
+            [self takeSimulatorSafePhotoWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+            break;
+            
+        default:
+            break;
+            
+    }
+}
+
+-(void)takeSimulatorSafePhotoWithSourceType:(UIImagePickerControllerSourceType)sourceType {
+    
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    // Check if the camera's available - if not, switch to the PhotoLibrary
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    
+    // Set the image picker to the valid type
+    [imagePicker setSourceType:sourceType];
+    [imagePicker setAllowsEditing:NO];
+    [imagePicker setDelegate:self];
+    
+    [self presentModalViewController:imagePicker animated:YES];
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    // This UIIMagePickerController delegate method is called by the image picker when 
+    // it's dismissed as a result of choosing an image from the Photo Library, 
+    // or taking an image with the camera
+    
+    // Get image from picker
+    UIImage *takenImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    NSLog(@"takenImage = %@", takenImage);
+    
+    [self dismissModalViewControllerAnimated:YES];  
+    
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [self dismissModalViewControllerAnimated:YES];
+    
 }
 
 @end
