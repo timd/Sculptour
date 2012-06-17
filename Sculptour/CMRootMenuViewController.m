@@ -9,16 +9,25 @@
 #import "CMRootMenuViewController.h"
 #import "CMCatagoryTopLevelViewController_iPhone.h"
 #import "CMMapViewController.h"
+#import "CMInstructionsViewController.h"
 
 @implementation CMRootMenuViewController
 
 @synthesize catagoryView_iPhone=_catagoryView_iPhone;
 @synthesize mapViewController=_mapViewController;
+@synthesize instructionsViewController=_instructionsViewController;
 
 ///////////////////////////////////////////////////////////////////////////////
 //
 - (IBAction)showInstructions:(id)sender
 {
+    if (self.instructionsViewController == nil)
+    {
+        self.instructionsViewController = [[CMInstructionsViewController alloc] init];
+    }
+    
+    [self.navigationController pushViewController: self.instructionsViewController
+                                         animated: YES];
 }
 
 
