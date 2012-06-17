@@ -166,6 +166,10 @@
         self.distanceLabel.hidden = NO;
         self.streetNameLabel.hidden = NO;
         self.artistLabel.hidden = NO;
+                
+        if (self.navigationItem.rightBarButtonItem) {
+            self.navigationItem.rightBarButtonItem = nil;
+        }
         
         CLLocation *here = SharedCurrentLocation;
         
