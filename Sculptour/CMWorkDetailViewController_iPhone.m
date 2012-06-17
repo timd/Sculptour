@@ -84,7 +84,7 @@
 - (void)postToTwitter
 {
     TWTweetComposeViewController *twitter = [[TWTweetComposeViewController alloc] init];
-    [twitter setInitialText: [NSString stringWithFormat: @"I found the %@ scuplture in Harlow!", self.work.title]];
+    [twitter setInitialText: [NSString stringWithFormat: @"I found the %@ sculpture in Harlow!", self.work.title]];
     
     [self presentModalViewController:twitter animated:YES];
     

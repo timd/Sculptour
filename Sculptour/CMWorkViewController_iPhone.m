@@ -68,7 +68,9 @@
     
     switch (item_tag) 
     {
-        case kCMDetailsTabTag:
+        case kCMDetailsTabTag: 
+        
+        {
             
             if (self.detailViewController_iPhone == nil)
             {
@@ -78,16 +80,16 @@
             }
             self.detailViewController_iPhone.work = self.work;
             
-            if (self.navigationItem.rightBarButtonItem) {
-                // TODO: Be consistent...
-//                self.navigationItem.rightBarButtonItem = nil;
-            }
+            UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self.detailViewController_iPhone action:@selector(share:)];
+            self.navigationItem.rightBarButtonItem = share;
             
             [[self.currentTabView view] removeFromSuperview];
             self.currentTabView = self.detailViewController_iPhone;
             [self.view addSubview: [self.currentTabView view]];
             
             break;
+            
+        }
             
         case kCMPhotosTabTag:
             

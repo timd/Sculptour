@@ -551,7 +551,6 @@
 		2297C6EA158CACCE0073492A = {
 			isa = PBXGroup;
 			children = (
-				4C448306158DE2AC007CC4EC /* Twitter.framework */,
 				2297C701158CACCF0073492A /* Sculptour */,
 				2297C71D158CACCF0073492A /* SculptourTests */,
 				22B2D69E158CC3C9004ADAEE /* GHUnit Tests */,
@@ -573,6 +572,7 @@
 		2297C6F8158CACCF0073492A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C448306158DE2AC007CC4EC /* Twitter.framework */,
 				22A59AA5158CF02D007D2FA1 /* GHUnitIOS.framework */,
 				4C5F054D158CC92B009B77C4 /* CoreLocation.framework */,
 				4C5F054B158CC925009B77C4 /* MapKit.framework */,
