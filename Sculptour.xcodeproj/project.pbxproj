@@ -471,6 +471,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		227ABEBF158DCDDD00DA6DDB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4C44829E158D24CE007CC4EC /* 104-index-cards.png */,
+				4C44829F158D24CF007CC4EC /* 104-index-cards@2x.png */,
+				4C4482A2158D24EC007CC4EC /* 43-film-roll.png */,
+				4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */,
+				4C4482A6158D250E007CC4EC /* 96-book.png */,
+				4C4482A7158D250F007CC4EC /* 96-book@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		227ABEC0158DCDEB00DA6DDB /* Work view */ = {
+			isa = PBXGroup;
+			children = (
+				4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */,
+				4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */,
+				4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */,
+			);
+			name = "Work view";
+			sourceTree = "<group>";
+		};
+		227ABEC1158DCDF400DA6DDB /* Photos view */ = {
+			isa = PBXGroup;
+			children = (
+				4C448281158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.h */,
+				4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */,
+				4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */,
+			);
+			name = "Photos view";
+			sourceTree = "<group>";
+		};
+		227ABEC2158DCDFD00DA6DDB /* Collection view */ = {
+			isa = PBXGroup;
+			children = (
+				4C4482AA158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.h */,
+				4C4482AB158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.m */,
+				4C4482AC158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.xib */,
+			);
+			name = "Collection view";
+			sourceTree = "<group>";
+		};
+		227ABEC3158DCE0700DA6DDB /* Detail view */ = {
+			isa = PBXGroup;
+			children = (
+				4C6AF2A1158D162D005E76FB /* CMWorkDetailViewController_iPhone.h */,
+				4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */,
+				4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */,
+				4C6AF2BF158D17E5005E76FB /* Details.mustache */,
+			);
+			name = "Detail view";
+			sourceTree = "<group>";
+		};
 		2297C6EA158CACCE0073492A = {
 			isa = PBXGroup;
 			children = (
@@ -932,25 +986,11 @@
 		4C6AF25F158CFD4A005E76FB /* Detail view controller */ = {
 			isa = PBXGroup;
 			children = (
-				4C6AF260158CFD99005E76FB /* CMWorkViewController_iPhone.h */,
-				4C6AF261158CFD99005E76FB /* CMWorkViewController_iPhone.m */,
-				4C6AF262158CFD99005E76FB /* CMWorkViewController_iPhone.xib */,
-				4C6AF2A1158D162D005E76FB /* CMWorkDetailViewController_iPhone.h */,
-				4C6AF2A2158D162D005E76FB /* CMWorkDetailViewController_iPhone.m */,
-				4C6AF2A3158D162D005E76FB /* CMWorkDetailViewController_iPhone.xib */,
-				4C6AF2BF158D17E5005E76FB /* Details.mustache */,
-				4C448281158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.h */,
-				4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */,
-				4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */,
-				4C44829E158D24CE007CC4EC /* 104-index-cards.png */,
-				4C44829F158D24CF007CC4EC /* 104-index-cards@2x.png */,
-				4C4482A2158D24EC007CC4EC /* 43-film-roll.png */,
-				4C4482A3158D24EC007CC4EC /* 43-film-roll@2x.png */,
-				4C4482A6158D250E007CC4EC /* 96-book.png */,
-				4C4482A7158D250F007CC4EC /* 96-book@2x.png */,
-				4C4482AA158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.h */,
-				4C4482AB158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.m */,
-				4C4482AC158D25F3007CC4EC /* CMWorkCollectionViewController_iPhone.xib */,
+				227ABEC3158DCE0700DA6DDB /* Detail view */,
+				227ABEC2158DCDFD00DA6DDB /* Collection view */,
+				227ABEC1158DCDF400DA6DDB /* Photos view */,
+				227ABEC0158DCDEB00DA6DDB /* Work view */,
+				227ABEBF158DCDDD00DA6DDB /* Assets */,
 			);
 			name = "Detail view controller";
 			sourceTree = "<group>";
