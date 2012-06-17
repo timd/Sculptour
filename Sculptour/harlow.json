@@ -33,7 +33,12 @@
   "size": "Height: 250cm (approx)",
   "latitude": 51.776752,
   "longitude": 0.10032,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "animals"
+           }
+           ]
   },
   {
   "artist": "Christopher Dean             ",
@@ -45,7 +50,12 @@
   "size": "119.5cm x 80cm",
   "latitude": null,
   "longitude": null,
-  "image": "1"
+  "image": "1",
+  "tags": [
+           {
+           "tag": "people"
+           }
+           ]
   },
   {
   "artist": "Jane Stobart  ",
@@ -117,7 +127,12 @@
   "size": "Height: 39cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "people"
+           }
+           ]
   },
   {
   "artist": "Antanas Brazdys         ",
@@ -213,7 +228,12 @@
   "size": "",
   "latitude": 51.778652,
   "longitude": 0.093207,
-  "image": "18"
+  "image": "18",
+  "tags": [
+           {
+           "tag": "animals"
+           }
+           ]
   },
   {
   "artist": "Michael Austin",
@@ -237,7 +257,12 @@
   "size": "Various sizes   (7)",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "people"
+           }
+           ]
   },
   {
   "artist": "William Mitchell  ",
@@ -369,7 +394,12 @@
   "size": "Height: 90cm",
   "latitude": 51.767353,
   "longitude": 0.094199,
-  "image": "31"
+  "image": "31",
+  "tags": [
+           {
+           "tag": "animals"
+           }
+           ]
   },
   {
   "artist": "Hebe Comerford    ",
@@ -525,7 +555,15 @@
   "size": "Height: 70cm",
   "latitude": 51.771809,
   "longitude": 0.123502,
-  "image": "44"
+  "image": "44",
+  "tags": [
+           {
+           "tag": "animals"
+           },
+           {
+           "tag": "people"
+           }
+           ]
   },
   {
   "artist": "Claire Guest  ",
@@ -537,7 +575,12 @@
   "size": "Width: 99cm",
   "latitude": null,
   "longitude": null,
-  "image": "3"
+  "image": "3",
+  "tags": [
+           {
+           "tag": "animals"
+           }
+           ]
   },
   {
   "artist": "Gerda Rubinstein ",

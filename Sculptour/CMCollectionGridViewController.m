@@ -23,6 +23,17 @@
 @synthesize workViewController_iPhone=_workViewController_iPhone;
 @synthesize selectedTag = _selectedTag;
 
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)setWorkList:(NSArray *)workList
+{
+    _workList = workList;
+    
+    [self.gridView reloadData];
+}
+
+
 ///////////////////////////////////////////////////////////////////////////////
 //
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -65,18 +76,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    if (self.selectedTag != nil) {
-
-        self.title = self.selectedTag;
-        self.workList = [Work MR_findByAttribute:@"tag" withValue:self.selectedTag];
-        
-    } else {
-        
-        self.title = @"All works";
-        self.workList = [Work MR_findAll];
-        
-    }
+//    
+//    if (self.selectedTag != nil) {
+//
+//        self.title = self.selectedTag;
+//        self.workList = [Work MR_findByAttribute:@"tag" withValue:self.selectedTag];
+//        
+//    } else {
+//        
+//        self.title = @"All works";
+//        self.workList = [Work MR_findAll];
+//        
+//    }
     
     
     [[NSNotificationCenter defaultCenter] addObserver: self

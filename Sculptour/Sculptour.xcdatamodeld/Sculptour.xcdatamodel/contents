@@ -11,7 +11,7 @@
     </entity>
     <entity name="Work" representedClassName="Work" syncable="YES">
         <attribute name="artist" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="collected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="collected" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="internal" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -27,7 +27,7 @@
     </entity>
     <elements>
         <element name="Image" positionX="187" positionY="90" width="128" height="90"/>
-        <element name="Work" positionX="-63" positionY="-18" width="128" height="240"/>
         <element name="Tag" positionX="205" positionY="282" width="128" height="75"/>
+        <element name="Work" positionX="-63" positionY="-18" width="128" height="255"/>
     </elements>
 </model>
