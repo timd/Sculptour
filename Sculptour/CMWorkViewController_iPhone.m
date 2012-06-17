@@ -17,6 +17,8 @@
 #import "CMWorkPhotosViewController_iPhone.h"
 #import "CMWorkCollectionViewController_iPhone.h"
 
+#import "CLLocation+CLExtensions.h"
+
 #define kCMDetailsTabTag 0
 #define kCMPhotosTabTag 1
 #define kCMCollectionTabTag 2
@@ -40,6 +42,7 @@
 @synthesize distanceLabel=_distanceLabel;
 @synthesize streetNameLabel=_streetNameLabel;
 @synthesize collectButton=_collectButton;
+@synthesize artistLabel=_artistLabel;
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -123,6 +126,7 @@
         self.distanceLabel.hidden = YES;
         self.streetNameLabel.hidden = YES;        
         self.collectButton.hidden = YES;
+        self.artistLabel.hidden = YES;
         
         // this doesn't seem to cause the delegate method to be called
         [self.tabBar setSelectedItem: [[self.tabBar items] objectAtIndex: 0]];
@@ -138,6 +142,7 @@
         self.questionMarkLabel.hidden = NO;
         self.distanceLabel.hidden = NO;
         self.streetNameLabel.hidden = NO;
+        self.artistLabel.hidden = NO;
         
         CLLocation *here = SharedCurrentLocation;
         
@@ -145,9 +150,35 @@
         {
             CLLocation *workLocation = [[CLLocation alloc] initWithLatitude: [self.work.latitude doubleValue]
                                                                   longitude: [self.work.longitude doubleValue]];
-            float distance = [workLocation distanceFromLocation: SharedCurrentLocation];
+            CLLocation *here = SharedCurrentLocation;
             
-            self.distanceLabel.text = [NSString stringWithFormat: @"%.1f km", distance / 1000.0];
+            float distance = [workLocation distanceFromLocation: here];
+            
+            
+			
+			// now work out the direction
+			float radians = [here bearingInRadiansTowardsLocation: workLocation];
+			
+			NSString *direction;
+			if ((radians >= ((1.0 * M_PI) / 8.0)) && (radians < ((3.0 * M_PI) / 8.0)))
+				direction = @"north east";
+			else if ((radians >= ((3.0 * M_PI) / 8.0)) && (radians < ((5.0 * M_PI) / 8.0)))
+				direction = @"east";
+			else if ((radians >= ((5.0 * M_PI) / 8.0)) && (radians < ((7.0 * M_PI) / 8.0)))
+				direction = @"south east";
+			else if ((radians >= ((7.0 * M_PI) / 8.0)) && (radians < ((9.0 * M_PI) / 8.0)))
+				direction = @"south";
+			else if ((radians >= ((9.0 * M_PI) / 8.0)) && (radians < ((11.0 * M_PI) / 8.0)))
+				direction = @"south west";
+			else if ((radians >= ((11.0 * M_PI) / 8.0)) && (radians < ((13.0 * M_PI) / 8.0)))
+				direction = @"west";
+			else if ((radians >= ((13.0 * M_PI) / 8.0)) && (radians < ((15.0 * M_PI) / 8.0)))
+				direction = @"north west";
+			else 
+				direction = @"north";
+            
+            
+            self.distanceLabel.text = [NSString stringWithFormat: @"%.1f km to the %@", distance / 1000.0, direction];
             
             
             self.collectButton.hidden = distance > 10.0;
@@ -160,7 +191,7 @@
         }
         
         self.streetNameLabel.text = self.work.place;
-        
+        self.artistLabel.text = self.work.artist;
         
         self.collectButton.hidden = NO;
     }

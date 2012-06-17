@@ -188,6 +188,7 @@
 		4C4482B6158D28C8007CC4EC /* CMPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4482B5158D28C8007CC4EC /* CMPlacemark.m */; };
 		4C4482C5158DBF5E007CC4EC /* qmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482C3158DBF5D007CC4EC /* qmark.png */; };
 		4C4482C6158DBF5E007CC4EC /* qmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482C4158DBF5E007CC4EC /* qmark@2x.png */; };
+		4C4482D9158DD6F5007CC4EC /* CLLocation+CLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4482D8158DD6F5007CC4EC /* CLLocation+CLExtensions.m */; };
 		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
 		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
 		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
@@ -390,6 +391,8 @@
 		4C4482B5158D28C8007CC4EC /* CMPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPlacemark.m; sourceTree = "<group>"; };
 		4C4482C3158DBF5D007CC4EC /* qmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qmark.png; sourceTree = "<group>"; };
 		4C4482C4158DBF5E007CC4EC /* qmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qmark@2x.png"; sourceTree = "<group>"; };
+		4C4482D7158DD6F5007CC4EC /* CLLocation+CLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+CLExtensions.h"; sourceTree = "<group>"; };
+		4C4482D8158DD6F5007CC4EC /* CLLocation+CLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+CLExtensions.m"; sourceTree = "<group>"; };
 		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
 		4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRootMenuViewController.m; sourceTree = "<group>"; };
 		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -704,6 +707,8 @@
 			isa = PBXGroup;
 			children = (
 				22A56466158D4B9300A2AB3E /* facebook-ios-sdk */,
+				4C4482D7158DD6F5007CC4EC /* CLLocation+CLExtensions.h */,
+				4C4482D8158DD6F5007CC4EC /* CLLocation+CLExtensions.m */,
 				4C44829B158D22AC007CC4EC /* NSArray-Set.h */,
 				4C44829C158D22AC007CC4EC /* NSArray-Set.m */,
 				4C6AF2A6158D16A8005E76FB /* GRMustache */,
@@ -1279,6 +1284,7 @@
 				4C4482B6158D28C8007CC4EC /* CMPlacemark.m in Sources */,
 				22A56426158D40A700A2AB3E /* Tag.m in Sources */,
 				22A5642B158D40A800A2AB3E /* Work.m in Sources */,
+				4C4482D9158DD6F5007CC4EC /* CLLocation+CLExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -223,7 +223,7 @@
   "work": "Butterfly",
   "location": "Fifth Avenue residential area",
   "internal": "External",
-  "text": "Dated2008",
+  "text": "One of two sculptures commissioned by Barratt Homes for the Fith Avenue development from Students at Harlow College.",
   "material": "Fabricated stainless steel",
   "size": "",
   "latitude": 51.778652,
@@ -389,7 +389,7 @@
   "work": "Boar",
   "location": "The Water Gardens",
   "internal": "External",
-  "text": null,
+  "text": "Boar was commissioned as a concrete sculpture in 1957. The original version suffered from vandalism and weathering and, in 1970, was cast in bronze.",
   "material": "Bronze with green patina on a bronze base",
   "size": "Height: 90cm",
   "latitude": 51.767353,
@@ -406,12 +406,17 @@
   "work": "Bird",
   "location": "The Water Gardens",
   "internal": "External",
-  "text": null,
+  "text": "Michael Chase offered his own steel version of this sculpture to be cast in bronze for the Trust in 1983. Bird was installed in the Water Gardens in 1985. The original mild steel version is in the Gibberd Garden.",
   "material": "Bronze with green patina",
   "size": "Height: 129cm",
   "latitude": 51.767452,
   "longitude": 0.094655,
-  "image": "32"
+  "image": "32",
+  "tags": [
+           {
+           "tag": "animals"
+           }
+           ]
   },
   {
   "artist": "Auguste Rodin               ",
@@ -587,7 +592,7 @@
   "work": "Baby; Tondo",
   "location": "William Martin Primary School",
   "internal": "External",
-  "text": null,
+  "text": "William Martin Infant School Rubinstein gave Baby to the Trust in 1992.",
   "material": "Coloured bronze resin on wood mount",
   "size": "Diameter: 37cm",
   "latitude": null,
@@ -863,7 +868,7 @@
   "work": "Buster Keaton 1981-82",
   "location": "The Playhouse",
   "internal": "External",
-  "text": null,
+  "text": "This is one of a series of sculptures based on Mills' artist 'heroes'. Other works were based on Rembrandt, Michelangelo, Orson Welles and William Blake. The sculpture reflects the artist's recollections of Keaton as he appeared in the film The General. Mills donated it to the Trust in 1994.",
   "material": "Bronze",
   "size": "Height 152cm",
   "latitude": null,

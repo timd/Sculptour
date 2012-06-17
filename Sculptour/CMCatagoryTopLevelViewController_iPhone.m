@@ -30,7 +30,6 @@
     
     // first add in all the tags
     NSArray *tagList = [Tag MR_findAll];
-    NSLog(@"tags (%d)", tagList.count);
     
     for (Tag *tag in tagList)
     {
@@ -179,10 +178,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     }
     
     NSDictionary *info = [self.catagoryList objectAtIndex: indexPath.row];
-    NSPredicate *predicate = [info objectForKey: @"predicate"];
+    NSPredicate *tagPredicate = [info objectForKey: @"predicate"];    
+    NSPredicate *homelessPredicate = [NSPredicate predicateWithFormat: @"latitude != %@ AND latitude != %@", nil, [NSNumber numberWithFloat: 0.0]];    
+    
+    NSPredicate *predicate = [NSCompoundPredicate andPredicateWithSubpredicates: [NSArray arrayWithObjects: tagPredicate, homelessPredicate, nil]];
     
     NSArray *workSubSet = [Work MR_findAllWithPredicate: predicate];
-    NSLog(@"items: %d", workSubSet.count);
     
     self.collectionView.workList = workSubSet;    
     self.collectionView.title = [info objectForKey: @"title"];
