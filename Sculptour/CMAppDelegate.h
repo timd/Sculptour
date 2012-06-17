@@ -12,6 +12,7 @@
 
 
 extern NSString * const CMLocationUpdateNotification;
+extern NSString * const CMWorkCollectedNotification;
 
 #define SharedCurrentLocation ((CMAppDelegate *)[[UIApplication sharedApplication] delegate]).lastPoint
 #define SharedLocationManager ((CMAppDelegate *)[[UIApplication sharedApplication] delegate]).locationManager

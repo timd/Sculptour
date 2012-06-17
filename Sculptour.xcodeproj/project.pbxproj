@@ -186,6 +186,8 @@
 		4C4482B2158D26B8007CC4EC /* CMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4482B0158D26B8007CC4EC /* CMMapViewController.m */; };
 		4C4482B3158D26B8007CC4EC /* CMMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482B1158D26B8007CC4EC /* CMMapViewController.xib */; };
 		4C4482B6158D28C8007CC4EC /* CMPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4482B5158D28C8007CC4EC /* CMPlacemark.m */; };
+		4C4482C5158DBF5E007CC4EC /* qmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482C3158DBF5D007CC4EC /* qmark.png */; };
+		4C4482C6158DBF5E007CC4EC /* qmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482C4158DBF5E007CC4EC /* qmark@2x.png */; };
 		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
 		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
 		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
@@ -386,6 +388,8 @@
 		4C4482B1158D26B8007CC4EC /* CMMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMMapViewController.xib; sourceTree = "<group>"; };
 		4C4482B4158D28C8007CC4EC /* CMPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPlacemark.h; sourceTree = "<group>"; };
 		4C4482B5158D28C8007CC4EC /* CMPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPlacemark.m; sourceTree = "<group>"; };
+		4C4482C3158DBF5D007CC4EC /* qmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qmark.png; sourceTree = "<group>"; };
+		4C4482C4158DBF5E007CC4EC /* qmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qmark@2x.png"; sourceTree = "<group>"; };
 		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
 		4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRootMenuViewController.m; sourceTree = "<group>"; };
 		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -899,6 +903,8 @@
 		4C5F0548158CC831009B77C4 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
+				4C4482C3158DBF5D007CC4EC /* qmark.png */,
+				4C4482C4158DBF5E007CC4EC /* qmark@2x.png */,
 				4C5F0545158CC82A009B77C4 /* CMCollectionGridViewController.h */,
 				4C5F0546158CC82A009B77C4 /* CMCollectionGridViewController.m */,
 				4C5F0564158CE795009B77C4 /* CMWorkGridView.h */,
@@ -1122,6 +1128,8 @@
 				4C4482B3158D26B8007CC4EC /* CMMapViewController.xib in Resources */,
 				22A56476158D4B9300A2AB3E /* FBDialog.bundle in Resources */,
 				22A5647D158D530C00A2AB3E /* piglet.jpg in Resources */,
+				4C4482C5158DBF5E007CC4EC /* qmark.png in Resources */,
+				4C4482C6158DBF5E007CC4EC /* qmark@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,9 @@
 
 @interface CMWorkGridView : AQGridViewCell
 {
+    UIImageView *imageView;
     UILabel *title;
+    UIView *colorView;
 }
 
 @property (nonatomic, strong) Work *work;
