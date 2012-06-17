@@ -1,9 +1,38 @@
 <!doctype html>
 <html>
 <head>
+    <style>
+        body {
+            font-family: "Helvetica Neue";
+        }
+        
+        img.thumbnail {
+            width: 100px;
+        }
+        
+        h2 {
+            font-size: 12pt;
+        }
+    </style>
 </head>
 <body>    
-    <h2>by {{artist}}</h2>
-    <h2>{{place}}</h2>
+    <table width="100%">
+        <tr>
+            <td>
+                <img class="thumbnail" src="{{fileURLForOneImage}}">
+            </td>
+            <td>
+                <h2>by {{artist}}</h2>
+                <h2>{{place}}</h2>
+            </td>
+        </tr>
+    </table>
+
+    <p>Cupcake ipsum dolor sit amet macaroon I love marzipan. Dragée I love I love tiramisu gummi bears I love. Caramels pie faworki carrot cake sweet marshmallow.</p>
+    
+    <p>Candy oat cake faworki wypas gummies. Halvah brownie ice cream danish I love soufflé marshmallow I love. Cupcake liquorice tiramisu cake chupa chups halvah marshmallow.</p>
+    
+    <p>Sesame snaps donut dragée I love macaroon I love macaroon biscuit chocolate cake. Biscuit gummies lemon drops dessert. Carrot cake muffin cheesecake jelly-o liquorice I love candy canes I love cupcake. Jelly-o candy sweet roll brownie icing topping caramels.</p>
+
 </body>
 </html>

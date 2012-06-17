@@ -88,7 +88,11 @@
     NSArray *annotations = [self.mapView annotations];    
     [self.mapView removeAnnotations: annotations];
     
-    NSArray *workList = [Work MR_findAll];
+    // ignore stuff with no lat/lng
+    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"latitude != %@ AND latitude != %@", nil, [NSNumber numberWithFloat: 0.0]];    
+    NSArray *workList = [Work MR_findAllWithPredicate: predicate];
+
+    
     for (Work *work in workList)
     {
         CMPlacemark *placeMark = [[CMPlacemark alloc] initWithWork: work];
@@ -114,7 +118,10 @@
     MKCoordinateRegion region = {coord, span};
     [self.mapView setRegion:region];
     
-    NSArray *workList = [Work MR_findAll];
+    
+    // ignore stuff with no lat/lng
+    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"latitude != %@ AND latitude != %@", nil, [NSNumber numberWithFloat: 0.0]];    
+    NSArray *workList = [Work MR_findAllWithPredicate: predicate];
     for (Work *work in workList)
     {
         CMPlacemark *placeMark = [[CMPlacemark alloc] initWithWork: work];

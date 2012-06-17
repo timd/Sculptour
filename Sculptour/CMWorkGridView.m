@@ -38,7 +38,7 @@
     }
     else 
     {
-        UIImage *image = [UIImage imageNamed: @"qmark"];
+        UIImage *image = [UIImage imageNamed: @"qmark"];    
         imageView.image = image;
         
         CLLocation *artLocation = [[CLLocation alloc] initWithLatitude: [self.work.latitude floatValue]
@@ -52,9 +52,7 @@
         float closeness = distance / 5000.0;
         if (closeness > 1.0)
             closeness = 1.0;
-        
-        NSLog(@"distance, closeness: %f, %f", distance, closeness);
-        
+                
         UIColor * color = [UIColor colorWithRed: closeness 
                                           green: 1.0 - closeness
                                            blue: 0.0 

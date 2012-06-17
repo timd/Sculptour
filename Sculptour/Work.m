@@ -28,4 +28,21 @@
 @dynamic images;
 @dynamic tags;
 
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (NSString*)fileURLForOneImage
+{
+    if (self.images.count < 1)
+        return nil;
+    
+    Image *image = [self.images anyObject];
+    NSString *path = [[NSBundle mainBundle] pathForResource: image.file ofType: @"jpg"];
+    NSURL *url = [NSURL fileURLWithPath: path];
+    path = [NSString stringWithFormat: @"%@", url];
+    
+    return path;    
+}
+
 @end

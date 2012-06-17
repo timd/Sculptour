@@ -41,4 +41,6 @@
 - (void)addTags:(NSSet *)values;
 - (void)removeTags:(NSSet *)values;
 
+- (NSString*)fileURLForOneImage;
+
 @end

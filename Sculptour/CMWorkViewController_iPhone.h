@@ -29,6 +29,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *streetNameLabel;
 @property (nonatomic, strong) IBOutlet UILabel *distanceLabel;
 @property (nonatomic, strong) IBOutlet UIButton *collectButton;
+@property (nonatomic, strong) IBOutlet UILabel *artistLabel;
 
 - (IBAction)collectWork:(id)sender;
 
