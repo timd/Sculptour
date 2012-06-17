@@ -12,6 +12,7 @@
 #import "CMJsonIngest.h"
 
 NSString * const CMLocationUpdateNotification = @"CMLocationUpdateNotification";
+NSString * const CMWorkCollectedNotification = @"CMWorkCollectedNotification";
 
 @implementation CMAppDelegate
 

@@ -10,6 +10,7 @@
 #import "CMWorkGridView.h"
 #import "Work.h"
 #import "CMWorkViewController_iPhone.h"
+#import "CMAppDelegate.h"
 
 @interface CMCollectionGridViewController ()
 
@@ -53,6 +54,14 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 //
+- (void)workCollectedNotification: (NSNotification*)notification
+{
+    [self.gridView reloadData];
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -70,7 +79,10 @@
     }
     
     
-    
+    [[NSNotificationCenter defaultCenter] addObserver: self
+                                             selector: @selector(workCollectedNotification:) 
+                                                 name: CMWorkCollectedNotification
+                                               object: nil];
     
     
     [self.gridView reloadData];
@@ -81,8 +93,9 @@
 //
 - (void)viewDidUnload
 {
+    [[NSNotificationCenter defaultCenter] removeObserver: self];
+    
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 
@@ -122,7 +135,7 @@
     CMWorkGridView *cell = (CMWorkGridView*)[self.gridView dequeueReusableCellWithIdentifier: reuseIdentifier];
     if (cell == nil)
     {
-        cell = [[CMWorkGridView alloc] initWithFrame: CGRectMake(0.0, 0.0, 100.0, 10.0)
+        cell = [[CMWorkGridView alloc] initWithFrame: CGRectMake(0.0, 0.0, 100.0, 100.0)
                                      reuseIdentifier: reuseIdentifier];
     }
     
@@ -150,6 +163,9 @@
     
     [self.navigationController pushViewController: self.workViewController_iPhone
                                          animated: YES];
+    
+    [self.gridView deselectItemAtIndex: index
+                              animated: YES];
     
 }
 

@@ -49,6 +49,9 @@
     self.work.collected = [NSNumber numberWithBool: YES];
     [[NSManagedObjectContext defaultContext] MR_save];
     
+    [[NSNotificationCenter defaultCenter] postNotificationName: CMWorkCollectedNotification
+                                                        object: self.work];
+    
     [self updateUI];
 }
 
