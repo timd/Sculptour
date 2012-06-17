@@ -10,8 +10,11 @@
 
 @class Work;
 
-@interface CMWorkCollectionViewController_iPhone : UIViewController
+@interface CMWorkCollectionViewController_iPhone : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) Work *work;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) IBOutlet UILabel *noCatagoriesLabel;
+
 
 @end
