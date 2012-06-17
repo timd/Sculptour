@@ -38,7 +38,25 @@
         return nil;
     
     Image *image = [self.images anyObject];
-    NSString *path = [[NSBundle mainBundle] pathForResource: image.file ofType: @"jpg"];
+    
+    NSString *path = nil;
+    
+    if (image.userGenerated == [NSNumber numberWithInt:1]) {
+        
+        // Retrieve filepath as png from user docs directory
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
+        NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory 
+        
+        NSString *fileName = [NSString stringWithFormat:@"%@.png", image.file];
+        path = [documentsPath stringByAppendingPathComponent:fileName]; //Add the file name
+        
+    } else {
+        
+        //UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: workImage.url]]];
+        path = [[NSBundle mainBundle] pathForResource:image.file ofType:@"jpg"];
+        
+    }
+
     NSURL *url = [NSURL fileURLWithPath: path];
     path = [NSString stringWithFormat: @"%@", url];
     

@@ -19,8 +19,6 @@
 		2297C71A158CACCF0073492A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2297C6FF158CACCF0073492A /* CoreData.framework */; };
 		2297C722158CACCF0073492A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2297C720158CACCF0073492A /* InfoPlist.strings */; };
 		2297C725158CACCF0073492A /* SculptourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C724158CACCF0073492A /* SculptourTests.m */; };
-		2297C732158CB82F0073492A /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
-		2297C733158CB82F0073492A /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
 		2297C740158CB8D80073492A /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
 		2297C741158CB8D80073492A /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
 		2297C781158CBAAD0073492A /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C749158CBAAC0073492A /* MagicalImportFunctions.m */; };
@@ -170,10 +168,16 @@
 		22B2D76D158CC9FD004ADAEE /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77A158CBAAD0073492A /* MagicalRecord+Setup.m */; };
 		22B2D76E158CC9FD004ADAEE /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77C158CBAAD0073492A /* MagicalRecord+ShorthandSupport.m */; };
 		22B2D76F158CC9FD004ADAEE /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C77E158CBAAD0073492A /* MagicalRecord.m */; };
-		22B2D771158CCA67004ADAEE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C731158CB82F0073492A /* Image.m */; };
 		22B2D773158CCF25004ADAEE /* CMDataCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297C73F158CB8D80073492A /* CMDataCreater.m */; };
 		22DEA222158DD593001D58C6 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 22DEA220158DD593001D58C6 /* camera.png */; };
 		22DEA223158DD593001D58C6 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22DEA221158DD593001D58C6 /* camera@2x.png */; };
+		22DEA23E158DE291001D58C6 /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DEA236158DE291001D58C6 /* DCCrossHairView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		22DEA23F158DE291001D58C6 /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DEA238158DE291001D58C6 /* DCFrameView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		22DEA240158DE291001D58C6 /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DEA23A158DE291001D58C6 /* DCIntrospect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		22DEA241158DE291001D58C6 /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DEA23D158DE291001D58C6 /* DCStatusBarOverlay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		22DEA249158DE8BE001D58C6 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DEA248158DE8BE001D58C6 /* Image.m */; };
+		22DEA24A158DE8BE001D58C6 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DEA248158DE8BE001D58C6 /* Image.m */; };
+		22DEA24B158DE8BE001D58C6 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DEA248158DE8BE001D58C6 /* Image.m */; };
 		4C448284158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */; };
 		4C448285158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */; };
 		4C44829D158D22AC007CC4EC /* NSArray-Set.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C44829C158D22AC007CC4EC /* NSArray-Set.m */; };
@@ -257,8 +261,6 @@
 		2297C721158CACCF0073492A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2297C723158CACCF0073492A /* SculptourTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SculptourTests.h; sourceTree = "<group>"; };
 		2297C724158CACCF0073492A /* SculptourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SculptourTests.m; sourceTree = "<group>"; };
-		2297C730158CB82F0073492A /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
-		2297C731158CB82F0073492A /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		2297C73E158CB8D80073492A /* CMDataCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDataCreater.h; sourceTree = "<group>"; };
 		2297C73F158CB8D80073492A /* CMDataCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDataCreater.m; sourceTree = "<group>"; };
 		2297C748158CBAAC0073492A /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
@@ -374,6 +376,17 @@
 		22B2D6B7158CC5E5004ADAEE /* CoreDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTest.m; sourceTree = "<group>"; };
 		22DEA220158DD593001D58C6 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		22DEA221158DD593001D58C6 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		22DEA235158DE291001D58C6 /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
+		22DEA236158DE291001D58C6 /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = "<group>"; };
+		22DEA237158DE291001D58C6 /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = "<group>"; };
+		22DEA238158DE291001D58C6 /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = "<group>"; };
+		22DEA239158DE291001D58C6 /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = "<group>"; };
+		22DEA23A158DE291001D58C6 /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = "<group>"; };
+		22DEA23B158DE291001D58C6 /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
+		22DEA23C158DE291001D58C6 /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
+		22DEA23D158DE291001D58C6 /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
+		22DEA247158DE8BE001D58C6 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		22DEA248158DE8BE001D58C6 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		4C448281158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWorkPhotosViewController_iPhone.h; sourceTree = "<group>"; };
 		4C448282158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWorkPhotosViewController_iPhone.m; sourceTree = "<group>"; };
 		4C448283158D2003007CC4EC /* CMWorkPhotosViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMWorkPhotosViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -630,8 +643,8 @@
 				22A5642A158D40A800A2AB3E /* Work.m */,
 				22A56424158D40A600A2AB3E /* Tag.h */,
 				22A56425158D40A700A2AB3E /* Tag.m */,
-				2297C730158CB82F0073492A /* Image.h */,
-				2297C731158CB82F0073492A /* Image.m */,
+				22DEA247158DE8BE001D58C6 /* Image.h */,
+				22DEA248158DE8BE001D58C6 /* Image.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -712,6 +725,7 @@
 		2297C742158CB9260073492A /* Third party */ = {
 			isa = PBXGroup;
 			children = (
+				22DEA234158DE291001D58C6 /* DCIntrospect */,
 				22A56466158D4B9300A2AB3E /* facebook-ios-sdk */,
 				4C4482D7158DD6F5007CC4EC /* CLLocation+CLExtensions.h */,
 				4C4482D8158DD6F5007CC4EC /* CLLocation+CLExtensions.m */,
@@ -887,6 +901,22 @@
 				22A59A7F158CE7E9007D2FA1 /* TestJsonIngest.m */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		22DEA234158DE291001D58C6 /* DCIntrospect */ = {
+			isa = PBXGroup;
+			children = (
+				22DEA235158DE291001D58C6 /* DCCrossHairView.h */,
+				22DEA236158DE291001D58C6 /* DCCrossHairView.m */,
+				22DEA237158DE291001D58C6 /* DCFrameView.h */,
+				22DEA238158DE291001D58C6 /* DCFrameView.m */,
+				22DEA239158DE291001D58C6 /* DCIntrospect.h */,
+				22DEA23A158DE291001D58C6 /* DCIntrospect.m */,
+				22DEA23B158DE291001D58C6 /* DCIntrospectSettings.h */,
+				22DEA23C158DE291001D58C6 /* DCStatusBarOverlay.h */,
+				22DEA23D158DE291001D58C6 /* DCStatusBarOverlay.m */,
+			);
+			path = DCIntrospect;
 			sourceTree = "<group>";
 		};
 		4C5F04E3158CBBA4009B77C4 /* View Controllers */ = {
@@ -1250,7 +1280,6 @@
 				4C6AF25E158CF913005E76FB /* Sculptour.xcdatamodeld in Sources */,
 				2297C708158CACCF0073492A /* main.m in Sources */,
 				4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */,
-				2297C732158CB82F0073492A /* Image.m in Sources */,
 				2297C740158CB8D80073492A /* CMDataCreater.m in Sources */,
 				2297C781158CBAAD0073492A /* MagicalImportFunctions.m in Sources */,
 				2297C783158CBAAD0073492A /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -1293,6 +1322,11 @@
 				22A56426158D40A700A2AB3E /* Tag.m in Sources */,
 				22A5642B158D40A800A2AB3E /* Work.m in Sources */,
 				4C4482D9158DD6F5007CC4EC /* CLLocation+CLExtensions.m in Sources */,
+				22DEA23E158DE291001D58C6 /* DCCrossHairView.m in Sources */,
+				22DEA23F158DE291001D58C6 /* DCFrameView.m in Sources */,
+				22DEA240158DE291001D58C6 /* DCIntrospect.m in Sources */,
+				22DEA241158DE291001D58C6 /* DCStatusBarOverlay.m in Sources */,
+				22DEA249158DE8BE001D58C6 /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1301,7 +1335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2297C725158CACCF0073492A /* SculptourTests.m in Sources */,
-				2297C733158CB82F0073492A /* Image.m in Sources */,
 				2297C741158CB8D80073492A /* CMDataCreater.m in Sources */,
 				2297C782158CBAAD0073492A /* MagicalImportFunctions.m in Sources */,
 				2297C784158CBAAD0073492A /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -1332,6 +1365,7 @@
 				22A59AAA158CF7E0007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
 				22A56427158D40A700A2AB3E /* Tag.m in Sources */,
 				22A5642C158D40A800A2AB3E /* Work.m in Sources */,
+				22DEA24A158DE8BE001D58C6 /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1368,7 +1402,6 @@
 				22B2D76E158CC9FD004ADAEE /* MagicalRecord+ShorthandSupport.m in Sources */,
 				22B2D76F158CC9FD004ADAEE /* MagicalRecord.m in Sources */,
 				22B2D6B5158CC543004ADAEE /* MyTest.m in Sources */,
-				22B2D771158CCA67004ADAEE /* Image.m in Sources */,
 				22B2D6B8158CC5E5004ADAEE /* CoreDataTest.m in Sources */,
 				22B2D773158CCF25004ADAEE /* CMDataCreater.m in Sources */,
 				22A59A6B158CDD37007D2FA1 /* CMJsonIngest.m in Sources */,
@@ -1376,6 +1409,7 @@
 				22A59AAB158CF7E0007D2FA1 /* Sculptour.xcdatamodeld in Sources */,
 				22A56428158D40A700A2AB3E /* Tag.m in Sources */,
 				22A5642D158D40A800A2AB3E /* Work.m in Sources */,
+				22DEA24B158DE8BE001D58C6 /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

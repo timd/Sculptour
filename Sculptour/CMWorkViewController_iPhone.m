@@ -10,6 +10,7 @@
 
 #import "CMWorkViewController_iPhone.h"
 #import "Work.h"
+#import "Image.h"
 
 #import "CMAppDelegate.h"
 
@@ -97,7 +98,7 @@
             self.photosViewController_iPhone.work = self.work;
             
             // Add "take photo" button to navbar
-            UIBarButtonItem *photoButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"camera"] style:UIBarButtonItemStylePlain target:self.photosViewController_iPhone action:@selector(takePhoto)];
+            UIBarButtonItem *photoButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"camera"] style:UIBarButtonItemStylePlain target:self action:@selector(takePhoto)];
             self.navigationItem.rightBarButtonItem = photoButton;
             
             [[self.currentTabView view] removeFromSuperview];
@@ -262,5 +263,120 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark -
+#pragma mark Photo methods
+
+-(void)takePhoto {
+    
+    NSLog(@"takePhoto");
+    
+#if TARGET_IPHONE_SIMULATOR
+    [self showActionSheet];
+#else
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [self showActionSheet];
+    } else {
+        [self takeSimulatorSafePhotoWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    }
+#endif
+    
+}
+
+
+-(void)showActionSheet {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Choose source of photo" message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Take photo", @"Choose from library", nil];
+    [alert show];
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSLog(@"button = %d", buttonIndex);
+    switch (buttonIndex) {
+        case 0:
+            // dismiss, no action
+            break;
+            
+        case 1:
+            // Use camera
+            [self takeSimulatorSafePhotoWithSourceType:UIImagePickerControllerSourceTypeCamera];
+            break;
+            
+        case 2:
+            // Use library
+            [self takeSimulatorSafePhotoWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+            break;
+            
+        default:
+            break;
+            
+    }
+}
+
+-(void)takeSimulatorSafePhotoWithSourceType:(UIImagePickerControllerSourceType)sourceType {
+    
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    // Check if the camera's available - if not, switch to the PhotoLibrary
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    
+    // Set the image picker to the valid type
+    [imagePicker setSourceType:sourceType];
+    [imagePicker setAllowsEditing:NO];
+    [imagePicker setDelegate:self];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+    [self presentModalViewController:imagePicker animated:YES];
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    // This UIIMagePickerController delegate method is called by the image picker when 
+    // it's dismissed as a result of choosing an image from the Photo Library, 
+    // or taking an image with the camera
+    
+    // Get image from picker
+    UIImage *takenImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    NSLog(@"takenImage = %@", takenImage);
+    
+    // Create a new image for the current Work
+    
+    NSData *pngData = UIImagePNGRepresentation(takenImage);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory 
+    
+    // Create the filename
+    NSString *imageFilename = [NSString stringWithFormat:@"image-%@", [NSDate date]];
+    NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png", imageFilename]];
+    [pngData writeToFile:filePath atomically:YES]; //Write the file
+    
+    NSLog(@"imageFilename = %@", imageFilename);
+    NSLog(@"filePath = %@", filePath);
+    
+    Image *newImage = [Image MR_createEntity];
+    newImage.file = imageFilename;
+    newImage.userGenerated = [NSNumber numberWithBool:YES];
+    [self.work addImagesObject:newImage];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    [self dismissModalViewControllerAnimated:YES];  
+    
+    [self updateUI];
+    
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    
+    [self dismissModalViewControllerAnimated:YES];
+    
+}
+
 
 @end

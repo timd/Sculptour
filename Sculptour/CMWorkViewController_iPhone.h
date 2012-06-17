@@ -15,7 +15,7 @@
 @class CMWorkCollectionViewController_iPhone;
 
 
-@interface CMWorkViewController_iPhone : UIViewController <UITabBarDelegate>
+@interface CMWorkViewController_iPhone : UIViewController <UITabBarDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) Work *work;
 

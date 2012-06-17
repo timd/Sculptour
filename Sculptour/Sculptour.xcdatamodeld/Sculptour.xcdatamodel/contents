@@ -3,6 +3,7 @@
     <entity name="Image" representedClassName="Image" syncable="YES">
         <attribute name="file" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userGenerated" optional="YES" attributeType="Boolean" syncable="YES"/>
         <relationship name="work" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Work" inverseName="images" inverseEntity="Work" syncable="YES"/>
     </entity>
     <entity name="Tag" representedClassName="Tag" syncable="YES">
@@ -26,7 +27,7 @@
         <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="work" inverseEntity="Tag" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Image" positionX="187" positionY="90" width="128" height="90"/>
+        <element name="Image" positionX="187" positionY="90" width="128" height="105"/>
         <element name="Tag" positionX="205" positionY="282" width="128" height="75"/>
         <element name="Work" positionX="-63" positionY="-18" width="128" height="255"/>
     </elements>

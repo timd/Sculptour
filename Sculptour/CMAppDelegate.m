@@ -10,6 +10,7 @@
 #import "CMRootMenuViewController.h"
 #import "CMDataCreater.h"
 #import "CMJsonIngest.h"
+#import "DCIntrospect.h"
 
 NSString * const CMLocationUpdateNotification = @"CMLocationUpdateNotification";
 NSString * const CMWorkCollectedNotification = @"CMWorkCollectedNotification";
@@ -77,6 +78,12 @@ NSString * const CMWorkCollectedNotification = @"CMWorkCollectedNotification";
     
     self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
+    
+#if TARGET_IPHONE_SIMULATOR
+    [[DCIntrospect sharedIntrospector] start];
+#endif
+    
+    
     return YES;
     
 }
