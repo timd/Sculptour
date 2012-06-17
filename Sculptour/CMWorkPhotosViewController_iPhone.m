@@ -10,6 +10,8 @@
 #import "Work.h"
 #import "Image.h"
 #import "NSArray-Set.h"
+#import "CMWorkViewController_iPhone.h"
+
 
 @interface CMWorkPhotosViewController_iPhone ()
 

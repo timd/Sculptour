@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CMWorkViewController_iPhone.h"
 
 @class Work;
+@class CMWorkViewController_iPhone;
 
 @interface CMWorkPhotosViewController_iPhone : UIViewController<UIScrollViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
