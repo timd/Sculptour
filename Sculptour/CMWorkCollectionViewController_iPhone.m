@@ -118,7 +118,10 @@
     
     Tag *tag = [orderedTags objectAtIndex: indexPath.row];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"(ANY tags.name CONTAINS %@) AND (collected == YES)", tag.name];
+    NSPredicate *collectedPredicate = [NSPredicate predicateWithFormat: @"(ANY tags.name CONTAINS %@) AND (collected == YES)", tag.name];
+    NSPredicate *homelessPredicate = [NSPredicate predicateWithFormat: @"latitude != %@ AND latitude != %@", nil, [NSNumber numberWithFloat: 0.0]];    
+    NSPredicate *predicate = [NSCompoundPredicate andPredicateWithSubpredicates: [NSArray arrayWithObjects: collectedPredicate, homelessPredicate, nil]];
+    
     NSArray *collected_for_tag = [Work MR_findAllWithPredicate: predicate];
     
     int collected_count = collected_for_tag.count;
@@ -143,7 +146,10 @@
     
     Tag *tag = [orderedTags objectAtIndex: indexPath.row];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"(ANY tags.name CONTAINS %@)", tag.name];
+    NSPredicate *tagPredicate = [NSPredicate predicateWithFormat: @"(ANY tags.name CONTAINS %@)", tag.name];
+    NSPredicate *homelessPredicate = [NSPredicate predicateWithFormat: @"latitude != %@ AND latitude != %@", nil, [NSNumber numberWithFloat: 0.0]];    
+    NSPredicate *predicate = [NSCompoundPredicate andPredicateWithSubpredicates: [NSArray arrayWithObjects: tagPredicate, homelessPredicate, nil]];
+
     NSArray *works_for_tag = [Work MR_findAllWithPredicate: predicate];
     
     if (self.collectionViewController == nil)

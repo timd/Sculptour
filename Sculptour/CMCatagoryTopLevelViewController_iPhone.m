@@ -116,13 +116,22 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-            cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault 
+            cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle
                                           reuseIdentifier: CellIdentifier];
     }
     
-    NSDictionary *info = [self.catagoryList objectAtIndex: indexPath.row];
-        
+    NSDictionary *info = [self.catagoryList objectAtIndex: indexPath.row];        
     cell.textLabel.text = [info objectForKey: @"title"];
+    
+    
+    NSPredicate *tagPredicate = [info objectForKey: @"predicate"];    
+    NSPredicate *homelessPredicate = [NSPredicate predicateWithFormat: @"latitude != %@ AND latitude != %@", nil, [NSNumber numberWithFloat: 0.0]];        
+    NSPredicate *predicate = [NSCompoundPredicate andPredicateWithSubpredicates: [NSArray arrayWithObjects: tagPredicate, homelessPredicate, nil]];
+    NSArray *workSubSet = [Work MR_findAllWithPredicate: predicate];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat: @"%d works", workSubSet.count];
+    
+    
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
