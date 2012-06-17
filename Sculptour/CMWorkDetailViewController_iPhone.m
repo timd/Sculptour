@@ -10,6 +10,7 @@
 
 #import "CMWorkDetailViewController_iPhone.h"
 #import "Work.h"
+#import "Image.h"
 #import "CMAppDelegate.h"
 #import "CMWorkViewController_iPhone.h"
 
@@ -150,15 +151,40 @@
 
 - (IBAction)didTapFacebookButton:(id)sender {
     
-    UIImage *image = [UIImage imageNamed:@"piglet.jpg"];
+    // Get the image to post to Facebook
+    UIImage *image = nil;
+
+    NSSet *imagesSet = self.work.images;
+    NSArray *imagesArray = [imagesSet allObjects];
+
+    Image *workImage = [imagesArray objectAtIndex:0];
+    
+    if ([workImage.userGenerated isEqualToNumber:[NSNumber numberWithBool:YES]]) {
+        
+        // Retrieve filepath as png from user docs directory
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
+        NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory 
+        
+        NSString *fileName = [NSString stringWithFormat:@"%@.png", workImage.file];
+        NSString *filePath = [documentsPath stringByAppendingPathComponent:fileName]; //Add the file name
+        image = [UIImage imageWithContentsOfFile:filePath];
+        
+    } else {
+        
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:workImage.file ofType:@"jpg"];
+        image = [UIImage imageWithContentsOfFile:filePath];
+        
+    }
+    
     NSData* imageData = UIImageJPEGRepresentation(image, 90);
+    NSString *photoCaption = [NSString stringWithFormat:@"%@ - %@", self.work.artist, self.work.title];
     
     CMAppDelegate *appDelegate = (CMAppDelegate *)[[UIApplication sharedApplication] delegate];
     Facebook *facebook = appDelegate.facebook;
     
     NSMutableDictionary * params = [NSMutableDictionary dictionaryWithObjectsAndKeys:[facebook accessToken], 
                                     @"access_token",
-                                    @"This is a photo of Piglet", 
+                                    photoCaption, 
                                     @"message",
                                     imageData, 
                                     @"source",
@@ -168,6 +194,7 @@
                          andParams:params
                      andHttpMethod:@"POST" 
                        andDelegate:self];
+     
 }
 
 -(void)requestLoading:(FBRequest *)request {

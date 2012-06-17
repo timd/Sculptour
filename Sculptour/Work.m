@@ -41,7 +41,7 @@
     
     NSString *path = nil;
     
-    if (image.userGenerated == [NSNumber numberWithInt:1]) {
+    if ([image.userGenerated isEqualToNumber:[NSNumber numberWithInt:1]]) {
         
         // Retrieve filepath as png from user docs directory
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  

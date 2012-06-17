@@ -65,7 +65,7 @@
     {
         UIImage *image = nil;
         
-        if (workImage.userGenerated == [NSNumber numberWithBool:YES]) {
+        if ([workImage.userGenerated isEqualToNumber:[NSNumber numberWithBool:YES]]) {
 
             // Retrieve filepath as png from user docs directory
             NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
