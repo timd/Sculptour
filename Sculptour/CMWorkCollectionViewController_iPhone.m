@@ -7,6 +7,8 @@
 //
 
 #import "CMWorkCollectionViewController_iPhone.h"
+#import "CMCollectionGridViewController.h"
+#import "CMWorkViewController_iPhone.h"
 
 #import "Work.h"
 #import "Tag.h"
@@ -22,7 +24,8 @@
 @synthesize work=_work;
 @synthesize tableView=_tableView;
 @synthesize noCatagoriesLabel=_noCatagoriesLabel;
-
+@synthesize parentController=_parentController;
+@synthesize collectionViewController=_collectionViewController;
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -126,5 +129,35 @@
     
     return cell;
 }
+
+#pragma mark - UITableView delegate methods
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *orderedTags = [NSArray arrayByOrderingSet: self.work.tags
+                                                 byKey: @"name"
+                                             ascending: YES];
+    
+    Tag *tag = [orderedTags objectAtIndex: indexPath.row];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"(ANY tags.name CONTAINS %@)", tag.name];
+    NSArray *works_for_tag = [Work MR_findAllWithPredicate: predicate];
+    
+    if (self.collectionViewController == nil)
+    {
+        self.collectionViewController = [[CMCollectionGridViewController alloc] init];
+    }
+    
+    self.collectionViewController.title = [tag.name capitalizedString];
+    self.collectionViewController.workList = works_for_tag;
+    
+    [self.parentController.navigationController pushViewController: self.collectionViewController
+                                                          animated: YES];
+    
+}
+
 
 @end

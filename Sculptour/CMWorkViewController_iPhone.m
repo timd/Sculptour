@@ -115,6 +115,7 @@
             if (self.collectionViewController_iPhone == nil)
             {
                 self.collectionViewController_iPhone = [[CMWorkCollectionViewController_iPhone alloc] init];
+                self.collectionViewController_iPhone.parentController = self;
             }
             self.collectionViewController_iPhone.work = self.work;
             

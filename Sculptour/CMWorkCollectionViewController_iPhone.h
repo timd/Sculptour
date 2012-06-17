@@ -9,12 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @class Work;
+@class CMWorkViewController_iPhone;
+@class CMCollectionGridViewController;
 
 @interface CMWorkCollectionViewController_iPhone : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) Work *work;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet UILabel *noCatagoriesLabel;
+@property (nonatomic, strong) CMWorkViewController_iPhone *parentController;
+@property (nonatomic, strong) CMCollectionGridViewController *collectionViewController;
 
 
 @end
