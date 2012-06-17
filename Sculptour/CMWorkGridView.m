@@ -30,8 +30,26 @@
     if ([work.collected isEqualToNumber: [NSNumber numberWithBool: YES]])
     {
         Image *workImage = [work.images anyObject];
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:workImage.file ofType:@"jpg"];
-        UIImage *image = [UIImage imageWithContentsOfFile:filePath];
+
+        UIImage *image;
+        if ([workImage.userGenerated isEqualToNumber: [NSNumber numberWithBool:YES]]) 
+        {
+            // Retrieve filepath as png from user docs directory
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
+            NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory 
+            
+            NSString *fileName = [NSString stringWithFormat:@"%@.png", workImage.file];
+            NSString *filePath = [documentsPath stringByAppendingPathComponent:fileName]; //Add the file name
+            image = [UIImage imageWithContentsOfFile:filePath];
+            
+        } else {
+            
+            //UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: workImage.url]]];
+            NSString *filePath = [[NSBundle mainBundle] pathForResource:workImage.file ofType:@"jpg"];
+            image = [UIImage imageWithContentsOfFile:filePath];
+            
+        }
+        
         imageView.image = image;
         
         colorView.backgroundColor = [UIColor whiteColor];

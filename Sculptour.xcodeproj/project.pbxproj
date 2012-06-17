@@ -196,6 +196,9 @@
 		4C4482C6158DBF5E007CC4EC /* qmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4482C4158DBF5E007CC4EC /* qmark@2x.png */; };
 		4C4482D9158DD6F5007CC4EC /* CLLocation+CLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4482D8158DD6F5007CC4EC /* CLLocation+CLExtensions.m */; };
 		4C448307158DE2AC007CC4EC /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C448306158DE2AC007CC4EC /* Twitter.framework */; };
+		4C448335158DF62F007CC4EC /* CMInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C448333158DF62F007CC4EC /* CMInstructionsViewController.m */; };
+		4C448336158DF62F007CC4EC /* CMInstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C448334158DF62F007CC4EC /* CMInstructionsViewController.xib */; };
+		4C448338158DF698007CC4EC /* Instructions.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 4C448337158DF698007CC4EC /* Instructions.mustache */; };
 		4C5F04E7158CBBE0009B77C4 /* CMRootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */; };
 		4C5F04E9158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */; };
 		4C5F04EB158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5F04EA158CBD19009B77C4 /* CMRootMenuViewController_iPad.xib */; };
@@ -412,6 +415,10 @@
 		4C4482D7158DD6F5007CC4EC /* CLLocation+CLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+CLExtensions.h"; sourceTree = "<group>"; };
 		4C4482D8158DD6F5007CC4EC /* CLLocation+CLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+CLExtensions.m"; sourceTree = "<group>"; };
 		4C448306158DE2AC007CC4EC /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		4C448332158DF62F007CC4EC /* CMInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMInstructionsViewController.h; sourceTree = "<group>"; };
+		4C448333158DF62F007CC4EC /* CMInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMInstructionsViewController.m; sourceTree = "<group>"; };
+		4C448334158DF62F007CC4EC /* CMInstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMInstructionsViewController.xib; sourceTree = "<group>"; };
+		4C448337158DF698007CC4EC /* Instructions.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Instructions.mustache; sourceTree = "<group>"; };
 		4C5F04E5158CBBE0009B77C4 /* CMRootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRootMenuViewController.h; sourceTree = "<group>"; };
 		4C5F04E6158CBBE0009B77C4 /* CMRootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRootMenuViewController.m; sourceTree = "<group>"; };
 		4C5F04E8158CBC2A009B77C4 /* CMRootMenuViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRootMenuViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -959,6 +966,10 @@
 		4C5F04EE158CBE68009B77C4 /* Instructions view */ = {
 			isa = PBXGroup;
 			children = (
+				4C448332158DF62F007CC4EC /* CMInstructionsViewController.h */,
+				4C448333158DF62F007CC4EC /* CMInstructionsViewController.m */,
+				4C448334158DF62F007CC4EC /* CMInstructionsViewController.xib */,
+				4C448337158DF698007CC4EC /* Instructions.mustache */,
 			);
 			name = "Instructions view";
 			sourceTree = "<group>";
@@ -1217,6 +1228,8 @@
 				4C4482C6158DBF5E007CC4EC /* qmark@2x.png in Resources */,
 				22DEA222158DD593001D58C6 /* camera.png in Resources */,
 				22DEA223158DD593001D58C6 /* camera@2x.png in Resources */,
+				4C448336158DF62F007CC4EC /* CMInstructionsViewController.xib in Resources */,
+				4C448338158DF698007CC4EC /* Instructions.mustache in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1331,6 +1344,7 @@
 				22DEA240158DE291001D58C6 /* DCIntrospect.m in Sources */,
 				22DEA241158DE291001D58C6 /* DCStatusBarOverlay.m in Sources */,
 				22DEA249158DE8BE001D58C6 /* Image.m in Sources */,
+				4C448335158DF62F007CC4EC /* CMInstructionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
