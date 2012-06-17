@@ -65,8 +65,8 @@
     {
         UIImage *image = nil;
         
-        if (workImage.userGenerated == [NSNumber numberWithBool:YES]) {
-
+        if ([workImage.userGenerated isEqualToNumber: [NSNumber numberWithBool:YES]]) 
+        {
             // Retrieve filepath as png from user docs directory
             NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
             NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory 
@@ -83,7 +83,8 @@
             
         }
         
-        UIImageView *imageView = [[UIImageView alloc] initWithImage: image];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame: frame];
+        imageView.image = image;        
         [self.scrollView addSubview: imageView];
         frame.origin.x += frame.size.width;
                 
