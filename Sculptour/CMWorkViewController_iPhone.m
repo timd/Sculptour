@@ -69,7 +69,6 @@
     switch (item_tag) 
     {
         case kCMDetailsTabTag: 
-        
         {
             
             if (self.detailViewController_iPhone == nil)
